@@ -5,15 +5,15 @@ ATTRIBUTE GROUPS DEFINITION (70-30% Split):
 ==========================================
 
 STYLES (16 attributes): 70% train (11) + 30% test (5)
-- Train: color, backgroundColor, fontFamily, fontSize, fontWeight, textAlignment, opacity, border, padding, margin, gap
-- Test: fill, visitedStateColor, lineHeight, borderRadius, boxShadow
+- Train: color, background color, font family, font size, font weight, text alignment, opacity, border, padding, margin, gap
+- Test: fill, visited state color, line height, border radius, box shadow
 
 STATES & INTERACTIVITY (7 attributes): 70% train (5) + 30% test (2)  
 - Train: visible/hidden, enabled/disabled, focused, hovered, active/selected
 - Test: clickable, cursor
 
 POSITION & LAYOUT (17 attributes): 70% train (12) + 30% test (5)
-- Train: x/y, width, height, alignment (absolute/relative), gap, aspectRatio, gapPx, offset, tolerancePx, zIndex, occluded, overflow
+- Train: x/y, width, height, alignment (absolute/relative), gap, aspect ratio, gap Px, offset, tolerance Px, z index, occluded, overflow
 - Test: transform, clipping, blurring, left/right, top/bottom
 
 CONTENT (5 attributes): 3-2 split
@@ -25,24 +25,24 @@ MEDIA (4 attributes): 3-1 split
 - Test: sourceType
 
 DYNAMICS (12 attributes): 70% train (8) + 30% test (4)
-- Train: transition, animation, movement, parallax, progressDirection, scroll, loading, progressValue
-- Test: duration, autoAdvance, autoPlay, timeout
+- Train: transition, animation, movement, parallax, progress direction, scroll, loading, progress value
+- Test: duration, auto advance, auto play, timeout
 
 TEXT (6 attributes): 70% train (4) + 30% test (2)
-- Train: text, validation, placeholder, allowedCharacters
-- Test: language, altText
+- Train: text, validation, placeholder, allowed characters
+- Test: language, alt text
 
 DATA (5 attributes): 3-2 split
-- Train: count, value, timeValue
-- Test: date, currencySymbol
+- Train: count, value, time value
+- Test: date, currency symbol
 
 IMAGE (10 attributes): 70% train (7) + 30% test (3)
-- Train: source, isLoaded, loadTime, sharpnessScoreGTE, compressionArtifactsLTE, watermark, naturalDimensions
-- Test: renderedDimensions, viewportDimensions, video/audio
+- Train: source, is loaded, load time, sharpness score GTE, compression artifacts LTE, watermark, natural dimensions
+- Test: rendered dimensions, viewport dimensions, video/audio
 
 ACCESSIBILITY (7 attributes): 70% train (5) + 30% test (2)
-- Train: activatableByKeyboard, keyboard.focusable, keyboardNavigable, focusTrapping, label
-- Test: aria-label, contrastRatio
+- Train: activatable by keyboard, keyboard focusable, keyboard navigable, focus trapping, label
+- Test: aria-label, contrast ratio
 
 REPETITIVE & HIERARCHICAL (2 attributes): 1-1 split
 - Train: list/table validation
@@ -88,30 +88,30 @@ used_keys = set()
 # Định nghĩa attributes cho train và test theo phân chia 70-30% và 3-2, 2-1, 1-1
 TRAIN_ATTRIBUTES = [
     # Styles (11/16)
-    "color", "backgroundColor", "fontFamily", "fontSize", "fontWeight", 
-    "textAlignment", "opacity", "border", "padding", "margin", "gap",
+    "color", "background color", "font family", "font size", "font weight", 
+    "text alignment", "opacity", "border", "padding", "margin", "gap",
     # States & Interactivity (5/7)
     "visible/hidden", "enabled/disabled", "focused", "hovered", "active/selected",
     # Position & Layout (12/17)
     "x/y coordinates", "width", "height", "alignment (absolute/relative)", 
-    "gap", "aspectRatio", "gapPx", "offset", "tolerancePx", "zIndex", "occluded", "overflow",
+    "gap", "aspect ratio", "gap Px", "offset", "tolerance Px", "z index", "occluded", "overflow",
     # Content (3/5)
     "text", "placeholder", "language",
     # Media (3/4)
     "muted", "playing", "fullscreen",
     # Dynamics (8/12)
-    "transition", "animation", "movement", "parallax", "progressDirection", 
-    "scroll", "loading", "progressValue",
+    "transition", "animation", "movement", "parallax", "progress direction", 
+    "scroll", "loading", "progress value",
     # Text (4/6)
-    "text validation", "placeholder text", "allowedCharacters", "text content",
+    "text validation", "placeholder text", "allowed characters", "text content",
     # Data (3/5)
-    "count", "value", "timeValue",
+    "count", "value", "time value",
     # Image (7/10)
-    "source", "isLoaded", "loadTime", "sharpnessScoreGTE", 
-    "compressionArtifactsLTE", "watermark", "naturalDimensions",
+    "source", "is loaded", "load time", "sharpness score GTE", 
+    "compression artifacts LTE", "watermark", "natural dimensions",
     # Accessibility (5/7)
-    "activatableByKeyboard", "keyboard.focusable", "keyboardNavigable", 
-    "focusTrapping", "label",
+    "activatable by keyboard", "keyboard focusable", "keyboard navigable", 
+    "focus trapping", "label",
     # Repetitive & Hierarchical (1/2)
     "list/table validation",
     # Complex Visual (2/3)
@@ -122,7 +122,7 @@ TRAIN_ATTRIBUTES = [
 
 TEST_ATTRIBUTES = [
     # Styles (5/16)
-    "fill", "visitedStateColor", "lineHeight", "borderRadius", "boxShadow",
+    "fill", "visited state color", "line height", "border radius", "box shadow",
     # States & Interactivity (2/7)
     "clickable", "cursor",
     # Position & Layout (5/17)
@@ -130,17 +130,17 @@ TEST_ATTRIBUTES = [
     # Content (2/5)
     "exists", "present",
     # Media (1/4)
-    "sourceType",
+    "source type",
     # Dynamics (4/12)
-    "duration", "autoAdvance", "autoPlay", "timeout",
+    "duration", "auto advance", "auto play", "timeout",
     # Text (2/6)
-    "language detection", "altText",
+    "language detection", "alt text",
     # Data (2/5)
-    "date", "currencySymbol",
+    "date", "currency symbol",
     # Image (3/10)
-    "renderedDimensions", "viewportDimensions", "video/audio",
+    "rendered dimensions", "viewport dimensions", "video/audio",
     # Accessibility (2/7)
-    "aria-label", "contrastRatio",
+    "aria-label", "contrast ratio",
     # Repetitive & Hierarchical (1/2)
     "nested elements check",
     # Complex Visual (1/3)
@@ -233,29 +233,30 @@ STRICT CONSTRAINTS FOR TRAINING SET:
 - ALWAYS give explicit, measurable values.
 - STRICTLY FORBIDDEN to make up or use any attributes outside the allowed list.
 - DO NOT use any attributes other than the list below.
+- Use single quotes ONLY for literal string values (URLs, hex colors, text content, file names). Do NOT quote CSS property values like font names, alignment values, UI element names, or attribute names.
 
 ALLOWED ATTRIBUTES FOR TRAINING SET (ONLY USE THESE ATTRIBUTES):
 ==============================================================
-Styles: 'color', 'backgroundColor', 'fontFamily', 'fontSize', 'fontWeight', 'textAlignment', 'opacity', 'border', 'padding', 'margin', 'gap'
+Styles: 'color', 'background color', 'font family', 'font size', 'font weight', 'text alignment', 'opacity', 'border', 'padding', 'margin', 'gap'
 States & Interactivity: 'visible/hidden', 'enabled/disabled', 'focused', 'hovered', 'active/selected'
-Position & Layout: 'x/y coordinates', 'width', 'height', 'alignment (absolute/relative)', 'gap', 'aspectRatio', 'gapPx', 'offset', 'tolerancePx', 'zIndex', 'occluded', 'overflow'
+Position & Layout: 'x/y coordinates', 'width', 'height', 'alignment (absolute/relative)', 'gap', 'aspect ratio', 'gap Px', 'offset', 'tolerance Px', 'z index', 'occluded', 'overflow'
 Content: 'text', 'placeholder', 'language'
 Media: 'muted', 'playing', 'fullscreen'
-Dynamics: 'transition', 'animation', 'movement', 'parallax', 'progressDirection', 'scroll', 'loading', 'progressValue'
-Text: 'text validation', 'placeholder text', 'allowedCharacters', 'text content'
-Data: 'count', 'value', 'timeValue'
-Image: 'source', 'isLoaded', 'loadTime', 'sharpnessScoreGTE', 'compressionArtifactsLTE', 'watermark', 'naturalDimensions'
-Accessibility: 'activatableByKeyboard', 'keyboard.focusable', 'keyboardNavigable', 'focusTrapping', 'label'
+Dynamics: 'transition', 'animation', 'movement', 'parallax', 'progress direction', 'scroll', 'loading', 'progress value'
+Text: 'text validation', 'placeholder text', 'allowed characters', 'text content'
+Data: 'count', 'value', 'time value'
+Image: 'source', 'is loaded', 'load time', 'sharpness score GTE', 'compression artifacts LTE', 'watermark', 'natural dimensions'
+Accessibility: 'activatable by keyboard', 'keyboard focusable', 'keyboard navigable', 'focus trapping', 'label'
 Repetitive & Hierarchical: 'list/table validation'
 Complex Visual: 'shape validation', 'image composition'
 More: 'flowchart validation', 'browser compatibility'
 
 ABSOLUTELY MUST NOT use the following attributes (reserved for test set):
-- fill, visitedStateColor, lineHeight, borderRadius, boxShadow
+- fill, visited state color, line height, border radius, box shadow
 - clickable, cursor, transform, clipping, blurring, left/right, top/bottom
-- exists, present, sourceType, duration, autoAdvance, autoPlay, timeout
-- language detection, altText, date, currencySymbol
-- renderedDimensions, viewportDimensions, video/audio, aria-label, contrastRatio
+- exists, present, source type, duration, auto advance, auto play, timeout
+- language detection, alt text, date, currency symbol
+- rendered dimensions, viewport dimensions, video/audio, aria-label, contrast ratio
 - nested elements check, graphics/charts validation, multiple attribute comparison
 
 STRICT REQUIREMENTS:
@@ -263,7 +264,9 @@ STRICT REQUIREMENTS:
 - The steps should be sequential and complete.
 - Each sentence must describe multiple attributes of the same element OR specify at least one explicit spatial constraint.
 - Always provide concrete values: exact pixels (16px), RGB/HEX colors (#228B22), timing (800ms), percentages (75%), full URLs, coordinates (x,y), gaps/tolerance (24px ±2px).
-- Inside each description string, use only single quotes (') for UI labels; do not use double quotes (") inside.
+- Inside each description string, use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values, font names, alignment values, UI element names, or attribute names.
+- Correct: "verify the Submit button has background color '#ff0000', font family Roboto, and text alignment left" 
+- Incorrect: "verify the 'Submit' button has 'background color' '#ff0000', 'font family' 'Roboto', and 'text alignment' 'left'"
 
 OUTPUT FORMAT:
 =============
@@ -272,7 +275,11 @@ OUTPUT FORMAT:
 - Do not include numbering, markdown, code fences, or extra text.
 
 TRAINING EXAMPLE (for reference only):
-"Open 'https://shop.demo.com/product/456', verify that the product image has source equal to 'main_product.jpg' and renderedDimensions of 350x250px ±3px, check the product title shows exact text 'Premium Quality Product' with font size 20px and color '#333333', confirm the 'Buy Now' button has width 180px, height 45px, border radius 8px, zIndex of 15, and changes to hovered state with background color '#ff6600', ensure transition animation duration of 250ms applies, scroll the page and verify header remains fixed with absolute alignment, check that exactly count 8 related products are displayed."
+"Open 'https://shop.demo.com/product/456', verify that the product image has source equal to 'main_product.jpg' and natural dimensions of 350x250px ±3px, check the product title shows exact text 'Premium Quality Product' with font size 20px and color '#333333', confirm the Buy Now button has width 180px, height 45px, border radius 8px, z index of 15, and changes to hovered state with background color '#ff6600', ensure transition animation duration of 250ms applies, scroll the page and verify header remains fixed with absolute alignment, check that exactly count 8 related products are displayed."
+
+IMPORTANT NOTES: 
+1. Always use SEPARATE WORDS for compound attributes. Use "background color" instead of "backgroundColor", "font size" instead of "fontSize", "natural dimensions" instead of "naturalDimensions", etc.
+2. Use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values like font names (Roboto), alignment values (left, center), UI element names, or attribute names.
 """
 
     all_sentences = []
@@ -317,32 +324,33 @@ STRICT CONSTRAINTS FOR TEST SET:
 - ALWAYS give explicit, measurable values.
 - STRICTLY FORBIDDEN to make up or use any attributes outside the allowed list.
 - DO NOT use any attributes other than the list below.
+- Use single quotes ONLY for literal string values (URLs, hex colors, text content, file names). Do NOT quote CSS property values like font names, alignment values, UI element names, or attribute names.
 
 DESIGNATED ATTRIBUTES FOR TEST SET (ONLY USE THESE ATTRIBUTES):
 =============================================================
-Styles: 'fill', 'visitedStateColor', 'lineHeight', 'borderRadius', 'boxShadow'
+Styles: 'fill', 'visited state color', 'line height', 'border radius', 'box shadow'
 States & Interactivity: 'clickable', 'cursor'
 Position & Layout: 'transform', 'clipping', 'blurring', 'left/right', 'top/bottom'
 Content: 'exists', 'present'
-Media: 'sourceType'
-Dynamics: 'duration', 'autoAdvance', 'autoPlay', 'timeout'
-Text: 'language detection', 'altText'
-Data: 'date', 'currencySymbol'
-Image: 'renderedDimensions', 'viewportDimensions', 'video/audio'
-Accessibility: 'aria-label', 'contrastRatio'
+Media: 'source type'
+Dynamics: 'duration', 'auto advance', 'auto play', 'timeout'
+Text: 'language detection', 'alt text'
+Data: 'date', 'currency symbol'
+Image: 'rendered dimensions', 'viewport dimensions', 'video/audio'
+Accessibility: 'aria-label', 'contrast ratio'
 Repetitive & Hierarchical: 'nested elements check'
 Complex Visual: 'graphics/charts validation'
 More: 'multiple attribute comparison'
 
 ABSOLUTELY MUST NOT use the following training attributes:
-- color, backgroundColor, fontFamily, fontSize, fontWeight, textAlignment, opacity, border, padding, margin, gap
+- color, background color, font family, font size, font weight, text alignment, opacity, border, padding, margin, gap
 - visible/hidden, enabled/disabled, focused, hovered, active/selected
-- x/y coordinates, width, height, alignment (absolute/relative), aspectRatio, gapPx, offset, tolerancePx, zIndex, occluded, overflow
+- x/y coordinates, width, height, alignment (absolute/relative), aspect ratio, gap Px, offset, tolerance Px, z index, occluded, overflow
 - text, placeholder, language, muted, playing, fullscreen
-- transition, animation, movement, parallax, progressDirection, scroll, loading, progressValue
-- text validation, placeholder text, allowedCharacters, text content, count, value, timeValue
-- source, isLoaded, loadTime, sharpnessScoreGTE, compressionArtifactsLTE, watermark, naturalDimensions
-- activatableByKeyboard, keyboard.focusable, keyboardNavigable, focusTrapping, label
+- transition, animation, movement, parallax, progress direction, scroll, loading, progress value
+- text validation, placeholder text, allowed characters, text content, count, value, time value
+- source, is loaded, load time, sharpness score GTE, compression artifacts LTE, watermark, natural dimensions
+- activatable by keyboard, keyboard focusable, keyboard navigable, focus trapping, label
 - list/table validation, shape validation, image composition, flowchart validation, browser compatibility
 
 STRICT REQUIREMENTS:
@@ -350,7 +358,9 @@ STRICT REQUIREMENTS:
 - The steps should be sequential and complete.
 - Each sentence must describe multiple attributes of the same element OR specify at least one explicit spatial constraint.
 - Always provide concrete values: exact ratios (4.5:1), specific aria-label, play states (playing/paused), specific shapes (circle/square), exact altText.
-- Inside each description string, use only single quotes (') for UI labels; do not use double quotes (") inside.
+- Inside each description string, use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values, font names, alignment values, UI element names, or attribute names.
+- Correct: "check navigation menu aria-label is set to 'Main Navigation Menu' and has font family Arial with text alignment center"
+- Incorrect: "check 'navigation menu' 'aria-label' is set to 'Main Navigation Menu' and has 'font family' 'Arial' with 'text alignment' 'center'"
 
 OUTPUT FORMAT:
 =============
@@ -359,7 +369,11 @@ OUTPUT FORMAT:
 - Do not include numbering, markdown, code fences, or extra text.
 
 TEST EXAMPLE (for reference only):
-"Open 'https://media.example.com/player/789', verify that the video player is in playing state, check image has altText containing 'New Product Introduction Video 2024', confirm nested elements are checked in proper order from parent to child with max depth 3 levels, ensure all text elements have contrastRatio at least 4.5:1 against background, check navigation menu aria-label is set to 'Main Navigation Menu', verify button has shape of circle with exact radius, compare multiple attribute between header and footer for accessibility compliance."
+"Open 'https://media.example.com/player/789', verify that the video player is in playing state, check image has alt text containing 'New Product Introduction Video 2024', confirm nested elements are checked in proper order from parent to child with max depth 3 levels, ensure all text elements have contrast ratio at least 4.5:1 against background, check navigation menu aria-label is set to 'Main Navigation Menu', verify button has shape of circle with exact radius, compare multiple attribute between header and footer for accessibility compliance."
+
+IMPORTANT NOTES:
+1. Always use SEPARATE WORDS for compound attributes. Use "alt text" instead of "altText", "contrast ratio" instead of "contrastRatio", "rendered dimensions" instead of "renderedDimensions", etc.
+2. Use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values like font names (Arial), alignment values (center, left), UI element names, or attribute names.
 """
 
     all_sentences = []
@@ -408,7 +422,7 @@ Follow these strict rules:
     - The properties relate to **different states** (e.g., hover vs normal).
     - The properties relate to **different elements**.
     - The instruction involves a **user action** followed by a **verification** (e.g., click then check, locate then check, locate then type), or an explicit user action in between is required.
-    - The instruction involves many actions (example: "Locate the 'Email' input field and enter 'invalid-email'" must be separated into 2 tasks: Locate the 'Email' input field, Enter 'invalid-email' into the 'Email' input field).
+    - The instruction involves many actions (example: "Locate the Email input field and enter 'invalid-email'" must be separated into 2 tasks: Locate the Email input field, Enter 'invalid-email' into the Email input field).
     - The behavior differs between **device types** (e.g., mobile vs desktop).
     - Action requires many steps to complete (example: Log in with the account 'patient001' and password 'Health@2023' must be separated into 2 tasks: Enter 'patient001' into the account field, Enter 'Health@2023' into the password field).
   - (Example: The 'Add to Cart' button has a color of '#ff9900', a border radius of '4px', and the background color changes to '#e68a00' on hover)
@@ -418,22 +432,22 @@ Follow these strict rules:
 
 Example:
 - Requirement:
-"Open 'https://www.netflix.com', click the 'Sign In' button located at the top-right corner (50px from the top edge and 30px from the right edge), enter the email 'testuser@example.com' and password 'Test@1234', submit the login form, verify that after submission, the user is redirected to 'https://www.netflix.com/browse' within 3 seconds and the page displays at least 5 personalized movie thumbnails, and ensure that all input fields have the font 'Roboto 16px', padding '12px', bottom margin '16px'; the 'Sign In' button has a background color '#e50914', text color '#ffffff', border radius '4px', is responsive down to a 360px screen width, and all elements meet a WCAG contrast ratio of at least 4.5:1.",
+"Open 'https://www.netflix.com', click the Sign In button located at the top-right corner (50px from the top edge and 30px from the right edge), enter the email 'testuser@example.com' and password 'Test@1234', submit the login form, verify that after submission, the user is redirected to 'https://www.netflix.com/browse' within 3 seconds and the page displays at least 5 personalized movie thumbnails, and ensure that all input fields have the font family Roboto with size 16px, padding 12px, bottom margin 16px; the Sign In button has a background color '#e50914', text color '#ffffff', border radius 4px, is responsive down to a 360px screen width, and all elements meet a WCAG contrast ratio of at least 4.5:1.",
 "Open 'https://www.amazon.com', search for 'Dàn loa Bluetooth', verify that the search completes in under 2 seconds, displays at least 10 products with titles containing 'Loa Bluetooth', confirm each product card has an image width of exactly '150px', product price has a font size of '18px', and ensure the 'Add to Cart' button has a color '#ff9900', rounded corners '4px', and hover background color changes to '#e68a00'.",
 "Open 'https://shop.example.com/item/P123', verify that the main product image '#main-product-image' loads successfully within 800ms, has alt text containing 'Ví da Premium', no watermark, natural dimensions 1600x1200, displayed at 400x300 with a tolerance of ±4px, sharpness ≥ 0.85, compression artifacts ≤ 0.1, and ensure the image is positioned to the left of the price block '.price' with a minimum spacing of 24px (±2px)."
 - Response:
 [
   "Open 'https://www.netflix.com'",
-  "Locate the 'Sign In' button at the top-right corner (50px from the top edge and 30px from the right edge)",
-  "Click the 'Sign In' button",
+  "Locate the Sign In button at the top-right corner (50px from the top edge and 30px from the right edge)",
+  "Click the Sign In button",
   "Enter 'testuser@example.com' into the email input field",
   "Enter 'Test@1234' into the password input field",
   "Submit the login form",
   "Verify that after submission, the user is redirected to 'https://www.netflix.com/browse' within 3 seconds",
   "Verify that the page displays at least 5 personalized movie thumbnails",
   "Verify that all input fields have the font 'Roboto 16px', padding '12px', bottom margin '16px'",
-  "Verify that the 'Sign In' button has a background color '#e50914', text color '#ffffff', border radius '4px'",
-  "Verify that the 'Sign In' button is responsive down to a 360px screen width",
+  "Verify that the Sign In button has a background color '#e50914', text color '#ffffff', border radius 4px",
+  "Verify that the Sign In button is responsive down to a 360px screen width",
   "Verify that all elements meet a WCAG contrast ratio of at least 4.5:1"
 ],
 [
@@ -443,8 +457,8 @@ Example:
   "Verify that the search results display at least 10 products with titles containing 'Loa Bluetooth'",
   "Verify that each product card has an image width of exactly '150px'",
   "Verify that the product price has a font size of '18px'",
-  "Verify that the 'Add to Cart' button has a color '#ff9900' and rounded corners '4px'",
-  "Verify that the 'Add to Cart' button's background color changes to '#e68a00' on hover"
+  "Verify that the Add to Cart button has a color '#ff9900' and rounded corners 4px",
+  "Verify that the Add to Cart button's background color changes to '#e68a00' on hover"
 ],
 [
   "Open 'https://shop.example.com/item/P123'",
@@ -532,7 +546,7 @@ Important:
   - 'styles':
     - 'textAlign':
     - `color`: e.g., "#ffffff" or "rgb(255, 255, 255)" or "white"
-    - `backgroundColor`
+    - `background color`
     - `font`: an object with `family`, `size`, `weight`, `style` if mentioned 
     - 'border': width, style, color, radius
     - 'padding': top, right, bottom, left
@@ -561,20 +575,20 @@ Important:
     - Or any property related to 'dynamics', as long as it follows the correct format and rules stated (only declare if present in the input description).
   - If the element is image (img), its may contain:
     - `source`: URL of the image
-    - 'altText': string (e.g., "Hình ảnh sản phẩm", "Logo")
-    - 'isLoaded': boolean (true if image is loaded, false if not)
-    - 'loadTime': number (in milliseconds, e.g., 500 for 0.5 seconds)
-    - 'shapnessScoreGTE': number (0 to 1, e.g., 0.8 for sharpness)
-    - 'compressionArtifactsLTE': number (0 to 1, e.g., 0.2 for compression artifacts)
-    - 'renderedDimensions': object with `width`, `height`, 'tolerancePx' (in pixels, e.g., 300x200)
-    - 'naturalDimensions': object with `width`, `height` (natural size of the image)
-    - 'viewportDimensions': object with `width`, `height` (size of the image in the viewport)
+    - 'alt text': string (e.g., "Hình ảnh sản phẩm", "Logo")
+    - 'is loaded': boolean (true if image is loaded, false if not)
+    - 'load time': number (in milliseconds, e.g., 500 for 0.5 seconds)
+    - 'sharpness score GTE': number (0 to 1, e.g., 0.8 for sharpness)
+    - 'compression artifacts LTE': number (0 to 1, e.g., 0.2 for compression artifacts)
+    - 'rendered dimensions': object with `width`, `height`, 'tolerance Px' (in pixels, e.g., 300x200)
+    - 'natural dimensions': object with `width`, `height` (natural size of the image)
+    - 'viewport dimensions': object with `width`, `height` (size of the image in the viewport)
     - 'watermark': boolean (true if image has a watermark, false if not)
   - 'compair': if comparing with another element, it may contain:
     - 'element': object describing the element to compare with (must always have when `compare` is used). (if there are multiple elements to compare, use 'element1', 'element2', etc.)
       - This object may contain `selector` (required), and may also include `action`, `value`, 'expected' only if explicitly described in the task.  
       - `expected` follows the same structure and rules as the `expected` field for the main element.
-    - Properties to compare (e.g., `color`, `fontSize`, `position`, etc.)
+    - Properties to compare (e.g., `color`, `font size`, `position`, etc.)
   - Or any property related to expected , as long as it follows the correct format and rules stated (only declare if present in the input description).
 
 Example 1:
@@ -675,7 +689,7 @@ Example 1:
         "hovered": true
       }},
       "styles": {{
-        "backgroundColor": "#e68a00"
+        "background color": "#e68a00"
       }}
     }}
   }}
@@ -796,7 +810,7 @@ Example 2:
     "expected": {{
       "text": "Login",
       "styles": {{
-        "backgroundColor": "#e50914",
+        "background color": "#e50914",
         "color": "#ffffff",
         "border": {{
           "radius": "4px"
@@ -855,23 +869,23 @@ Example 3:
       "loadTime": {{
         "max": 800
       }},
-      "altText": {{
+      "alt text": {{
         "contains": "Premium Leather Wallet"
       }},
       "watermark": false,
-      "naturalDimensions": {{
+      "natural dimensions": {{
         "width": 1600,
         "height": 1200
       }},
-      "renderedDimensions": {{
+      "rendered dimensions": {{
         "width": 400,
         "height": 300,
-        "tolerancePx": 4
+        "tolerance Px": 4
       }},
-      "shapnessScoreGTE": {{
+      "sharpness score GTE": {{
         "min": 0.85
       }},
-      "compressionArtifactsLTE": {{
+      "compression artifacts LTE": {{
         "max": 0.1
       }},
       "compair": {{
@@ -915,7 +929,7 @@ Example 4:
       "status": true,
       "styles": {{
         "height": "40px",
-        "fontSize": "14px"
+        "font size": "14px"
       }},
     }}
   }},
@@ -940,7 +954,7 @@ Example 4:
         }}
       }},
       'styles': {{
-        'backgroundColor': '#dcf8c6',
+        'background color': '#dcf8c6',
       }},
       'dynamics': {{
         'timeout': 1000
@@ -1015,6 +1029,7 @@ Notes:
 - Each atomic test instruction return only ONE test steps, NO splitting the instruction into multiple substeps.
 - The selector can be a CSS selector or a natural-language reference to the element.
 - UI may be implemented using any frontend framework (e.g., TailwindCSS, Bootstrap, raw HTML).
+- Use single quotes ONLY for literal string values (URLs, hex colors, text content, file names). Do NOT quote CSS property values like font names, alignment values, UI element names, or attribute names.
 - Return only a JSON array. No explanation. No markdown.
 
 Now generate the JSON array of steps for the instruction above.
