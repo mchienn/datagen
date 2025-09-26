@@ -77,7 +77,19 @@ KEY_LIST = [
     "AIzaSyASJhbOMdoDskCw0DK064m6MRcYP3RzOek",
     "AIzaSyBeE2zDsYSevNjT2jAjDTAV78xOJgHkyKk",
     "AIzaSyCebrHwLcUfp50PIjc07Ln3mPuQNa7mqmY",
-    "AIzaSyBxq1XVTElXyWYhqBunCAXBaGXAhHCr9hg"
+    "AIzaSyBxq1XVTElXyWYhqBunCAXBaGXAhHCr9hg",
+    "AIzaSyDR0iAaefnM77-r82LQMewDCdaxx1Z5eu4",
+    "AIzaSyB4-tYIo1th7F2yJJG4NAhW6-u2fcswXRY", 
+    "AIzaSyDhWSf8YfEjIxH-dZgU7anIiT9HKkRVmJg",
+    "AIzaSyBZ4VzwuVoys9ih-56kpFB1B-rW5eaZhXs",
+    "AIzaSyCjc9t158aikfIixvwkV-2_dDOG3TXqWKg",
+    "AIzaSyBywyWgvxcQn9aAQfjQ6U-st_tXROGOEEk",
+    "AIzaSyBy4fptcpyNCSE5M9UoqpSsy_Tw-KU4dLk",
+    "AIzaSyAAq6AZBZA7pGBd6SRfdQPaYBIQ-f5mjos",
+    "AIzaSyAA1vPX8HRezaVel9RXqRTa9NEnJ831NeY",
+    "AIzaSyDCb5MYyS5ucWvg_vBEbORMzRoC18T2so8",
+    "AIzaSyA-hFzf05Io-4bEn-siACb3ZXnCxMUhkcg",
+    "AIzaSyAkv4KdSRsUB_qsYvrS8GtZQkZBannFUbY"
     ]
 MODEL = "models/gemini-2.5-flash"
 HEADERS = {"Content-Type": "application/json"}
@@ -1202,4 +1214,5 @@ def main():
     print("🔒 Zero leakage between train/test attribute sets")
 
 if __name__ == "__main__":
+
     main()
