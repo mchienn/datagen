@@ -77,6 +77,21 @@ def extract_json_from_text(text: str) -> str:
     text = re.sub(r"```$", "", text)
     return text.strip()
 
+def sanitize_numeric_quotes(s: str) -> str:
+  """Remove single quotes around numeric units, color codes, css function values
+  such as '16px', '2s', '800ms', '75%', '#ff0000', 'rgb(34,139,34)', '400x300px'.
+  Keep single quotes for human-readable text like 'Submit', 'Roboto', URLs, file names.
+  """
+  patterns = [
+    r"'(#[0-9A-Fa-f]{3,8})'",  # hex colors
+    r"'((?:rgb|rgba|hsl|hsla)\([^']+\))'",  # css color functions
+    r"'(\d+(?:\.\d+)?(?:px|em|rem|vw|vh|%)|\d+(?:ms|s))'",  # units and time
+    r"'(\d{2,4}x\d{2,4}(?:px)?)'",  # dimensions like 400x300 or 400x300px
+  ]
+  for pat in patterns:
+    s = re.sub(pat, r"\1", s)
+  return s
+
 def step0_create_task(filename: str):
     # Prepare folder & output file
     INPUT_DIR = Path("Input")
@@ -101,6 +116,10 @@ Strict constraints (must satisfy all):
 - Always provide concrete, measurable expected values with units or counts where applicable: exact pixels (e.g., 16px), RGB/HEX colors (e.g., rgb(34,139,34) or #228B22 or 'green'), time (e.g., 800ms, 2s), percentage (e.g., 75%), URL (full), viewport width (e.g., 360px), coordinates (x,y).
 - Do not combine two unrelated actions in one sentence. If the same action applies to unrelated elements, split them into separate sentences.
 - Inside each string, use only single quotes (') when quoting text/labels/links; do not use any double quotes (\") inside the content.
+ - Quote usage policy:
+   - Use single quotes ONLY when quoting human-readable text or identifiers such as: visible UI text content, link URLs, exact labels/aria-labels, font family names, file names (e.g., 'Submit', 'https://...', 'Roboto', 'hero_image.jpg').
+   - Do NOT wrap numeric values, units, color codes, or CSS function values in single quotes. Disallowed forms include: '16px', '2s', '800ms', '75%', '#ff0000', 'rgb(34,139,34)', 'rgba(0,0,0,0.5)', 'hsl(0, 0%, 100%)', '400x300px'. These must appear without the extra single quotes.
+   - Do not single-quote boolean-like words or states (visible/hidden, enabled/disabled, active/selected, true/false).
 
 Coverage (ensure diversity across the 20 items):
 - You are allowed to use ONLY the attributes below and MUST NOT use any attribute outside this list.
@@ -165,6 +184,9 @@ Output formatting (must follow exactly):
 - Use JSON double quotes for items.
 - Inside each string, **do not** include any double quotes; use only single quotes for quoted labels/literals.
 - Do not include numbering, markdown, code fences, or any other text outside the JSON array.
+ - Enforce the quote usage policy above. Examples:
+   - Allowed: font size 16px, color #ff0000, background rgb(34,139,34), timeout 800ms.
+   - Disallowed (single-quoted values): '16px', '#ff0000', 'rgb(34,139,34)', '800ms'.
 
 Synonym usage requirements (for linguistic diversity while preserving semantics):
 - Do NOT change the original meaning of any attribute (e.g., 'background color' vs 'background hue' must still mean the same CSS property).
@@ -197,12 +219,13 @@ Return 20 such strings inside one JSON array. Return the JSON array only.
         # 2) fallback: split by lines
         if not sentences:
             sentences = [ln.strip().strip(",") for ln in text.splitlines() if ln.strip()]
-        # Normalize: replace inner " with ' ; wrap each sentence with "
-        for s in sentences:
-            s = s.replace('"', "'").strip()
-            if not (s.startswith('"') and s.endswith('"')):
-                s = f'"{s}"'
-            all_sentences.append(s)
+    # Normalize: replace inner " with ' ; sanitize numeric/color quotes; wrap each sentence with "
+    for s in sentences:
+      s = s.replace('"', "'").strip()
+      s = sanitize_numeric_quotes(s)
+      if not (s.startswith('"') and s.endswith('"')):
+        s = f'"{s}"'
+      all_sentences.append(s)
 
     # Write the file: comma-separated strings, each kept inside quotes
     with open(out_path, "w", encoding="utf-8") as f:
@@ -237,7 +260,9 @@ Follow these strict rules:
 - Each item in the array is a single atomic test instruction string.
 - Do not invent steps that are not described in the main task.
 Return ONLY the JSON array. No explanation, no markdown.
-Use single quotes only when quoting URLs/text.
+Quote usage policy for atomic instruction text:
+- Use single quotes ONLY for human-readable text, exact labels, aria-labels, URLs, and font family/file names (e.g., 'Submit', 'https://...', 'Roboto', 'hero_image.jpg').
+- NEVER quote numeric values, CSS units, color codes, or CSS function values. Avoid forms like '16px', '2s', '800ms', '75%', '#ff0000', 'rgb(34,139,34)'. Use them without quotes.
 Examples:
 - Requirement:
 [
@@ -361,6 +386,11 @@ Important:
   - 'visibility', 'enabled', 'focused', 'hovered', 'active'
   - dynamics: 'movement', 'scroll', 'transition', 'animation', 'focus', 'navigation', 'loading', 'progress-value'
   - image-only: 'src', 'alt-text', 'is-loaded', 'load-time', 'sharpness-score-gte', 'compression-artifacts-lte', 'rendered-dimensions', 'natural-dimensions', 'viewport-dimensions', 'watermark'
+
+Quote usage policy for JSON step values:
+- Only quote string literals that are human-readable text, URLs, labels/aria-labels, font family names, or file names. Example: 'Submit', 'https://...', 'Roboto', 'hero_image.jpg'.
+- Do NOT put quotes around numeric values, units, or color codes in `expected`. Examples (correct): width: 150px, timeout: 800ms, color: #ff9900, background-color: rgb(34,139,34).
+- Avoid forms like '16px', '2s', '800ms', '#ff9900', 'rgb(34,139,34)' in `expected`.
 
 Selenium + ChromeDriver constraints (Chrome computed styles):
 1. Only include CSS properties retrievable via `window.getComputedStyle(element)`.
