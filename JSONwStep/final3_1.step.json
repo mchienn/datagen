@@ -1,0 +1,506 @@
+[
+  [
+    {
+      "action": "verify",
+      "selector": "'Products' navigation link",
+      "value": "",
+      "expected": {
+        "text-content": "Products",
+        "font-size": "16px",
+        "font-family": "Arial",
+        "color": "#333333",
+        "padding-top": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Products' navigation link",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#f0f0f0",
+        "color": "#0000FF",
+        "transition-property": "background-color, color",
+        "transition-duration": "200ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Submit Order' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "visibility": "visible",
+        "background-color": "#4CAF50",
+        "color": "#FFFFFF",
+        "border-radius": "8px",
+        "width": "200px",
+        "height": "48px",
+        "margin-top": "20px",
+        "x": "100px",
+        "y": "250px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "main product image",
+      "value": "",
+      "expected": {
+        "src": "product_main.jpg",
+        "alt-text": "Stylish Red Sneakers",
+        "rendered-width": 600,
+        "rendered-height": 400,
+        "is-loaded": true,
+        "load-time": 500,
+        "opacity": 1,
+        "display": "block",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Email' input field",
+      "value": "",
+      "expected": {
+        "value": "user@example.com",
+        "placeholder": "Enter your email address",
+        "border-top": "1px solid #CCCCCC",
+        "border-right": "1px solid #CCCCCC",
+        "border-bottom": "1px solid #CCCCCC",
+        "border-left": "1px solid #CCCCCC"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Email' input field",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Email' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-top": "2px solid #007bff",
+        "border-right": "2px solid #007bff",
+        "border-bottom": "2px solid #007bff",
+        "border-left": "2px solid #007bff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "play",
+      "selector": "video player",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "fullscreen": true,
+        "muted": true,
+        "src": "intro_video.mp4",
+        "aspect-ratio": "16:9",
+        "playing": true,
+        "load-time": 1000
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "error message 'Invalid credentials. Please try again.'",
+      "value": "",
+      "expected": {
+        "text-content": "Invalid credentials. Please try again.",
+        "visibility": "visible",
+        "color": "#FF0000",
+        "font-size": "14px",
+        "text-align": "left",
+        "margin-top": "10px",
+        "animation-name": "vanish",
+        "animation-duration": "3s"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "checked": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember me' label",
+      "value": "",
+      "expected": {
+        "text-content": "Remember me",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "checked": true,
+        "background-color": "#007bff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "data table rows",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "data table row",
+      "value": "",
+      "expected": {
+        "height": "40px",
+        "padding-top": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'.Status' column with text 'Active'",
+      "value": "",
+      "expected": {
+        "text-content": "Active",
+        "color": "#28a745",
+        "font-weight": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'.Status' column with text 'Inactive'",
+      "value": "",
+      "expected": {
+        "text-content": "Inactive",
+        "color": "#dc3545"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "pagination link with text '3'",
+      "value": "",
+      "expected": {
+        "text-content": "3",
+        "active": true,
+        "background-color": "#007bff",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "non-active pagination links",
+      "value": "",
+      "expected": {
+        "active": false,
+        "color": "#0000EE",
+        "font-weight": 400,
+        "border-top": "1px solid #DDDDDD",
+        "border-right": "1px solid #DDDDDD",
+        "border-bottom": "1px solid #DDDDDD",
+        "border-left": "1px solid #DDDDDD"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "user profile avatar image",
+      "value": "",
+      "expected": {
+        "src": "avatar.png",
+        "border-radius": "50%",
+        "rendered-width": "50px",
+        "rendered-height": "50px",
+        "aria-label": "User profile image for John Doe",
+        "x": "900px",
+        "y": "50px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "hover",
+      "selector": "'Info' icon",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip 'This field is required.'",
+      "value": "",
+      "expected": {
+        "text-content": "This field is required.",
+        "visibility": "visible",
+        "background-color": "#333333",
+        "color": "#FFFFFF",
+        "font-size": "12px",
+        "border-radius": "4px",
+        "transition": "opacity"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "width": "300px",
+        "height": "10px",
+        "background-color": "#e9ecef"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar inner bar",
+      "value": "",
+      "expected": {
+        "progress-value": "75%",
+        "background-color": "#28a745",
+        "text-content": "75% Complete",
+        "font-weight": 600
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "notification badge on 'Messages' icon",
+      "value": "",
+      "expected": {
+        "text-content": "5",
+        "border-radius": "50%",
+        "background-color": "#dc3545",
+        "color": "#FFFFFF",
+        "font-size": "10px",
+        "top": "-5px",
+        "right": "-5px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "accordion header 'Section 1'",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "accordion header 'Section 1'",
+      "value": "",
+      "expected": {
+        "active": true,
+        "background-color": "#e2e3e5",
+        "transition": "background-color, transform",
+        "font-weight": 700,
+        "color": "#000000",
+        "transform": "rotate(180deg)",
+        "transition-duration": "300ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "dropdown menu trigger",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Settings' menu item",
+      "value": "",
+      "expected": {
+        "text-content": "Settings",
+        "color": "#212529",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Settings' menu item",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#e9ecef",
+        "padding-top": "8px",
+        "padding-bottom": "8px",
+        "padding-left": "12px",
+        "padding-right": "12px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "select",
+      "selector": "date picker",
+      "value": "August 15, 2024",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "selected date element",
+      "value": "",
+      "expected": {
+        "text-content": "15",
+        "background-color": "#007bff",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "header displaying 'August 2024'",
+      "value": "",
+      "expected": {
+        "text-content": "August 2024",
+        "font-size": "18px",
+        "text-align": "center"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "content area",
+      "value": "",
+      "expected": {
+        "overflow-y": "auto"
+      }
+    },
+    {
+      "action": "scroll",
+      "selector": "content area",
+      "value": "bottom",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "content area",
+      "value": "",
+      "expected": {
+        "scroll-top": "500px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Back to Top' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "opacity": 1,
+        "bottom": "20px",
+        "right": "20px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Upload File' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "text-content": "Upload File",
+        "accept": "image/jpeg, image/png"
+      }
+    },
+    {
+      "action": "select",
+      "selector": "'Upload File' button",
+      "value": "document.pdf",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "PDF file type icon next to the button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "24px",
+        "height": "24px",
+        "margin-left": "8px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "open",
+      "selector": "'Confirm Deletion' modal dialog",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "modal dialog",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "500px",
+        "height": "300px",
+        "background-color": "rgba(0,0,0,0.5)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "title 'Confirm Deletion' in the modal dialog",
+      "value": "",
+      "expected": {
+        "text-content": "Confirm Deletion",
+        "font-size": "20px",
+        "color": "#333333"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "brand logo image",
+      "value": "",
+      "expected": {
+        "src": "logo.svg",
+        "natural-width": 150,
+        "natural-height": 50,
+        "rendered-width": 100,
+        "rendered-height": 33,
+        "alt-text": "Company Name",
+        "watermark": false
+      }
+    }
+  ]
+]

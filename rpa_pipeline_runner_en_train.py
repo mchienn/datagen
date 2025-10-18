@@ -3,8 +3,10 @@ from pathlib import Path
 import re
 import pandas as pd
 import requests
-from key import KEY_LIST
+#from key import KEY_LIST
 import random
+
+KEY_LIST = ["AIzaSyAI3GS2y3R4ei-emjjsHd6mQeSRznjY_JM"]
 
 MODEL = "models/gemini-2.5-flash"
 HEADERS = {"Content-Type": "application/json"}
