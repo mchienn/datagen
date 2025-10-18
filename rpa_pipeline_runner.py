@@ -235,63 +235,117 @@ def step0_create_train_task(filename: str):
     out_path = INPUT_DIR / (filename if filename.endswith(".txt") else f"{filename}.txt")
     
     prompt = f"""
-You are a professional UI tester specialized in creating TRAINING data.
-Generate exactly 20 different UI test descriptions in English for TRAINING SET.
+You are a professional UI tester.
+Generate exactly 20 different UI test descriptions in English.
 
-STRICT CONSTRAINTS FOR TRAINING SET:
-===================================
-- Each description is a single JSON string item, but may contain multiple sentences (10-15 sentences).
-- ABSOLUTELY FORBID vague words (example: 'correctly', 'appropriately', 'fast', 'quickly', 'smooth', 'enough', ...). 
-- ALWAYS give explicit, measurable values.
-- STRICTLY FORBIDDEN to make up or use any attributes outside the allowed list.
-- DO NOT use any attributes other than the list below.
-- Use single quotes ONLY for literal string values (URLs, hex colors, text content, file names). Do NOT quote CSS property values like font names, alignment values, UI element names, or attribute names.
-
-ALLOWED ATTRIBUTES FOR TRAINING SET (ONLY USE THESE ATTRIBUTES):
-==============================================================
-Styles: 'color', 'background color', 'font family', 'font size', 'font weight', 'text alignment', 'opacity', 'border', 'padding', 'margin', 'gap'
-States & Interactivity: 'visible/hidden', 'enabled/disabled', 'focused', 'hovered', 'active/selected'
-Position & Layout: 'x/y coordinates', 'width', 'height', 'alignment (absolute/relative)', 'gap', 'aspect ratio', 'gap Px', 'offset', 'tolerance Px', 'z index', 'occluded', 'overflow'
-Content: 'text', 'placeholder', 'language'
-Media: 'muted', 'playing', 'fullscreen'
-Dynamics: 'transition', 'animation', 'movement', 'parallax', 'progress direction', 'scroll', 'loading', 'progress value'
-Text: 'text validation', 'placeholder text', 'allowed characters', 'text content'
-Data: 'count', 'value', 'time value'
-Image: 'source', 'is loaded', 'load time', 'sharpness score GTE', 'compression artifacts LTE', 'watermark', 'natural dimensions'
-Accessibility: 'activatable by keyboard', 'keyboard focusable', 'keyboard navigable', 'focus trapping', 'label'
-Repetitive & Hierarchical: 'list/table validation'
-Complex Visual: 'shape validation', 'image composition'
-More: 'flowchart validation', 'browser compatibility'
-
-ABSOLUTELY MUST NOT use the following attributes (reserved for test set):
-- fill, visited state color, line height, border radius, box shadow
-- clickable, cursor, transform, clipping, blurring, left/right, top/bottom
-- exists, present, source type, duration, auto advance, auto play, timeout
-- language detection, alt text, date, currency symbol
-- rendered dimensions, viewport dimensions, video/audio, aria-label, contrast ratio
-- nested elements check, graphics/charts validation, multiple attribute comparison
-
-STRICT REQUIREMENTS:
-==================
-- The steps should be sequential and complete.
-- Each sentence must describe multiple attributes of the same element OR specify at least one explicit spatial constraint.
-- Always provide concrete values: exact pixels (16px), RGB/HEX colors (#228B22), timing (800ms), percentages (75%), full URLs, coordinates (x,y), gaps/tolerance (24px ±2px).
-- Inside each description string, use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values, font names, alignment values, UI element names, or attribute names.
-- Correct: "verify the Submit button has background color '#ff0000', font family Roboto, and text alignment left" 
-- Incorrect: "verify the 'Submit' button has 'background color' '#ff0000', 'font family' 'Roboto', and 'text alignment' 'left'"
-
-OUTPUT FORMAT:
-=============
+Output format (must be followed exactly):
 - Return ONLY a valid JSON array of exactly 20 strings.
-- Use JSON double quotes for array items.
-- Do not include numbering, markdown, code fences, or extra text.
+- Use JSON double quotes for the array items (JSON requirement).
+- Inside each string, do not include any double quotes; use only single quotes for quoted labels or literals.
+- Do not include numbering, markdown, code fences, or any extra text outside the JSON array.
 
-TRAINING EXAMPLE (for reference only):
-"Open 'https://shop.demo.com/product/456', verify that the product image has source equal to 'main_product.jpg' and natural dimensions of 350x250px ±3px, check the product title shows exact text 'Premium Quality Product' with font size 20px and color '#333333', confirm the Buy Now button has width 180px, height 45px, border radius 8px, z index of 15, and changes to hovered state with background color '#ff6600', ensure transition animation duration of 250ms applies, scroll the page and verify header remains fixed with absolute alignment, check that exactly count 8 related products are displayed."
+Strict constraints (must follow all):
+- Output is a single JSON containing sentences in [], separated by commas, for example: ["sentence 1", "sentence 2",...]. One string can have many UI test ideas (10-15 ideas) like the example I gave below.
+- Absolutely forbidden vague words (example: 'appropriate', 'fast', 'quickly', 'smooth', 'enough', ...). Always give clear, measurable values.
+- Steps must be sequential and complete.
+- Each sentence must describe multiple attributes of the same element (e.g., font size, color, border, ...).
+- Each action must specify multiple attributes at the same time (type, layout, state, ...).
+- Always provide specific, measurable expected values with units or counts when applicable: exact pixel sizes (e.g., 16px), RGB/HEX colors (e.g., rgb(34,139,34) or #228B22 or 'green'), timing (e.g., 800ms, 2s, 1 second), percentages (e.g., 75%), URLs (full), screen width (e.g., 360px), coordinates (x,y).
+- Do not combine two different actions into the same sentence if they are not related. If the same action applies to two unrelated elements, split them into separate sentences for clarity.
+- Inside each description string, use only single quotes (') for character literals; do not use any double quotes (") inside the string content.
 
-IMPORTANT NOTES: 
-1. Always use SEPARATE WORDS for compound attributes. Use "background color" instead of "backgroundColor", "font size" instead of "fontSize", "natural dimensions" instead of "naturalDimensions", etc.
-2. Use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values like font names (Roboto), alignment values (left, center), UI element names, or attribute names.
+Coverage scope (ensure diversity across 20 items):
+- You are only allowed to use the following attributes, and no other attributes:
+ - Styling: color, background color, font size, font family, font weight, border (px), border radius, opacity, padding, margin
+ - State & Interaction: visible/hidden, focused, enabled/disabled, active/selected
+ - Position & Layout: x coordinate, y coordinate, width, height, alignment, left, right, top, bottom
+ - Multimedia: muted, fullscreen
+ - Dynamics: transition, animation, scroll-top/scroll-left
+ - Text: text, placeholder, alt text, text align
+ - Data: count, value, date
+ - Image: source, rendered dimensions, natural dimensions, is loaded, load time, watermark
+ - Accessibility: aria-label, label
+Each of the 20 description strings must include one or more attributes from the list above. Do not create any attributes outside this list.
+Each description MUST only use attributes from the whitelist below:
+Attribute whitelist:
+1. color
+2. background color
+3. font size
+4. font family
+5. font weight
+6. border (px)
+7. border radius
+8. opacity
+9. padding
+10. margin
+11. text align
+12. visible/hidden
+13. focused
+14. enabled/disabled
+15. active/selected
+16. x
+17. y
+18. width
+19. height
+20. alignment
+21. left
+22. right
+23. top
+24. bottom
+25. muted
+26. fullscreen
+27. transition
+28. animation
+29. scroll
+30. text
+31. placeholder
+32. alt text
+33. count
+34. value
+35. date
+36. source
+37. rendered dimensions
+38. natural dimensions
+39. is loaded
+40. load time
+41. watermark
+42. aria-label
+43. label
+44. shape
+Output format (must be followed exactly):
+- ONLY RETURN a valid JSON array of exactly 20 strings.
+- Use JSON double quotes for array items (JSON requirement).
+- Inside each string, do not include any double quotes; use only single quotes for quoted labels or literals.
+- Do not include numbering, markdown, code fences, or any extra text outside the JSON array.
+
+To help the model understand more generally, please diversify the expression of CSS attributes using synonyms, but still keep the meaning clear and mappable to the correct attribute in the whitelist.
+Elements can be in English or Vietnamese, for example: 'Submit' button, 'product_image.jpg' image, 'Happy Holiday' heading. But note that only use English for names, the rest should still be described in English.
+Example:
+- color can be described as: 'text color', 'font color', 'display color', 'title color', 'icon color'
+- background color: 'background', 'behind color', 'background display', 'button background'
+- font size: 'text size', 'font magnitude', 'display font size', 'character height'
+- font family: 'font type', 'font', 'font set', 'display font type'
+- border radius: 'rounded corners', 'corner curve', 'rounded border'
+- box shadow: 'shadow', 'block shadow', 'shadow effect', 'blurred shadow behind'
+- alignment: 'align', 'center position', 'edge alignment', 'left/right/center align'
+- width/height: 'width', 'horizontal extent', 'horizontal size'; 'height', 'display height'
+- opacity: 'transparency', 'blur', 'display clarity'
+- padding/margin: 'inner spacing', 'padding', 'outer margin', 'surrounding space'
+
+Requirements when using synonyms:
+- Must not change the original meaning of the attribute.
+- Each test description should alternate different synonyms for the same attribute type to increase language diversity.
+- However, in the JSON output, only need to represent as text string (no need to map back).
+- The goal is to help the model learn to recognize that many different phrases describe the same UI characteristic.
+
+The description words should be natural like human language, not stereotyped "color = color", but still must be clear and easy to understand.
+Valid example: "Verify that the heading has white text color and light blue background, slight rounded corners 6px, center-aligned text."
+Do not use single quotes ' or double quotes " randomly. Only use ' when quoting links, text.
+
+Example of 1 string (do not copy):
+"Open page 'https://www.shopdemo.com/product/123'. Verify that the product image has source 'hero_image.jpg' and rendered dimensions 400x300px. Ensure the image has alt text containing 'Authentic Shoes'. Verify that exactly 6 thumbnails are displayed below with center alignment and each thumbnail has width 120px and height 80px. Confirm the main heading displays exact text 'Product Title' with font size 18px and color #000000. Verify that the 'Buy Now' button is visible and transitions to selected state with background color #ff0000. Confirm the button has border radius 6px, scroll the page and verify the heading remains fixed (using scroll behavior). Check the language label has aria-label set to English."
+Each string needs many test actions like the example above (10-15 actions), with different attributes from the whitelist.
+Generate 20 strings, then put them in a JSON array to return. Return in the correct required format (sentences in [], separated by commas, for example: ["sentence 1", "sentence 2",...]).
 """
 
     all_sentences = []
@@ -326,66 +380,117 @@ def step0_create_test_task(filename: str):
     out_path = INPUT_DIR / (filename if filename.endswith(".txt") else f"{filename}.txt")
     
     prompt = f"""
-You are a professional UI tester specialized in creating TESTING data.
-Generate exactly 20 different UI test descriptions in English for TEST SET.
+You are a professional UI tester.
+Generate exactly 20 different UI test descriptions in English.
 
-STRICT CONSTRAINTS FOR TEST SET:
-================================
-- Each description is a single JSON string item, but may contain multiple sentences (10-15 sentences).
-- ABSOLUTELY FORBID vague words (example: 'correctly', 'appropriately', 'fast', 'quickly', 'smooth', 'enough', ...).
-- ALWAYS give explicit, measurable values.
-- STRICTLY FORBIDDEN to make up or use any attributes outside the allowed list.
-- DO NOT use any attributes other than the list below.
-- Use single quotes ONLY for literal string values (URLs, hex colors, text content, file names). Do NOT quote CSS property values like font names, alignment values, UI element names, or attribute names.
-
-DESIGNATED ATTRIBUTES FOR TEST SET (ONLY USE THESE ATTRIBUTES):
-=============================================================
-Styles: 'fill', 'visited state color', 'line height', 'border radius', 'box shadow'
-States & Interactivity: 'clickable', 'cursor'
-Position & Layout: 'transform', 'clipping', 'blurring', 'left/right', 'top/bottom'
-Content: 'exists', 'present'
-Media: 'source type'
-Dynamics: 'duration', 'auto advance', 'auto play', 'timeout'
-Text: 'language detection', 'alt text'
-Data: 'date', 'currency symbol'
-Image: 'rendered dimensions', 'viewport dimensions', 'video/audio'
-Accessibility: 'aria-label', 'contrast ratio'
-Repetitive & Hierarchical: 'nested elements check'
-Complex Visual: 'graphics/charts validation'
-More: 'multiple attribute comparison'
-
-ABSOLUTELY MUST NOT use the following training attributes:
-- color, background color, font family, font size, font weight, text alignment, opacity, border, padding, margin, gap
-- visible/hidden, enabled/disabled, focused, hovered, active/selected
-- x/y coordinates, width, height, alignment (absolute/relative), aspect ratio, gap Px, offset, tolerance Px, z index, occluded, overflow
-- text, placeholder, language, muted, playing, fullscreen
-- transition, animation, movement, parallax, progress direction, scroll, loading, progress value
-- text validation, placeholder text, allowed characters, text content, count, value, time value
-- source, is loaded, load time, sharpness score GTE, compression artifacts LTE, watermark, natural dimensions
-- activatable by keyboard, keyboard focusable, keyboard navigable, focus trapping, label
-- list/table validation, shape validation, image composition, flowchart validation, browser compatibility
-
-STRICT REQUIREMENTS:
-==================
-- The steps should be sequential and complete.
-- Each sentence must describe multiple attributes of the same element OR specify at least one explicit spatial constraint.
-- Always provide concrete values: exact ratios (4.5:1), specific aria-label, play states (playing/paused), specific shapes (circle/square), exact altText.
-- Inside each description string, use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values, font names, alignment values, UI element names, or attribute names.
-- Correct: "check navigation menu aria-label is set to 'Main Navigation Menu' and has font family Arial with text alignment center"
-- Incorrect: "check 'navigation menu' 'aria-label' is set to 'Main Navigation Menu' and has 'font family' 'Arial' with 'text alignment' 'center'"
-
-OUTPUT FORMAT:
-=============
+Output format (must be followed exactly):
 - Return ONLY a valid JSON array of exactly 20 strings.
-- Use JSON double quotes for array items.
-- Do not include numbering, markdown, code fences, or extra text.
+- Use JSON double quotes for the array items (JSON requirement).
+- Inside each string, do not include any double quotes; use only single quotes for quoted labels or literals.
+- Do not include numbering, markdown, code fences, or any extra text outside the JSON array.
 
-TEST EXAMPLE (for reference only):
-"Open 'https://media.example.com/player/789', verify that the video player is in playing state, check image has alt text containing 'New Product Introduction Video 2024', confirm nested elements are checked in proper order from parent to child with max depth 3 levels, ensure all text elements have contrast ratio at least 4.5:1 against background, check navigation menu aria-label is set to 'Main Navigation Menu', verify button has shape of circle with exact radius, compare multiple attribute between header and footer for accessibility compliance."
+Strict constraints (must follow all):
+- Output is a single JSON containing sentences in [], separated by commas, for example: ["sentence 1", "sentence 2",...]. One string can have many UI test ideas (10-15 ideas) like the example I gave below.
+- Absolutely forbidden vague words (example: 'appropriate', 'fast', 'quickly', 'smooth', 'enough', ...). Always give clear, measurable values.
+- Steps must be sequential and complete.
+- Each sentence must describe multiple attributes of the same element (e.g., font size, color, border, ...).
+- Each action must specify multiple attributes at the same time (type, layout, state, ...).
+- Always provide specific, measurable expected values with units or counts when applicable: exact pixel sizes (e.g., 16px), RGB/HEX colors (e.g., rgb(34,139,34) or #228B22 or 'green'), timing (e.g., 800ms, 2s, 1 second), percentages (e.g., 75%), URLs (full), screen width (e.g., 360px), coordinates (x,y).
+- Do not combine two different actions into the same sentence if they are not related. If the same action applies to two unrelated elements, split them into separate sentences for clarity.
+- Inside each description string, use only single quotes (') for character literals; do not use any double quotes (") inside the string content.
 
-IMPORTANT NOTES:
-1. Always use SEPARATE WORDS for compound attributes. Use "alt text" instead of "altText", "contrast ratio" instead of "contrastRatio", "rendered dimensions" instead of "renderedDimensions", etc.
-2. Use single quotes only for literal string values like URLs, hex colors, and text content. Do NOT quote CSS property values like font names (Arial), alignment values (center, left), UI element names, or attribute names.
+Coverage scope (ensure diversity across 20 items):
+- You are only allowed to use the following attributes, and no other attributes:
+ - Styling: color, background color, font size, font family, font weight, border (px), border radius, opacity, padding, margin
+ - State & Interaction: visible/hidden, focused, enabled/disabled, active/selected
+ - Position & Layout: x coordinate, y coordinate, width, height, alignment, left, right, top, bottom
+ - Multimedia: muted, fullscreen
+ - Dynamics: transition, animation, scroll-top/scroll-left
+ - Text: text, placeholder, alt text, text align
+ - Data: count, value, date
+ - Image: source, rendered dimensions, natural dimensions, is loaded, load time, watermark
+ - Accessibility: aria-label, label
+Each of the 20 description strings must include one or more attributes from the list above. Do not create any attributes outside this list.
+Each description MUST only use attributes from the whitelist below:
+Attribute whitelist:
+1. color
+2. background color
+3. font size
+4. font family
+5. font weight
+6. border (px)
+7. border radius
+8. opacity
+9. padding
+10. margin
+11. text align
+12. visible/hidden
+13. focused
+14. enabled/disabled
+15. active/selected
+16. x
+17. y
+18. width
+19. height
+20. alignment
+21. left
+22. right
+23. top
+24. bottom
+25. muted
+26. fullscreen
+27. transition
+28. animation
+29. scroll
+30. text
+31. placeholder
+32. alt text
+33. count
+34. value
+35. date
+36. source
+37. rendered dimensions
+38. natural dimensions
+39. is loaded
+40. load time
+41. watermark
+42. aria-label
+43. label
+44. shape
+Output format (must be followed exactly):
+- ONLY RETURN a valid JSON array of exactly 20 strings.
+- Use JSON double quotes for array items (JSON requirement).
+- Inside each string, do not include any double quotes; use only single quotes for quoted labels or literals.
+- Do not include numbering, markdown, code fences, or any extra text outside the JSON array.
+
+To help the model understand more generally, please diversify the expression of CSS attributes using synonyms, but still keep the meaning clear and mappable to the correct attribute in the whitelist.
+Elements can be in English or Vietnamese, for example: 'Submit' button, 'product_image.jpg' image, 'Happy Holiday' heading. But note that only use English for names, the rest should still be described in English.
+Example:
+- color can be described as: 'text color', 'font color', 'display color', 'title color', 'icon color'
+- background color: 'background', 'behind color', 'background display', 'button background'
+- font size: 'text size', 'font magnitude', 'display font size', 'character height'
+- font family: 'font type', 'font', 'font set', 'display font type'
+- border radius: 'rounded corners', 'corner curve', 'rounded border'
+- box shadow: 'shadow', 'block shadow', 'shadow effect', 'blurred shadow behind'
+- alignment: 'align', 'center position', 'edge alignment', 'left/right/center align'
+- width/height: 'width', 'horizontal extent', 'horizontal size'; 'height', 'display height'
+- opacity: 'transparency', 'blur', 'display clarity'
+- padding/margin: 'inner spacing', 'padding', 'outer margin', 'surrounding space'
+
+Requirements when using synonyms:
+- Must not change the original meaning of the attribute.
+- Each test description should alternate different synonyms for the same attribute type to increase language diversity.
+- However, in the JSON output, only need to represent as text string (no need to map back).
+- The goal is to help the model learn to recognize that many different phrases describe the same UI characteristic.
+
+The description words should be natural like human language, not stereotyped "color = color", but still must be clear and easy to understand.
+Valid example: "Verify that the heading has white text color and light blue background, slight rounded corners 6px, center-aligned text."
+Do not use single quotes ' or double quotes " randomly. Only use ' when quoting links, text.
+
+Example of 1 string (do not copy):
+"Open page 'https://www.shopdemo.com/product/123'. Verify that the product image has source 'hero_image.jpg' and rendered dimensions 400x300px. Ensure the image has alt text containing 'Authentic Shoes'. Verify that exactly 6 thumbnails are displayed below with center alignment and each thumbnail has width 120px and height 80px. Confirm the main heading displays exact text 'Product Title' with font size 18px and color #000000. Verify that the 'Buy Now' button is visible and transitions to selected state with background color #ff0000. Confirm the button has border radius 6px, scroll the page and verify the heading remains fixed (using scroll behavior). Check the language label has aria-label set to English."
+Each string needs many test actions like the example above (10-15 actions), with different attributes from the whitelist.
+Generate 20 strings, then put them in a JSON array to return. Return in the correct required format (sentences in [], separated by commas, for example: ["sentence 1", "sentence 2",...]).
 """
 
     all_sentences = []
