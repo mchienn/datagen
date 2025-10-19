@@ -6,7 +6,7 @@ import requests
 #from key import KEY_LIST
 import random
 
-KEY_LIST = ["AIzaSyAI3GS2y3R4ei-emjjsHd6mQeSRznjY_JM"]
+KEY_LIST = ["AIzaSyDAlbRsEOpE9daHh0QuO1KN9Gwc-UOawoU"]
 
 MODEL = "models/gemini-2.5-flash"
 HEADERS = {"Content-Type": "application/json"}
@@ -221,13 +221,13 @@ Return 20 such strings inside one JSON array. Return the JSON array only.
         # 2) fallback: split by lines
         if not sentences:
             sentences = [ln.strip().strip(",") for ln in text.splitlines() if ln.strip()]
-    # Normalize: replace inner " with ' ; sanitize numeric/color quotes; wrap each sentence with "
-    for s in sentences:
-      s = s.replace('"', "'").strip()
-      s = sanitize_numeric_quotes(s)
-      if not (s.startswith('"') and s.endswith('"')):
-        s = f'"{s}"'
-      all_sentences.append(s)
+        # Normalize: replace inner " with ' ; sanitize numeric/color quotes; wrap each sentence with "
+        for s in sentences:
+            s = s.replace('"', "'").strip()
+            s = sanitize_numeric_quotes(s)
+            if not (s.startswith('"') and s.endswith('"')):
+                s = f'"{s}"'
+            all_sentences.append(s)
 
     # Write the file: comma-separated strings, each kept inside quotes
     with open(out_path, "w", encoding="utf-8") as f:
@@ -306,7 +306,7 @@ Examples:
 Now create the JSON from the following requirements (keep the same order):
 
 - Requirement:
-{chr(10).join([f'{i+1}. \"{t}\"' for i, t in enumerate(batch)])}
+{chr(10).join([f'{i+1}. "{t}"' for i, t in enumerate(batch)])}
 
 Return ONLY the JSON array of arrays in the same order.
 """
@@ -734,23 +734,23 @@ def main():
             print(f"File already exists: {filename}")
         case_id = Path(filename).stem
         try:
-            print(f"\\n▶️ Running pipeline for: {case_id}")
+            print(f"Running pipeline for: {case_id}")
             task_file = INPUT_DIR / f"{case_id}.txt"
             task_json_file = TASK_DIR / f"{case_id}.task.json"
             task_list, task_trace = step1_analyze_task(task_file)
             save_json(task_json_file, task_list)
-            print("\\n Step 1 success \\n")  
+            print("Step 1 success")
 
             step_json_file = STEP_DIR / f"{case_id}.step.json"
             step_groups, step_trace = step2_generate_steps(task_list)
             save_json(step_json_file, step_groups)
-            print("\\n Step 2 success \\n")
+            print("Step 2 success")
 
             report_file = REPORT_DIR / f"{case_id}.summary.xlsx"
             save_excel_summary(report_file, task_trace, step_groups)
             print(f"✅ Excel saved to: {report_file}")
         except Exception as e:
-            print(f"❌ Error in {case_id}: {e}")
+            print(f"Error in {case_id}: {e}")
 
 if __name__ == "__main__":
     main()
