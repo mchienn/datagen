@@ -1,0 +1,700 @@
+[
+  [
+    {
+      "action": "verify",
+      "selector": "image at 'https://example.com/images/prod_hero.jpg'",
+      "value": "",
+      "expected": {
+        "src": "prod_hero.jpg",
+        "rendered-width": 600,
+        "rendered-height": 400,
+        "natural-width": 1200,
+        "natural-height": 800,
+        "alt-text": "Ergonomic Office Chair",
+        "load-time": 800
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product title 'Ergonomic Office Chair'",
+      "value": "",
+      "expected": {
+        "text-content": "Ergonomic Office Chair",
+        "visibility": "visible",
+        "x": "100px",
+        "y": "50px",
+        "font-size": "32px",
+        "font-weight": 700,
+        "color": "#333333",
+        "font-family": "Roboto",
+        "text-align": "left"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "thumbnail images on the product page",
+      "value": "",
+      "expected": {
+        "count": 4,
+        "width": "100px",
+        "height": "75px",
+        "margin-right": "5px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "primary navigation bar",
+      "value": "",
+      "expected": {
+        "background-color": "#f8f8f8",
+        "height": "60px",
+        "position": "fixed",
+        "top": "0px",
+        "width": "100%",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "primary navigation bar menu items",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "color": "#007bff",
+        "padding-left": "15px",
+        "padding-right": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' link",
+      "value": "",
+      "expected": {
+        "text-content": "About Us",
+        "active": true,
+        "background-color": "rgb(220, 237, 255)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' link",
+      "value": "",
+      "expected": {
+        "text-content": "About Us",
+        "hovered": true,
+        "color": "#0056b3",
+        "transition-duration": "200ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Contact' link",
+      "value": "",
+      "expected": {
+        "text-content": "Contact",
+        "aria-label": "Contact us for support"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Email Address' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "your@example.com",
+        "border": "1px solid #ccc",
+        "border-radius": "4px",
+        "width": "250px",
+        "height": "40px",
+        "padding-top": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "10px"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Email Address' input field",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Email Address' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border": "1px solid #007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Subscribe' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "font-size": "18px",
+        "text-content": "Subscribe",
+        "margin-top": "10px",
+        "margin-bottom": "10px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "embedded video player",
+      "value": "",
+      "expected": {
+        "src": "https://example.com/media/intro.mp4",
+        "rendered-width": 640,
+        "rendered-height": 360,
+        "natural-width": 1280,
+        "natural-height": 720,
+        "x": "50px",
+        "y": "150px",
+        "muted": true,
+        "fullscreen-toggle": true,
+        "load-time": 2000,
+        "height": "360px",
+        "width": "640px",
+        "aspect-ratio": "maintained",
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Confirm Deletion' modal dialog",
+      "value": "",
+      "expected": {
+        "visibility": "hidden"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Confirm Deletion' modal dialog",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "opacity": 1.0,
+        "x": "50%",
+        "y": "50%",
+        "background-color": "#ffffff",
+        "width": "400px",
+        "height": "200px",
+        "border": "1px solid #ddd",
+        "border-radius": "8px",
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Confirm Deletion' modal title",
+      "value": "",
+      "expected": {
+        "text-content": "Confirm Deletion",
+        "font-size": "24px",
+        "color": "#dc3545"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "each row in the 'Product List' table",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#f0f0f0",
+        "transition-duration": "150ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product name cell",
+      "value": "",
+      "expected": {
+        "color": "#333333",
+        "font-size": "14px",
+        "padding-top": "12px",
+        "padding-right": "12px",
+        "padding-bottom": "12px",
+        "padding-left": "12px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product rows",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Price' column cells",
+      "value": "",
+      "expected": {
+        "text-align": "right",
+        "border-bottom": "1px solid #eee"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Recent Activity' scrollable container",
+      "value": "",
+      "expected": {
+        "height": "300px",
+        "width": "100%",
+        "scroll-top": 0,
+        "padding": "15px",
+        "border": "1px solid #ccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Recent Activity' scrollable container activity items",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Recent Activity' scrollable container",
+      "value": "",
+      "expected": {
+        "overflow-y": "scroll",
+        "scroll-behavior": "smooth",
+        "animation-duration": "300ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Image Gallery' thumbnails",
+      "value": "",
+      "expected": {
+        "count": 8,
+        "src": "thumb_*.jpg",
+        "rendered-width": 120,
+        "rendered-height": 80,
+        "natural-width": 240,
+        "natural-height": 160,
+        "margin": "8px",
+        "alt-text": "Gallery image N"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "currently selected thumbnail in 'Image Gallery'",
+      "value": "",
+      "expected": {
+        "border": "2px solid #007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "other thumbnails in 'Image Gallery'",
+      "value": "",
+      "expected": {
+        "border": "1px solid #eee"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "thumbnail selection change",
+      "value": "",
+      "expected": {
+        "transition-duration": "100ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Delivery Date' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "MM/DD/YYYY",
+        "value": "10/26/2023",
+        "font-size": "16px",
+        "color": "#333333",
+        "width": "150px",
+        "height": "38px",
+        "border": "1px solid #aaa",
+        "enabled": true,
+        "label": "Delivery Date"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Delivery Date' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border": "2px solid #007bff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Invalid Credentials' error message",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "x": "20px",
+        "y": "300px",
+        "text-content": "Invalid Credentials",
+        "color": "#dc3545",
+        "background-color": "#f8d7da",
+        "font-size": "14px",
+        "font-weight": 600,
+        "padding": "10px",
+        "margin-bottom": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Invalid Credentials' error message",
+      "value": "",
+      "expected": {
+        "animation": "fade-in",
+        "animation-duration": "500ms",
+        "visibility-duration": "5s"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Category' dropdown menu",
+      "value": "",
+      "expected": {
+        "visibility": "hidden"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Category' dropdown menu",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Category' dropdown menu",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "200px",
+        "height": "180px",
+        "background-color": "#ffffff",
+        "border": "1px solid #ccc",
+        "border-radius": "4px",
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Category' dropdown menu items",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "color": "#333333",
+        "padding-top": "10px",
+        "padding-bottom": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Electronics' option in 'Category' dropdown",
+      "value": "",
+      "expected": {
+        "selected": true,
+        "background-color": "#e9ecef"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "loading spinner animation",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "animation": "360-degree rotation",
+        "width": "40px",
+        "height": "40px",
+        "color": "#007bff",
+        "opacity": 1.0,
+        "x": "50%",
+        "y": "50%",
+        "border-radius": "50%",
+        "border": "3px solid #f3f3f3",
+        "border-top-color": "#007bff",
+        "loading": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Upload Progress' bar",
+      "value": "",
+      "expected": {
+        "height": "10px",
+        "background-color": "#e9ecef",
+        "border-radius": "5px",
+        "fill-color": "#28a745",
+        "x": "10px",
+        "y": "100px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Upload Progress' bar",
+      "value": "",
+      "expected": {
+        "width": "75%",
+        "progress-value": 0.75,
+        "transition-duration": "300ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "text '75%' next to 'Upload Progress' bar",
+      "value": "",
+      "expected": {
+        "text-content": "75%",
+        "position": "right of 'Upload Progress' bar",
+        "vertical-align": "middle",
+        "font-size": "12px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "user avatar image",
+      "value": "",
+      "expected": {
+        "src": "https://example.com/avatars/user_1.jpg",
+        "rendered-width": "50px",
+        "rendered-height": "50px",
+        "natural-width": 100,
+        "natural-height": 100,
+        "is-loaded": true,
+        "border-radius": "50%",
+        "border": "1px solid #ddd",
+        "margin-right": "5px",
+        "alt-text": "User Profile Picture",
+        "vertical-align": "middle",
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Price Comparison' tooltip",
+      "value": "",
+      "expected": {
+        "visibility": "hidden"
+      }
+    },
+    {
+      "action": "hover",
+      "selector": "price element",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Price Comparison' tooltip",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#333333",
+        "color": "#ffffff",
+        "font-size": "12px",
+        "padding": "8px",
+        "border-radius": "4px",
+        "y-offset-from-target": "10px",
+        "text-content": "Prices vary by region",
+        "transition-duration": "200ms",
+        "width": "150px",
+        "height": "30px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "each item in the sidebar menu",
+      "value": "",
+      "expected": {
+        "color": "#555555",
+        "font-size": "16px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each item in the sidebar menu",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#e9ecef",
+        "transition-duration": "150ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Settings' item",
+      "value": "",
+      "expected": {
+        "active": true,
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "aria-label": "Application Settings",
+        "width": "200px",
+        "height": "40px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Upload File' component",
+      "value": "",
+      "expected": {
+        "label": "Upload Document",
+        "placeholder": "Choose file...",
+        "border": "2px dashed #ccc",
+        "background-color": "#f5f5f5",
+        "width": "300px",
+        "height": "100px",
+        "enabled": true
+      }
+    },
+    {
+      "action": "select",
+      "selector": "'Upload File' component input",
+      "value": "a file",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "file count or preview area",
+      "value": "",
+      "expected": {
+        "text-content": "1 file selected",
+        "is-loaded": true,
+        "load-time": 1000,
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "pagination control",
+      "value": "",
+      "expected": {
+        "count": 5,
+        "text-align": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination button '3'",
+      "value": "",
+      "expected": {
+        "active": true,
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "font-size": "14px",
+        "padding": "8px",
+        "border-radius": "2px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "other pagination buttons",
+      "value": "",
+      "expected": {
+        "active": false,
+        "background-color": "#f0f0f0",
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each pagination button",
+      "value": "",
+      "expected": {
+        "width": "32px",
+        "height": "32px",
+        "margin-left": "4px",
+        "margin-right": "4px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "main advertisement banner",
+      "value": "",
+      "expected": {
+        "src": "https://example.com/ads/promo_banner.jpg",
+        "rendered-width": "970px",
+        "rendered-height": "250px",
+        "natural-width": 1940,
+        "natural-height": 500,
+        "alt-text": "Limited Time Offer",
+        "x": "0px",
+        "y": "600px",
+        "visibility": "visible",
+        "load-time": 1000,
+        "border": "1px solid #eee",
+        "watermark": false
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "embedded map",
+      "value": "",
+      "expected": {
+        "src": "https://maps.google.com/?q=New+York",
+        "width": "100%",
+        "height": "400px",
+        "visibility": "visible",
+        "is-loaded": true,
+        "x": "0px",
+        "y": "700px",
+        "border": "1px solid #ddd",
+        "fullscreen-enabled": true,
+        "interactive": true,
+        "muted": false,
+        "load-time": 3000
+      }
+    }
+  ]
+]

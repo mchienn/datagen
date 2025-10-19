@@ -1,0 +1,481 @@
+[
+  [
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "text-content": "Add to Cart",
+        "font-size": "16px",
+        "color": "#FFFFFF",
+        "background-color": "#007BFF",
+        "border-radius": "4px",
+        "padding-left": "12px",
+        "padding-right": "12px",
+        "padding-top": "8px",
+        "padding-bottom": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "background-color": "#0056B3",
+        "transition-duration": "300ms",
+        "transition-property": "background-color",
+        "border-width": "2px",
+        "border-style": "solid",
+        "border-color": "#0056B3"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Search' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter keywords...",
+        "width": "300px",
+        "height": "40px",
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#CCCCCC",
+        "background-color": "#F8F8F8",
+        "font-family": "Arial"
+      }
+    },
+    {
+      "action": "type",
+      "selector": "'Search' input field",
+      "value": "laptop",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Search' input field",
+      "value": "",
+      "expected": {
+        "value": "laptop",
+        "x": "50px",
+        "y": "100px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "main product image",
+      "value": "",
+      "expected": {
+        "is-loaded": true,
+        "load-time": 500,
+        "src": "product_hero.jpg",
+        "rendered-width": 600,
+        "rendered-height": 400,
+        "natural-width": 1200,
+        "natural-height": 800,
+        "alt-text": "High-quality Widget",
+        "watermark": false
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "About Us",
+        "color": "#333333",
+        "font-weight": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "active": true,
+        "background-color": "#E0E0E0",
+        "transition-duration": "200ms",
+        "transition-property": "background-color",
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "15px",
+        "padding-right": "15px",
+        "border-radius": "5px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "main header bar",
+      "value": "",
+      "expected": {
+        "height": "60px",
+        "width": "100vw",
+        "background-color": "#FFFFFF",
+        "top": "0px",
+        "left": "0px",
+        "position": "fixed"
+      }
+    },
+    {
+      "action": "scroll",
+      "selector": "window",
+      "value": "",
+      "expected": {
+        "scroll": "down",
+        "scroll-by": "200px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main header bar",
+      "value": "",
+      "expected": {
+        "position": "fixed",
+        "border-bottom-width": "1px",
+        "border-bottom-style": "solid",
+        "border-bottom-color": "#EAEAEA"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "product card",
+      "value": "",
+      "expected": {
+        "width": "280px",
+        "height": "350px",
+        "border-radius": "8px",
+        "background-color": "#FFFFFF",
+        "padding-top": "16px",
+        "padding-right": "16px",
+        "padding-bottom": "16px",
+        "padding-left": "16px",
+        "margin-left": "20px",
+        "margin-right": "20px",
+        "count-per-row": 4,
+        "viewport-width": "1200px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "play",
+      "selector": "video player",
+      "value": "https://example.com/promo.mp4",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "muted": false,
+        "current-time": 0,
+        "duration": 30
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Fullscreen' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "fullscreen": true,
+        "timeout": 100,
+        "rendered-width": 1920,
+        "rendered-height": 1080
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "enabled": false,
+        "opacity": 0.6
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "opacity": 1,
+        "background-color": "#28A745",
+        "color": "#FFFFFF",
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#28A745"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Welcome' message",
+      "value": "",
+      "expected": {
+        "text-content": "Welcome to Our Store!",
+        "font-family": "Open Sans",
+        "font-size": "24px",
+        "color": "#1A1A1A",
+        "text-align": "center",
+        "margin-top": "50px",
+        "margin-bottom": "30px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Language' dropdown menu",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "aria-label": "Select Language",
+        "width": "180px",
+        "height": "38px",
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#CCCCCC",
+        "background-color": "#FFFFFF"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Language' dropdown menu",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Language' dropdown menu options",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "footer",
+      "value": "",
+      "expected": {
+        "background-color": "#333333",
+        "color": "#FFFFFF",
+        "padding-top": "40px",
+        "padding-right": "40px",
+        "padding-bottom": "40px",
+        "padding-left": "40px",
+        "text-align": "center",
+        "link-count": 3,
+        "text-content-contains": "2023"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "carousel image 'slide-1.jpg'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "rendered-width": 800,
+        "rendered-height": 450,
+        "alt-text": "Scenic landscape",
+        "animation-duration": "500ms",
+        "animation-name": "slide",
+        "right": "0px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "type",
+      "selector": "email input field",
+      "value": "invalid@example",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "error message 'Invalid email format'",
+      "value": "",
+      "expected": {
+        "text-content": "Invalid email format",
+        "color": "#DC3545",
+        "font-weight": 600,
+        "visibility": "visible",
+        "x-relative-to-input": "10px",
+        "y-relative-to-input": "5px",
+        "width": "200px",
+        "height": "20px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "user profile avatar image 'avatar.png'",
+      "value": "",
+      "expected": {
+        "border-radius": "50%",
+        "width": "50px",
+        "height": "50px",
+        "outline-width": "2px",
+        "outline-style": "solid",
+        "outline-color": "#007BFF",
+        "alt-text": "User Profile Picture",
+        "is-loaded": true,
+        "load-time": 100
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "active pagination link",
+      "value": "",
+      "expected": {
+        "background-color": "#007BFF",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination links",
+      "value": "",
+      "expected": {
+        "border-radius": "3px",
+        "padding-left": "8px",
+        "padding-right": "8px",
+        "padding-top": "4px",
+        "padding-bottom": "4px",
+        "count": 5,
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "checked": false,
+        "label-linked": true,
+        "label-text": "Remember me",
+        "x": "20px",
+        "y": "15px"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "checked": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "animation-duration": "2s",
+        "progress-value": "75%",
+        "background-color": "#00C851",
+        "height": "8px",
+        "border-radius": "4px",
+        "animation-timing-function": "linear",
+        "animation-property": "width"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "notification badge",
+      "value": "",
+      "expected": {
+        "text-content": "3",
+        "background-color": "#FFC107",
+        "color": "#212529",
+        "border-radius": "50%",
+        "opacity": 1,
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "hover",
+      "selector": "'Info' icon",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip with text 'Detailed information'",
+      "value": "",
+      "expected": {
+        "text-content": "Detailed information",
+        "visibility": "visible",
+        "timeout": 100,
+        "background-color": "#333333",
+        "color": "#FFFFFF",
+        "padding": "10px",
+        "position-below": "10px",
+        "position-align-x": "center"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "table header cell displaying 'Product Name'",
+      "value": "",
+      "expected": {
+        "text-content": "Product Name",
+        "font-weight": 700,
+        "background-color": "#F2F2FF",
+        "color": "#333333",
+        "padding-top": "12px",
+        "padding-right": "12px",
+        "padding-bottom": "12px",
+        "padding-left": "12px",
+        "text-align": "left",
+        "width": "200px"
+      }
+    }
+  ]
+]

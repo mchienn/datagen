@@ -1,0 +1,1237 @@
+[
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/login",
+      "expected": {
+        "url": "https://www.example.com/login"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your username",
+        "width": "250px",
+        "height": "40px",
+        "border": "1px solid #cccccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border": "1px solid #007bff",
+        "transition": 200
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Login' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#007bff",
+        "font-weight": 600,
+        "color": "#ffffff",
+        "border-radius": "8px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.shopco.com/products",
+      "expected": {
+        "url": "https://www.shopco.com/products"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product listing grid items",
+      "value": "",
+      "expected": {
+        "count": 12
+      }
+    },
+    {
+      "action": "verify",
+      "selector": ".product-card",
+      "value": "",
+      "expected": {
+        "margin": "16px",
+        "background-color": "#f8f8f8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": ".product-card .product-name",
+      "value": "",
+      "expected": {
+        "font-size": "18px",
+        "font-family": "Roboto",
+        "text-align": "left"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": ".product-card .add-to-cart-button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "padding": "10px 15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": ".product-card .product-image",
+      "value": "",
+      "expected": {
+        "alt-text": "product description",
+        "load-time": 300
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Profile' icon",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "user's profile picture",
+      "value": "",
+      "expected": {
+        "border-radius": "50%",
+        "natural-width": 150,
+        "natural-height": 150,
+        "src": "user_avatar.jpg"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "username 'JohnDoe'",
+      "value": "",
+      "expected": {
+        "text-content": "JohnDoe",
+        "font-size": "20px",
+        "color": "#1a1a1a"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Edit Profile' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "aria-label": "Edit user profile settings",
+        "opacity": 1,
+        "y": "200px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Changes' button",
+      "value": "",
+      "expected": {
+        "visibility": "hidden"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://mediaportal.com/video/1",
+      "expected": {
+        "url": "https://mediaportal.com/video/1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "height": "480px",
+        "width": "854px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Play' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "16px",
+        "background-color": "rgba(0,0,0,0.7)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "muted": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current time display",
+      "value": "",
+      "expected": {
+        "text-content": "0:00"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Fullscreen' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Fullscreen' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video",
+      "value": "",
+      "expected": {
+        "fullscreen": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "volume slider",
+      "value": "",
+      "expected": {
+        "value": 75
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Contact Us' navigation link",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "page title",
+      "value": "",
+      "expected": {
+        "text-content": "Contact Us",
+        "font-weight": 700
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Name' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Your full name",
+        "x": "50px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "email field label",
+      "value": "",
+      "expected": {
+        "text-content": "Email address"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "form",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "phone number input",
+      "value": "",
+      "expected": {
+        "valid-input-example": "+1 (555) 123-4567"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://dashboard.app/analytics",
+      "expected": {
+        "url": "https://dashboard.app/analytics"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main data chart",
+      "value": "",
+      "expected": {
+        "is-loaded": true,
+        "timeout": 1000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "chart's legend items",
+      "value": "",
+      "expected": {
+        "font-size": "14px",
+        "color": "#555555"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Download Report' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "border-radius": "4px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dashboard header",
+      "value": "",
+      "expected": {
+        "position": "sticky",
+        "top": "0px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Last Updated' date",
+      "value": "",
+      "expected": {
+        "text-content": "2023-10-27"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "navigation menu items",
+      "value": "",
+      "expected": {
+        "padding-top": "10px",
+        "padding-right": "12px",
+        "padding-bottom": "10px",
+        "padding-left": "12px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "button to open modal dialogue",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "modal dialogue",
+      "value": "",
+      "expected": {
+        "width": "500px",
+        "height": "300px",
+        "background-color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Close' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "aria-label": "Close dialogue"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal title 'Confirmation'",
+      "value": "",
+      "expected": {
+        "text-content": "Confirmation",
+        "font-size": "22px",
+        "text-align": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content area",
+      "value": "",
+      "expected": {
+        "margin-top": "20px",
+        "margin-right": "20px",
+        "margin-bottom": "20px",
+        "margin-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Cancel' button",
+      "value": "",
+      "expected": {
+        "text-content": "Cancel",
+        "enabled": true,
+        "color": "#6c757d"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal",
+      "value": "",
+      "expected": {
+        "opacity": 1
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://blog.tech/article/ai",
+      "expected": {
+        "url": "https://blog.tech/article/ai"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "article's main heading",
+      "value": "",
+      "expected": {
+        "font-size": "32px",
+        "color": "#111111"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "author's name 'Jane Doe'",
+      "value": "",
+      "expected": {
+        "text-content": "Jane Doe",
+        "font-weight": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "p",
+      "value": "",
+      "expected": {
+        "font-family": "Georgia",
+        "margin-bottom": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "share buttons",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-align": "right"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "comment section",
+      "value": "",
+      "expected": {
+        "text-content": "56 comments"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "social media icon for 'X'",
+      "value": "",
+      "expected": {
+        "alt-text": "Share on X"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Shopping Cart' link or button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "total number of items in cart",
+      "value": "",
+      "expected": {
+        "count": 2
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Checkout' button",
+      "value": "",
+      "expected": {
+        "text-content": "Proceed to Checkout",
+        "enabled": true,
+        "background-color": "#ffc107"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "item names in cart",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "font-weight": 400
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remove' button for each item",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#dc3545"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cart summary total value",
+      "value": "",
+      "expected": {
+        "text-content": "€150.00"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "Settings page",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Dark Mode' toggle switch",
+      "value": "",
+      "expected": {
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Settings' button",
+      "value": "",
+      "expected": {
+        "background-color": "#007bff",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "section headings",
+      "value": "",
+      "expected": {
+        "color": "#333333",
+        "margin-top": "25px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user email field",
+      "value": "",
+      "expected": {
+        "value": "test@example.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Language' dropdown",
+      "value": "",
+      "expected": {
+        "value": "English"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page content",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "25px",
+        "padding-bottom": "20px",
+        "padding-left": "25px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "interact",
+      "selector": "image carousel",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "current image in carousel",
+      "value": "",
+      "expected": {
+        "src": "carousel_image_1.webp",
+        "rendered-width": 900,
+        "rendered-height": 450
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Previous' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "opacity": 0.8
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Next' button",
+      "value": "",
+      "expected": {
+        "animation-duration": "300ms",
+        "active": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image caption",
+      "value": "",
+      "expected": {
+        "text-content": "Beautiful Landscape",
+        "font-size": "18px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "carousel dots",
+      "value": "",
+      "expected": {
+        "current-item": 1,
+        "total-items": 4
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "entire carousel",
+      "value": "",
+      "expected": {
+        "width": "900px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "'Create Account' form",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Password' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Minimum 8 characters"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Confirm Password' field",
+      "value": "",
+      "expected": {
+        "width": "280px",
+        "height": "45px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "validation error messages",
+      "value": "",
+      "expected": {
+        "color": "#dc3545",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Register' button",
+      "value": "",
+      "expected": {
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Terms and Conditions' checkbox",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "checked": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "form element",
+      "value": "",
+      "expected": {
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#e0e0e0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember Me' label",
+      "value": "",
+      "expected": {
+        "aria-label": "Remember me on this device"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://news.com/breaking",
+      "expected": {
+        "url": "https://news.com/breaking"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main news headline",
+      "value": "",
+      "expected": {
+        "font-size": "36px",
+        "font-weight": 800
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "publication date",
+      "value": "",
+      "expected": {
+        "text-content": "October 27, 2023"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Read More' link",
+      "value": "",
+      "expected": {
+        "color": "#0056b3",
+        "margin-bottom": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "hero image",
+      "value": "",
+      "expected": {
+        "src": "breaking_news_hero.jpg",
+        "natural-width": 1920,
+        "natural-height": 1080,
+        "is-loaded": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "news article body text",
+      "value": "",
+      "expected": {
+        "font-family": "Open Sans",
+        "text-align": "justify"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "related articles section",
+      "value": "",
+      "expected": {
+        "count": 3
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Apply Filters' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "filter results count",
+      "value": "",
+      "expected": {
+        "text-content": "15 results"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Category' filter label",
+      "value": "",
+      "expected": {
+        "text-content": "Product Category"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "selected filter button",
+      "value": "",
+      "expected": {
+        "background-color": "#e0f2f7",
+        "border": "1px solid #a8dadc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filter panel",
+      "value": "",
+      "expected": {
+        "width": "300px",
+        "right": "0px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Clear All' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filter option 'Electronics'",
+      "value": "",
+      "expected": {
+        "active": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'About Us' page",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "company logo image",
+      "value": "",
+      "expected": {
+        "src": "company_logo.svg",
+        "watermark": "Official"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main content block",
+      "value": "",
+      "expected": {
+        "padding-top": "30px",
+        "padding-right": "30px",
+        "padding-bottom": "30px",
+        "padding-left": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "mission statement text",
+      "value": "",
+      "expected": {
+        "font-size": "20px",
+        "font-weight": 600,
+        "text-align": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Our Team' section",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#f0f0f0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Careers' link",
+      "value": "",
+      "expected": {
+        "href": "https://www.example.com/careers"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "interactive map",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "map canvas",
+      "value": "",
+      "expected": {
+        "is-loaded": true,
+        "load-time": 2000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Zoom In' button",
+      "value": "",
+      "expected": {
+        "aria-label": "Zoom in on map",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map copyright text",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "bottom": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current location marker",
+      "value": "",
+      "expected": {
+        "x": "100px",
+        "y": "200px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map legend",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "opacity": 0.9
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Satellite View' button",
+      "value": "",
+      "expected": {
+        "active": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map viewport",
+      "value": "",
+      "expected": {
+        "width": "1200px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Privacy Policy' link/button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "document",
+      "value": "",
+      "expected": {
+        "title": "Privacy Policy"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "header text",
+      "value": "",
+      "expected": {
+        "font-size": "28px",
+        "color": "#222222"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "internal links",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "internal links",
+      "value": "",
+      "expected": {
+        "font-weight": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "document content",
+      "value": "",
+      "expected": {
+        "margin-top": "50px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Last Updated' date",
+      "value": "",
+      "expected": {
+        "text-content": "2023-09-01"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page content",
+      "value": "",
+      "expected": {
+        "width": "960px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page",
+      "value": "",
+      "expected": {
+        "scroll-top": "0px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Play' button of audio track",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "audio player",
+      "value": "",
+      "expected": {
+        "height": "50px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Volume' slider",
+      "value": "",
+      "expected": {
+        "value": 0.8
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "media player",
+      "value": "",
+      "expected": {
+        "audio-muted": true,
+        "mute-button-active": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "track title",
+      "value": "",
+      "expected": {
+        "text-content": "Ambient Melody",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "progress-value": "75%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Artist' label",
+      "value": "",
+      "expected": {
+        "text-content": "Unknown Artist"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Play' button",
+      "value": "",
+      "expected": {
+        "animation": "500ms on click"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://community.forum/threads",
+      "expected": {
+        "url": "https://community.forum/threads"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "forum thread titles",
+      "value": "",
+      "expected": {
+        "font-size": "17px",
+        "color": "#0000cc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'New Thread' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#17a2b8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sort By' dropdown",
+      "value": "",
+      "expected": {
+        "value": "Latest"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "thread list items",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination controls",
+      "value": "",
+      "expected": {
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user avatar images",
+      "value": "",
+      "expected": {
+        "border-radius": "50%",
+        "rendered-width": 40,
+        "rendered-height": 40
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Download' page link",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Download App' button",
+      "value": "",
+      "expected": {
+        "background-color": "#6f42c1",
+        "color": "#ffffff",
+        "width": "180px",
+        "height": "50px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "download link",
+      "value": "",
+      "expected": {
+        "href": "https://cdn.example.com/app.exe"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file size label",
+      "value": "",
+      "expected": {
+        "text-content": "100 MB"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Learn More' link",
+      "value": "",
+      "expected": {
+        "font-weight": 600
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "body",
+      "value": "",
+      "expected": {
+        "padding-left": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "primary app icon",
+      "value": "",
+      "expected": {
+        "alt-text": "Application Icon",
+        "is-loaded": true
+      }
+    }
+  ]
+]

@@ -1,0 +1,442 @@
+[
+  [
+    {
+      "action": "verify",
+      "selector": "'Login' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "120px",
+        "height": "40px",
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "font-size": "16px",
+        "font-weight": 500,
+        "border-radius": "4px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Login' button",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border": "2px solid #0056b3",
+        "transition": "200ms ease-in"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "username input field",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "placeholder": "Enter your email address",
+        "padding": "10px",
+        "font-family": "Arial"
+      }
+    },
+    {
+      "action": "type",
+      "selector": "username input field",
+      "value": "test@example.com",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "username input field",
+      "value": "",
+      "expected": {
+        "value": "test@example.com",
+        "color": "#333333",
+        "text-align": "left"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "main product image element",
+      "value": "",
+      "expected": {
+        "src": "https://example.com/images/prod_shoe.jpg",
+        "natural-width": 1000,
+        "natural-height": 750,
+        "rendered-width": 600,
+        "rendered-height": 450,
+        "alt-text": "Stylish running shoes",
+        "is-loaded": true,
+        "load-time": 500
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "x": "1000px",
+        "y": "20px",
+        "count": 3,
+        "aria-label": "Shopping cart with 3 items",
+        "color": "#ff0000"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "text-content": "About Us",
+        "font-size": "14px",
+        "font-family": "Roboto",
+        "color": "#666666"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#f0f0f0",
+        "transition": "150ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "muted": true,
+        "width": "800px",
+        "height": "450px",
+        "src": "https://example.com/video/intro.mp4"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "video player",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "fullscreen": true,
+        "watermark": false
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "error message 'Invalid credentials.'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Invalid credentials.",
+        "color": "#dc3545",
+        "background-color": "#f8d7da",
+        "padding": "15px",
+        "border": "1px solid #f5c6cb",
+        "font-weight": 600
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "product description text block",
+      "value": "",
+      "expected": {
+        "font-size": "15px",
+        "line-height": 1.6,
+        "color": "#555555",
+        "text-align": "justify",
+        "margin-top": "20px",
+        "padding": "0"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "pagination links",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "currently selected page '3' link",
+      "value": "",
+      "expected": {
+        "text-content": "3",
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "border-radius": "3px",
+        "width": "30px",
+        "height": "30px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "quantity input field",
+      "value": "",
+      "expected": {
+        "value": "1",
+        "width": "50px",
+        "height": "30px",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "associated label 'Quantity:'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Quantity:",
+        "font-size": "14px",
+        "color": "#333333"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'X' close button on a modal",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "top": "10px",
+        "right": "10px",
+        "opacity": 0.8,
+        "font-size": "20px",
+        "color": "#999999",
+        "aria-label": "Close dialog"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "sidebar menu",
+      "value": "",
+      "expected": {
+        "visibility": "hidden",
+        "viewport-width": "700px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "sidebar menu",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "left": "0px",
+        "width": "250px",
+        "background-color": "#f8f9fa",
+        "transition-duration": "300ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "date picker input",
+      "value": "",
+      "expected": {
+        "value": "2023-10-26"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "date picker input",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-top-width": "1px",
+        "border-right-width": "1px",
+        "border-bottom-width": "1px",
+        "border-left-width": "1px",
+        "border-style": "solid",
+        "border-color": "#0056b3",
+        "padding-top": "8px",
+        "padding-right": "8px",
+        "padding-bottom": "8px",
+        "padding-left": "8px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "user avatar image",
+      "value": "",
+      "expected": {
+        "is-loaded": true,
+        "src": "https://example.com/user/avatar.png",
+        "rendered-width": "48px",
+        "rendered-height": "48px",
+        "border-radius": "50%",
+        "alt-text": "User profile picture"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "copyright text '© 2023 Example Co.'",
+      "value": "",
+      "expected": {
+        "text-content": "© 2023 Example Co.",
+        "font-size": "12px",
+        "color": "#999999",
+        "text-align": "center",
+        "margin-top": "40px",
+        "padding-bottom": "20px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "main content area",
+      "value": "",
+      "expected": {
+        "overflow-y": "scroll"
+      }
+    },
+    {
+      "action": "scroll",
+      "selector": "window",
+      "value": "",
+      "expected": {
+        "scroll-top": "500px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Back to Top' button",
+      "value": "",
+      "expected": {
+        "text-content": "Back to Top",
+        "visibility": "visible",
+        "bottom": "20px",
+        "right": "20px",
+        "opacity": 1
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Download Report' button",
+      "value": "",
+      "expected": {
+        "text-content": "Download Report",
+        "enabled": true,
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "padding-top": "12px",
+        "padding-right": "20px",
+        "padding-bottom": "12px",
+        "padding-left": "20px",
+        "border-radius": "5px",
+        "aria-label": "Download PDF report"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "table row",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#e9ecef",
+        "transition-duration": "100ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "table cell",
+      "value": "",
+      "expected": {
+        "padding-top": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "10px",
+        "font-size": "14px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Search products...",
+        "width": "300px",
+        "height": "38px",
+        "border-top-width": "1px",
+        "border-right-width": "1px",
+        "border-bottom-width": "1px",
+        "border-left-width": "1px",
+        "border-style": "solid",
+        "border-color": "#ced4da"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-color": "#80bdff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "hero banner",
+      "value": "",
+      "expected": {
+        "background-image": "url(\"https://example.com/images/hero_bg.jpg\")",
+        "is-loaded": true,
+        "load-time": 1000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "overlay text 'Welcome'",
+      "value": "",
+      "expected": {
+        "text-content": "Welcome",
+        "font-size": "48px",
+        "font-weight": 700,
+        "color": "#ffffff",
+        "text-align": "center",
+        "top": "50%"
+      }
+    }
+  ]
+]

@@ -1,0 +1,589 @@
+[
+  [
+    {
+      "action": "verify",
+      "selector": "'Login' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "x": "100px",
+        "y": "250px",
+        "width": "120px",
+        "height": "40px",
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "font-size": "16px",
+        "border-radius": "4px",
+        "padding-top": "10px",
+        "padding-right": "20px",
+        "padding-bottom": "10px",
+        "padding-left": "20px",
+        "aria-label": "Log in to your account"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Login' button",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#0056b3",
+        "opacity": 0.8
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://example.com/product/xyz",
+      "expected": {
+        "url": "https://example.com/product/xyz"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main product image",
+      "value": "",
+      "expected": {
+        "src": "product_main.webp",
+        "is-loaded": true,
+        "load-time": 500,
+        "natural-width": 1200,
+        "natural-height": 900,
+        "rendered-width": 600,
+        "rendered-height": 450,
+        "alt-text": "Premium Bluetooth Headphones",
+        "watermark": false,
+        "margin-left": "20px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Search products...' input field",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "x": "50px",
+        "y": "30px",
+        "placeholder": "Search products...",
+        "font-size": "15px",
+        "color": "#333333",
+        "padding-top": "8px",
+        "padding-right": "12px",
+        "padding-bottom": "8px",
+        "padding-left": "12px",
+        "width": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Search products...' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-width": "2px",
+        "border-style": "solid",
+        "border-color": "#007bff",
+        "background-color": "#f0f8ff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#333333",
+        "font-weight": 500,
+        "font-family": "Arial, sans-serif",
+        "font-size": "14px",
+        "margin-top": "10px",
+        "padding-top": "5px",
+        "padding-right": "0px",
+        "padding-bottom": "5px",
+        "padding-left": "0px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "active": true,
+        "color": "#007bff",
+        "border-bottom-width": "2px",
+        "border-bottom-style": "solid",
+        "border-bottom-color": "#007bff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "main video player",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "800px",
+        "height": "450px",
+        "muted": true,
+        "fullscreen": false,
+        "margin-left": "auto",
+        "margin-right": "auto",
+        "src": "marketing_promo.mp4",
+        "load-time": 2000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player's play button",
+      "value": "",
+      "expected": {
+        "aria-label": "Play video"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "x": "900px",
+        "y": "20px",
+        "src": "cart_icon.svg",
+        "rendered-width": 24,
+        "rendered-height": 24,
+        "padding-top": "2px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart icon's count badge",
+      "value": "",
+      "expected": {
+        "text-content": "3",
+        "color": "#ffffff",
+        "background-color": "#dc3545"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Sign Up' button in the newsletter section",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "font-size": "16px",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "associated email input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your email",
+        "width": "250px",
+        "margin-right": "10px",
+        "label": "Email Address"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Contact Support' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Contact Support' modal",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "x": "50%",
+        "y": "50%",
+        "width": "400px",
+        "height": "300px",
+        "background-color": "#ffffff",
+        "border-radius": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal overlay",
+      "value": "",
+      "expected": {
+        "background-color": "rgba(0,0,0,0.5)",
+        "opacity": 0.5
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "product price text",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "US$ 49.99",
+        "font-size": "24px",
+        "font-weight": 700,
+        "color": "#dc3545",
+        "margin-top": "15px",
+        "text-align": "left",
+        "padding-bottom": "0px",
+        "font-family": "Georgia, serif"
+      }
+    }
+  ],
+  [
+    {
+      "action": "scroll",
+      "selector": "page",
+      "value": "",
+      "expected": {
+        "scroll-y-by": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "fixed header",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "fixed",
+        "top": "0px",
+        "height": "60px",
+        "background-color": "#ffffff",
+        "opacity": 1.0,
+        "border-bottom-width": "1px",
+        "border-bottom-style": "solid",
+        "border-bottom-color": "#e0e0e0",
+        "padding-top": "10px",
+        "padding-right": "0px",
+        "padding-bottom": "10px",
+        "padding-left": "0px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Specifications' tab",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Specifications' tab",
+      "value": "",
+      "expected": {
+        "selected": true,
+        "border-bottom": "2px solid #007bff",
+        "color": "#007bff",
+        "padding-top": "10px",
+        "padding-right": "15px",
+        "padding-bottom": "10px",
+        "padding-left": "15px",
+        "font-weight": 600
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Description' tab",
+      "value": "",
+      "expected": {
+        "active": false,
+        "color": "#333333"
+      }
+    }
+  ],
+  [
+    {
+      "action": "trigger",
+      "selector": "form validation",
+      "value": "validation error",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "error message 'Please enter a valid email address.'",
+      "value": "",
+      "expected": {
+        "text-content": "Please enter a valid email address.",
+        "visibility": "visible",
+        "color": "#dc3545",
+        "font-size": "13px",
+        "font-weight": 600,
+        "position": "below email input",
+        "margin-top": "5px",
+        "border-width": "0px",
+        "text-align": "left"
+      }
+    }
+  ],
+  [
+    {
+      "action": "initiate",
+      "selector": "file upload",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "75%",
+        "background-color": "#007bff",
+        "aria-label": "Upload progress",
+        "text-content": "75%",
+        "height": "8px",
+        "border-radius": "4px",
+        "margin-left": "10px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "date input",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "date picker calendar",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "border": "1px solid #cccccc",
+        "background-color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "date picker calendar selected date",
+      "value": "",
+      "expected": {
+        "text-content": "2023-10-26",
+        "selected": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "date input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Select Date",
+        "value": "10/26/2023"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "Facebook icon link at the footer",
+      "value": "",
+      "expected": {
+        "src": "facebook_icon.svg",
+        "load-time": 100,
+        "rendered-width": 32,
+        "rendered-height": 32,
+        "aria-label": "Visit us on Facebook",
+        "margin-right": "10px",
+        "border-radius": "50%",
+        "display": "inline"
+      }
+    }
+  ],
+  [
+    {
+      "action": "trigger",
+      "selector": "success alert",
+      "value": "Item added to cart!",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "banner 'Item added to cart!'",
+      "value": "",
+      "expected": {
+        "text-content": "Item added to cart!",
+        "visibility": "visible",
+        "x": "800px",
+        "y": "20px",
+        "background-color": "#d4edda",
+        "color": "#155724",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "banner 'Item added to cart!'",
+      "value": "",
+      "expected": {
+        "hidden-after": 3000,
+        "animation-name": "fade-out",
+        "animation-duration": 500,
+        "opacity-transition-from": 1.0,
+        "opacity-transition-to": 0.0
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "checked": false,
+        "margin-left": "5px",
+        "width": "16px",
+        "height": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox's label",
+      "value": "",
+      "expected": {
+        "text-content": "Remember me",
+        "font-size": "14px",
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "checked": true,
+        "value": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "pagination control",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "bottom of product list",
+        "text-content": "5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination button '2'",
+      "value": "",
+      "expected": {
+        "text-content": "2",
+        "active": true,
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "padding-top": "5px",
+        "padding-right": "10px",
+        "padding-bottom": "5px",
+        "padding-left": "10px",
+        "border-radius": "2px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "inactive pagination buttons",
+      "value": "",
+      "expected": {
+        "color": "#333333",
+        "padding-top": "5px",
+        "padding-right": "10px",
+        "padding-bottom": "5px",
+        "padding-left": "10px",
+        "border-radius": "2px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Sort by' dropdown",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "options": [
+          "Price: Low to High",
+          "Price: High to Low",
+          "Newest"
+        ],
+        "count": 3,
+        "value": "Newest",
+        "top": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each dropdown option",
+      "value": "",
+      "expected": {
+        "padding-top": "8px",
+        "padding-right": "15px",
+        "padding-bottom": "8px",
+        "padding-left": "15px",
+        "font-size": "14px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "file upload area",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Drag and drop files here or click to upload",
+        "accept": ".pdf, .doc, .docx",
+        "border-width": "2px",
+        "border-style": "dashed",
+        "border-color": "#cccccc",
+        "padding-top": "40px",
+        "padding-right": "40px",
+        "padding-bottom": "40px",
+        "padding-left": "40px",
+        "background-color": "#f8f8f8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Upload File' button",
+      "value": "",
+      "expected": {
+        "text-content": "Upload File",
+        "enabled": true,
+        "color": "#007bff"
+      }
+    }
+  ]
+]

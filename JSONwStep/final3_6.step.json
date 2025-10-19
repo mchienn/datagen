@@ -1,0 +1,442 @@
+[
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://example.com/dashboard",
+      "expected": {
+        "url": "https://example.com/dashboard"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Welcome User' text element",
+      "value": "",
+      "expected": {
+        "font-size": "24px",
+        "color": "#1a1a1a",
+        "font-family": "Inter",
+        "margin-left": "20px",
+        "margin-top": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Settings' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "border-radius": "4px",
+        "enabled": true,
+        "background-color": "rgb(0, 123, 255)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "primary product image",
+      "value": "",
+      "expected": {
+        "src": "product_P001_main.jpg",
+        "rendered-width": 600,
+        "rendered-height": 400,
+        "alt-text": "Stylish leather backpack",
+        "load-time": 500,
+        "watermark": false
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Add to Cart'",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "text-content": "1",
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "animation": "pulse",
+        "animation-duration": 300,
+        "width": "32px",
+        "height": "32px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Search' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter keywords...",
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#ced4da",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Search' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-color": "#80bdff",
+        "transition-property": "border-color",
+        "transition-duration": 200
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://example.com/video/intro",
+      "expected": {
+        "url": "https://example.com/video/intro"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "muted": true,
+        "width": "1280px",
+        "height": "720px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Play' button",
+      "value": "",
+      "expected": {
+        "aria-label": "Play video",
+        "opacity": 1
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Edit Profile' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "padding-top": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "10px",
+        "font-weight": 600,
+        "color": "#007bff",
+        "top": "200px",
+        "left": "50px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://example.com/contact",
+      "expected": {
+        "url": "https://example.com/contact"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "border-radius": "5px",
+        "width": "150px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#0056b3",
+        "transition-property": "background-color",
+        "transition-duration": 150
+      }
+    }
+  ],
+  [
+    {
+      "action": "set-viewport",
+      "selector": "",
+      "value": "",
+      "expected": {
+        "width": "768px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "14px",
+        "text-align": "center",
+        "x": "100px",
+        "y": "30px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://example.com/long-article",
+      "expected": {
+        "url": "https://example.com/long-article"
+      }
+    },
+    {
+      "action": "scroll",
+      "selector": "page",
+      "value": "down",
+      "expected": {
+        "distance": "500px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Back to Top' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "bottom": "30px",
+        "right": "30px",
+        "width": "40px",
+        "height": "40px",
+        "border-radius": "50%",
+        "background-color": "#6c757d"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Terms and Conditions' checkbox",
+      "value": "",
+      "expected": {
+        "checked": false,
+        "text-content": "I agree to the Terms and Conditions",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Terms and Conditions' checkbox",
+      "value": "",
+      "expected": {
+        "checked": true,
+        "border-width": "2px",
+        "border-style": "solid",
+        "border-color": "#007bff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Product Price' display for 'P001'",
+      "value": "",
+      "expected": {
+        "text-content": "$29.99",
+        "font-size": "22px",
+        "color": "#dc3545",
+        "font-weight": 700,
+        "margin-bottom": "10px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Date Picker' component",
+      "value": "",
+      "expected": {
+        "value": "2023-10-27"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Date Picker' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Select a date"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Date Picker' calendar icon",
+      "value": "",
+      "expected": {
+        "aria-label": "Open calendar",
+        "padding-right": "8px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Download Report' link",
+      "value": "",
+      "expected": {
+        "href": "https://example.com/reports/latest.pdf",
+        "color": "#007bff",
+        "text-decoration-line": "underline",
+        "alt-text": "Annual Report 2023"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Expand Details'",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "additional product details section",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "height": "200px",
+        "background-color": "#f8f9fa",
+        "padding-top": "15px",
+        "padding-right": "15px",
+        "padding-bottom": "15px",
+        "padding-left": "15px",
+        "opacity": 1,
+        "transition-property": "opacity",
+        "transition-duration": "300ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Password' input field",
+      "value": "",
+      "expected": {
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#ced4da",
+        "font-family": "Arial",
+        "width": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Password' input field",
+      "value": "",
+      "expected": {
+        "active": true,
+        "border-color": "#007bff",
+        "focused": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Notification' badge",
+      "value": "",
+      "expected": {
+        "text-content": "3",
+        "background-color": "#ffc107",
+        "color": "#212529",
+        "border-radius": "50%",
+        "font-size": "12px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Language Selector' dropdown",
+      "value": "",
+      "expected": {
+        "value": "English",
+        "width": "120px",
+        "height": "38px",
+        "text-align": "left",
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#6c757d"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://example.com/gallery",
+      "expected": {
+        "url": "https://example.com/gallery"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first gallery image",
+      "value": "",
+      "expected": {
+        "natural-width": 1920,
+        "natural-height": 1080,
+        "src": "image_001.jpg",
+        "is-loaded": true,
+        "load-time": 1000,
+        "alt-text": "Scenic landscape view"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'User Avatar' element",
+      "value": "",
+      "expected": {
+        "rendered-width": 50,
+        "rendered-height": 50,
+        "border-radius": "50%",
+        "src": "user_avatar_default.png",
+        "border-width": "2px",
+        "border-style": "solid",
+        "border-color": "#ffffff",
+        "margin-right": "10px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Account Balance' display",
+      "value": "",
+      "expected": {
+        "text-content": "$1,234.56",
+        "font-size": "20px",
+        "font-weight": 500,
+        "color": "#28a745",
+        "x": "150px",
+        "y": "80px"
+      }
+    }
+  ]
+]

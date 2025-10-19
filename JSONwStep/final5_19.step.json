@@ -1,0 +1,420 @@
+[
+  [
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "font-size": "16px",
+        "font-weight": 500,
+        "border-radius": "4px",
+        "padding-top": "10px",
+        "padding-right": "20px",
+        "padding-bottom": "10px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "background-color": "#0056b3",
+        "transition-duration": "200ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.ecomsite.com/item/101",
+      "expected": {
+        "url": "https://www.ecomsite.com/item/101"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main product image",
+      "value": "",
+      "expected": {
+        "src": "product_main.jpg",
+        "rendered-width": 600,
+        "rendered-height": 400,
+        "natural-width": 1200,
+        "natural-height": 800,
+        "load-time": 500,
+        "alt-text": "Premium Smartwatch",
+        "watermark": "NEW, top-right"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Search products...",
+        "width": "250px",
+        "height": "36px",
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#cccccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#007bff",
+        "text-value": ""
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "x": "50px",
+        "y": "100px",
+        "width": "640px",
+        "height": "360px",
+        "muted": true
+      }
+    },
+    {
+      "action": "click",
+      "selector": "fullscreen icon on the video player",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "full-screen": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "color": "#333333",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "font-weight": 400
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {
+        "active": true,
+        "color": "#007bff",
+        "padding-bottom": "2px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "orders table rows on the 'Orders' page",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Status' column in orders table",
+      "value": "",
+      "expected": {
+        "text-align": "right",
+        "text-content": "(Pending|Shipped)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Delete' action",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "confirmation modal",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "400px",
+        "height": "200px",
+        "background-color": "#ffffff",
+        "opacity": 1,
+        "top": "200px",
+        "left": "calc(50% - 200px)",
+        "border-radius": "8px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "price range slider",
+      "value": "",
+      "expected": {
+        "value": 50,
+        "min": 0,
+        "max": 200
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "slider track",
+      "value": "",
+      "expected": {
+        "width": "300px",
+        "height": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "slider thumb",
+      "value": "",
+      "expected": {
+        "dragged": true,
+        "transition-duration": "150ms",
+        "movement": "smooth"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#000000",
+        "font-size": "24px",
+        "aria-label": "Shopping Cart",
+        "item-count": 3
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "footer 'Privacy Policy' link",
+      "value": "",
+      "expected": {
+        "text-content": "Privacy Policy",
+        "href": "https://www.example.com/privacy",
+        "font-size": "12px",
+        "color": "#666666",
+        "padding-top": "5px",
+        "padding-right": "5px",
+        "padding-bottom": "5px",
+        "padding-left": "5px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "profile picture on user dashboard",
+      "value": "",
+      "expected": {
+        "src": "avatar_user1.jpg",
+        "border-radius": "50%",
+        "width": "60px",
+        "height": "60px",
+        "border": "2px solid #eeeeee",
+        "load-time": 300
+      }
+    }
+  ],
+  [
+    {
+      "action": "scroll",
+      "selector": "document",
+      "value": "",
+      "expected": {
+        "scroll-top": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main header",
+      "value": "",
+      "expected": {
+        "position": "fixed",
+        "top": "0px",
+        "background-color": "#ffffff",
+        "opacity": 0.9
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Coupon Code' input field",
+      "value": "",
+      "expected": {
+        "enabled": false,
+        "background-color": "#f0f0f0",
+        "color": "#999999",
+        "placeholder": "Discount unavailable"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Booking Date' input field",
+      "value": "",
+      "expected": {
+        "value": "2023-10-26",
+        "width": "150px",
+        "height": "32px",
+        "border-radius": "3px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "success alert banner",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "top",
+        "visibility-duration": 5000,
+        "text-content": "Item added to cart!",
+        "background-color": "#d4edda",
+        "color": "#155724",
+        "padding-top": "15px",
+        "padding-right": "15px",
+        "padding-bottom": "15px",
+        "padding-left": "15px",
+        "margin-bottom": "20px",
+        "transition": "opacity 500ms ease-out"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Edit', 'Delete', and 'Share' buttons",
+      "value": "",
+      "expected": {
+        "display": "inline-block",
+        "width": "80px",
+        "height": "30px",
+        "border-radius": "5px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "hover",
+      "selector": "information icon",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "visibility-duration": 3000,
+        "text-content": "Detailed product info",
+        "background-color": "#333333",
+        "color": "#ffffff",
+        "padding-top": "8px",
+        "padding-right": "12px",
+        "padding-bottom": "8px",
+        "padding-left": "12px",
+        "opacity": 0.9,
+        "position-relative-to": "information icon",
+        "offset-y": "10px",
+        "align-x": "center"
+      }
+    }
+  ],
+  [
+    {
+      "action": "trigger",
+      "selector": "data fetch",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "loading spinner",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "animation": "spin 1s linear infinite",
+        "width": "32px",
+        "height": "32px",
+        "border-color": "#f3f3f3 #3498db #3498db #f3f3f3"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "logo image in the header",
+      "value": "",
+      "expected": {
+        "src": "brand_logo.png",
+        "alt-text": "Company Logo",
+        "rendered-width": 150,
+        "rendered-height": 50,
+        "x": "20px",
+        "y": "15px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "checked": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "caption 'Remember me' for checkbox",
+      "value": "",
+      "expected": {
+        "text-content": "Remember me",
+        "font-size": "14px",
+        "color": "#333333",
+        "margin-left": "8px"
+      }
+    }
+  ]
+]

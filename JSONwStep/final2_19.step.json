@@ -1,0 +1,608 @@
+[
+  [
+    {
+      "action": "click",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "transition": true,
+        "timeout": 300,
+        "background-color": "#0056b3",
+        "color": "#ffffff",
+        "font-size": "16px",
+        "font-weight": 600,
+        "border-radius": "4px",
+        "width": "120px",
+        "height": "40px",
+        "enabled": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "focus",
+      "selector": "'Email address' input field",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Email address' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your email",
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#ced4da",
+        "background-color": "#ffffff",
+        "font-family": "Arial",
+        "font-size": "14px",
+        "padding-left": "12px",
+        "aria-label": "Email input"
+      }
+    },
+    {
+      "action": "type",
+      "selector": "'Email address' input field",
+      "value": "test@example.com",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Email address' input field",
+      "value": "",
+      "expected": {
+        "value": "test@example.com"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "hero image",
+      "value": "",
+      "expected": {
+        "src": "images/hero.webp",
+        "rendered-width": 1200,
+        "rendered-height": 400,
+        "natural-width": 1920,
+        "natural-height": 640,
+        "alt-text": "Abstract city skyline",
+        "load-time": 500,
+        "is-loaded": true,
+        "opacity": 1.0,
+        "x": "0px",
+        "y": "0px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "hover",
+      "selector": "'About Us' navigation link",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' link",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "color": "#007bff",
+        "font-weight": 700,
+        "border-bottom-width": "2px",
+        "border-bottom-style": "solid",
+        "border-bottom-color": "#007bff",
+        "transition": true,
+        "timeout": 200,
+        "width": "90px",
+        "height": "30px",
+        "left": "20px",
+        "top": "10px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "product video player",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "product video player",
+      "value": "",
+      "expected": {
+        "width": "640px",
+        "height": "360px",
+        "muted": false,
+        "fullscreen": false
+      }
+    },
+    {
+      "action": "click",
+      "selector": "mute button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video",
+      "value": "",
+      "expected": {
+        "muted": true
+      }
+    },
+    {
+      "action": "click",
+      "selector": "fullscreen button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "video",
+      "value": "",
+      "expected": {
+        "fullscreen": true,
+        "src": "videos/product_showcase.mp4"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "first product card's product name",
+      "value": "",
+      "expected": {
+        "text-content": "Wireless Headphones",
+        "font-size": "18px",
+        "color": "#1a1a1a"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first product card",
+      "value": "",
+      "expected": {
+        "background-color": "#f9f9f9",
+        "padding-top": "16px",
+        "padding-right": "16px",
+        "padding-bottom": "16px",
+        "padding-left": "16px",
+        "margin-bottom": "20px",
+        "border-radius": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first product card's embedded image",
+      "value": "",
+      "expected": {
+        "src": "products/headphones.jpg",
+        "alt-text": "Wireless Headphones Black"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart icon's badge",
+      "value": "",
+      "expected": {
+        "text-content": "1",
+        "background-color": "#ff0000",
+        "font-size": "12px",
+        "visibility": "visible",
+        "x": "850px",
+        "y": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "aria-label": "Shopping cart, 1 item"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "date input field",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "calendar dropdown",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "280px",
+        "height": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "date input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Select date"
+      }
+    },
+    {
+      "action": "select",
+      "selector": "calendar",
+      "value": "2024-07-25",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "date input field",
+      "value": "",
+      "expected": {
+        "value": "2024-07-25"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'25' cell in the calendar",
+      "value": "",
+      "expected": {
+        "selected": true,
+        "background-color": "#007bff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Logout' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Confirm Logout' modal dialog",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "centered",
+        "width": "400px",
+        "height": "200px",
+        "background-color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal overlay",
+      "value": "",
+      "expected": {
+        "opacity": 0.7
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal heading",
+      "value": "",
+      "expected": {
+        "text-content": "Confirm Logout"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal content",
+      "value": "",
+      "expected": {
+        "padding": "24px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "hover",
+      "selector": "second row of the data table",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "second data table row",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#f0f0f0",
+        "color": "#333333",
+        "height": "48px",
+        "transition-property": "background-color",
+        "transition-duration": "150ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each cell in the second data table row",
+      "value": "",
+      "expected": {
+        "border-bottom-width": "1px",
+        "border-bottom-style": "solid",
+        "border-bottom-color": "#e0e0e0"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Proceed to Payment' button",
+      "value": "",
+      "expected": {
+        "enabled": false,
+        "opacity": 0.6,
+        "background-color": "#cccccc",
+        "color": "#666666",
+        "font-weight": 500,
+        "border-radius": "5px",
+        "aria-label": "Proceed to Payment (disabled until details filled)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "first accordion header labeled 'Product Details'",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "first accordion header labeled 'Product Details'",
+      "value": "",
+      "expected": {
+        "background-color": "#e0e0e0",
+        "font-weight": 700
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content section below accordion header",
+      "value": "",
+      "expected": {
+        "height": "150px",
+        "transition-property": "height",
+        "transition-duration": "300ms",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "upload",
+      "selector": "file input",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar's fill element",
+      "value": "",
+      "expected": {
+        "progress-value": "75%",
+        "width": "75%",
+        "background-color": "#28a745",
+        "text-content": "75%",
+        "text-align": "center",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "total upload steps",
+      "value": "",
+      "expected": {
+        "count": 4
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Remember Me' checkbox",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember Me' checkbox",
+      "value": "",
+      "expected": {
+        "selected": true,
+        "background-color": "#007bff",
+        "border": "2px solid #007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember Me' checkbox associated label",
+      "value": "",
+      "expected": {
+        "text-content": "Remember me on this device"
+      }
+    }
+  ],
+  [
+    {
+      "action": "hover",
+      "selector": "info icon next to the username field",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Username must be alphanumeric",
+        "background-color": "#333333",
+        "color": "#ffffff",
+        "font-size": "12px",
+        "padding": "8px",
+        "border-radius": "4px",
+        "top": "20px",
+        "x": "100px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "search input bar",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "search input bar",
+      "value": "",
+      "expected": {
+        "placeholder": "Search products...",
+        "width": "300px",
+        "height": "36px",
+        "border": "1px solid #ccc",
+        "font-family": "Inter",
+        "text-align": "left",
+        "enabled": true
+      }
+    },
+    {
+      "action": "type",
+      "selector": "search input bar",
+      "value": "Laptops",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "search input bar",
+      "value": "",
+      "expected": {
+        "value": "Laptops"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "success notification banner",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Your changes have been saved.",
+        "color": "#155724",
+        "background-color": "#d4edda",
+        "padding": "16px"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "dismiss button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "banner",
+      "value": "",
+      "expected": {
+        "visibility": "hidden",
+        "opacity": 0,
+        "transition": "400ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "avatar image",
+      "value": "",
+      "expected": {
+        "src": "users/profile_pic.jpg",
+        "rendered-width": 60,
+        "rendered-height": 60,
+        "border-radius": "50%",
+        "alt-text": "User profile picture",
+        "watermark": false
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Privacy Policy' link",
+      "value": "",
+      "expected": {
+        "text-content": "Privacy Policy",
+        "color": "#666666",
+        "font-size": "13px",
+        "font-weight": 400,
+        "left": "10px",
+        "bottom": "5px",
+        "width": "100px",
+        "height": "20px",
+        "aria-label": "Privacy policy link"
+      }
+    }
+  ],
+  [
+    {
+      "action": "scroll",
+      "selector": "main content div",
+      "value": "",
+      "expected": {
+        "scroll-down": "200px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main content div",
+      "value": "",
+      "expected": {
+        "scroll-top": "200px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main content div",
+      "value": "",
+      "expected": {
+        "height": "500px",
+        "background-color": "#f8f8f8",
+        "padding": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "scroll action",
+      "value": "",
+      "expected": {
+        "scroll": "smooth",
+        "timeout": 500
+      }
+    }
+  ]
+]
