@@ -1,0 +1,609 @@
+[
+  [
+    "Open 'https://www.example.com/'",
+    "Verify the header element is visible, has background color #1A202C, height 64px, and width 100% of viewport",
+    "Verify the logo image has source 'logo.png', natural dimensions 150x40px, rendered size 150x40px, alt text 'Company Logo', and is loaded within 50ms",
+    "Verify the primary navigation text 'Home' has font size 16px, color #E2E8F0, font weight 500, and padding 0px 16px",
+    "Verify the search icon button has an aria-label 'Search' and is enabled"
+  ],
+  [
+    "Click the 'Add to Cart' button",
+    "Verify its background color changes from #007BFF to #0056B3 in 200ms with a ease-in transition",
+    "Verify its text color changes from #FFFFFF to #F0F0F0 in 200ms with a ease-in transition",
+    "Verify the button remains enabled, has border radius 8px, padding 10px 20px, font size 16px, font weight 600, width 150px, height 40px, and is centered horizontally within its parent container"
+  ],
+  [
+    "Open product page 'https://www.example.com/products/sku123'",
+    "Verify the main product image has source 'main_product.jpg', rendered dimensions 600x450px, alt text 'Blue T-Shirt', and is loaded",
+    "Verify there are exactly 4 thumbnail images displayed, each 80px wide and 60px high, with a 4px solid #CCCCCC border when not selected",
+    "Verify the currently selected thumbnail has a 4px solid #007BFF border and a border radius of 4px",
+    "Verify all images are visible and no watermark is present"
+  ],
+  [
+    "Focus on the 'Email Address' input field",
+    "Verify its placeholder text is 'your@example.com', its border changes to 2px solid #007BFF, and its background color becomes #F0F8FF",
+    "Verify its width is 300px, height is 48px, font size 16px, text color #333333, padding 12px horizontally and 8px vertically, and has an aria-label 'Email input for registration'"
+  ],
+  [
+    "Start playing the video",
+    "Verify the video player is visible, has width 800px, height 450px, and is not muted",
+    "Verify the play button has a background color #000000 with opacity 0.7 when hovered",
+    "Verify the progress bar has animation running",
+    "Verify the video source is 'product_intro.mp4' and the player has a 2px solid #CCCCCC border",
+    "Verify it transitions to fullscreen within 500ms when the fullscreen button is clicked"
+  ],
+  [
+    "Click the 'Open Dialog' button",
+    "Verify the modal dialog becomes visible with opacity 1, background color rgba(0,0,0,0.5) for the overlay, and a content box with background color #FFFFFF",
+    "Verify the dialog content box has width 500px, height 300px, border radius 12px, and is positioned at x: 200, y: 150",
+    "Verify the title 'Confirm Action' has font size 24px and color #333333",
+    "Verify the 'Close' button has an aria-label 'Close modal'"
+  ],
+  [
+    "Submit the form without required fields",
+    "Verify the error message 'Please fill in all fields' appears with color #DC3545, font size 14px, and font weight 500",
+    "Verify the message element is visible, has padding 8px, margin-top 10px, and a 1px solid #DC3545 border",
+    "Verify the associated 3 input fields now have a 1px solid #DC3545 border and a red background color #FFF3F3"
+  ],
+  [
+    "Scroll down the page by 500 pixels",
+    "Verify the header remains at top: 0 and left: 0, maintaining its background color #FFFFFF and height 70px",
+    "Verify its width remains 100% of the viewport and its border-bottom is 1px solid #E0E0E0",
+    "Verify the 'Shop Now' button within the header has color #007BFF and font weight 700",
+    "Verify the header itself has a 300ms transition applied to its visual properties, maintaining its visible state and alignment to the top of the viewport"
+  ],
+  [
+    "Click on the 'Specifications' tab",
+    "Verify this tab becomes active with background color #007BFF, text color #FFFFFF, font weight 600, a 2px solid #007BFF bottom border, and has an aria-label 'Product Specifications'",
+    "Verify the previously active tab 'Description' changes to background color #F0F0F0, text color #333333, font weight 400, and is no longer selected",
+    "Verify the 'Specifications' content panel becomes visible, has padding 20px, font size 14px, a 1px solid #CCCCCC border on all sides, text alignment left, and a height of at least 200px"
+  ],
+  [
+    "Click on the date input field",
+    "Verify the calendar dropdown becomes visible, has a background color #FFFFFF, and a 1px solid #CCCCCC border with radius 4px",
+    "Verify the current date '2023-10-26' is highlighted with background color #007BFF and text color #FFFFFF",
+    "Verify there are 42 days displayed in the grid, each with font size 14px, and padding 8px",
+    "Verify the selected date value in the input field is '26 Oct 2023'"
+  ],
+  [
+    "Trigger a success notification",
+    "Verify the banner is visible for 5 seconds before becoming hidden, positioned at top 20px and right 20px",
+    "Verify it has background color #D4EDDA, text color #155724, font size 15px, padding 15px 20px, border radius 6px, and a 1px solid #28A745 border",
+    "Verify the text content is 'Item added to cart successfully!'",
+    "Verify it disappears with a 300ms opacity transition"
+  ],
+  [
+    "Start a file upload",
+    "Verify the progress bar element is visible, has a height of 8px, and background color #E9ECEF",
+    "Verify the inner progress indicator has background color #007BFF and its width updates dynamically, reaching 75% at 3 seconds",
+    "Verify it has a border radius of 4px, no border",
+    "Verify the percentage text 75% is displayed with color #007BFF and font size 12px",
+    "Verify the animation is smooth over 300ms steps"
+  ],
+  [
+    "Click the 'Sort by' dropdown",
+    "Verify the menu items become visible, are positioned directly below the trigger, and have background color #FFFFFF",
+    "Verify there are 5 options, each with padding 10px 15px, font size 14px, and text color #333333",
+    "Verify the menu has a 1px solid #CCCCCC border, a border radius of 4px, and a width of 200px",
+    "Verify the option 'Price: Low to High' has aria-label 'Sort by lowest price' and is clickable"
+  ],
+  [
+    "Navigate to a product listing page",
+    "Verify the pagination control is visible, showing a count of 5 page numbers",
+    "Verify the 'Next' button is enabled and has an aria-label 'Go to next page'",
+    "Verify the 'Previous' button is disabled",
+    "Verify the currently active page number '3' has background color #007BFF, text color #FFFFFF, font weight 600, and a 2px border radius",
+    "Verify all page number buttons have a minimum width of 32px and height of 32px, and 1px solid #CCCCCC border when inactive"
+  ],
+  [
+    "Drag the price range slider thumb from left to right",
+    "Verify the thumb's x coordinate moves from 0 to 200px when the value changes from 0 to 500",
+    "Verify the track has background color #E0E0E0, is visible",
+    "Verify the filled portion of the track has background color #007BFF and width proportional to the value (e.g., 50% at 250)",
+    "Verify the thumb has width 20px, height 20px, border radius 50%, border 1px solid #CCCCCC, and opacity 1",
+    "Verify the current value '250' is displayed above the thumb with font size 14px and color #333333"
+  ],
+  [
+    "View an artist's portfolio image",
+    "Verify the main image has source 'artist_work_preview.jpg', is loaded within 100ms, and its natural dimensions are 1200x800px",
+    "Verify it displays a diagonal 'PREVIEW' watermark, which has an opacity of 0.6 and is visible, covering 75% of the image",
+    "Verify the image's rendered dimensions are 900x600px, it has a 1px solid #E0E0E0 border, and its alt text is 'Abstract Painting Sample'",
+    "Verify the image is centrally aligned"
+  ],
+  [
+    "On the 'About Us' page",
+    "Verify the main paragraph text begins with 'Our company was founded...' and has font family 'Arial', font size 16px, color #333333, and a height of at least 150px",
+    "Verify the paragraph width is 75% of the content area, has margin-bottom 20px, and text alignment justified",
+    "Verify the heading 'Our Mission' above it has font size 28px, font weight 700, and is centered",
+    "Verify the entire content block has padding 30px, background color #F9F9F9, and a 1px solid #E0E0E0 border"
+  ],
+  [
+    "Hover over the 'View Details' link",
+    "Verify its text color changes from #007BFF to #0056B3 within 150ms with a linear transition",
+    "Verify its border-bottom changes from 1px solid #007BFF to 2px solid #0056B3 within 150ms with a linear transition",
+    "Verify its font weight changes from 400 to 600, its padding-bottom increases by 2px, and its opacity remains 1",
+    "Verify the link's URL is 'https://www.example.com/item/detail/456', its font size is 14px, it has an aria-label 'View product details', and it is enabled"
+  ],
+  [
+    "Hover over the info icon",
+    "Verify the tooltip becomes visible with opacity 1, background color #333333, and text color #FFFFFF",
+    "Verify it's positioned at x: 100, y: 50, has padding 8px 12px, border radius 4px, and font size 12px",
+    "Verify the text content is 'More information about this field'",
+    "Verify the tooltip has a width of 150px and a 200ms ease-out transition on opacity"
+  ],
+  [
+    "Resize the browser viewport to 768px width",
+    "Verify the mobile navigation button becomes visible, positioned at top 10px and right 10px, with background color #007BFF and a 1px solid #007BFF border",
+    "Verify its width is 48px, height is 48px, and it has an aria-label 'Open navigation menu'",
+    "Verify the desktop navigation links become hidden",
+    "Verify the mobile menu icon (hamburger) is displayed with color #FFFFFF and font size 24px"
+  ],
+  [
+    "Verify the main product image has source 'product_hero.jpg', rendered dimensions 800x600px, and alt text 'Stylish Leather Boots'",
+    "Verify its load time is under 500ms",
+    "Verify the product title displays 'Leather Boots' with font size 28px, font family 'Montserrat', font weight 700, and color #333333",
+    "Verify the title is top-aligned with padding 15px"
+  ],
+  [
+    "Verify the 'About Us' navigation link is visible, has text color #007bff, and a padding of 10px 15px",
+    "Verify on hover, its background color transitions to #e9ecef over 200ms",
+    "Verify its text becomes focused on hover",
+    "Verify the link has an aria-label 'Navigate to About Us page'"
+  ],
+  [
+    "Verify the shopping cart icon displays a count of 3 items, positioned at x 1200px and y 20px",
+    "Verify its background color is #dc3545, it has a border radius of 50%, text size is 12px, and opacity is 1"
+  ],
+  [
+    "Verify the search input field is enabled, visible, and has a placeholder text 'Search products...'",
+    "Verify its width is 300px, height 40px, and it has a 1px solid border with color #ced4da",
+    "Verify on focus, the border color changes to #80bdff with a transition of 150ms"
+  ],
+  [
+    "Verify the video player's 'Play' button is visible, has a width of 50px, height of 30px, and its background color is rgba(0,0,0,0.5)",
+    "Verify the video is not muted by default",
+    "Verify the fullscreen button is visible",
+    "Verify its padding is 8px, and it has an aria-label 'Play video'"
+  ],
+  [
+    "Verify the user avatar image has source 'user_profile.png', natural dimensions 200x200px, and rendered dimensions 60x60px",
+    "Verify it has a circular shape with border radius 50%",
+    "Verify the username 'JohnDoe' is displayed next to it with font size 16px, font weight 500, and color #495057"
+  ],
+  [
+    "Verify the 'Login' button is enabled, has a background color #007bff, text color #ffffff, font size 16px, width 100px, height 40px, and a border radius of 4px",
+    "Verify on active state, its opacity decreases to 0.8 with a 100ms transition"
+  ],
+  [
+    "Verify the first row of the data table is selected with a background color #e6f7ff and border 1px solid #91d5ff",
+    "Verify the 'Status' cell within this row displays 'Active' with font color #28a745, font weight 600, positioned at left 200px"
+  ],
+  [
+    "Verify there are exactly 5 thumbnail images visible, each with source 'thumb_#.jpg', rendered dimensions 100x75px, and a 2px solid border #cccccc",
+    "Verify on selection, the border color changes to #007bff",
+    "Verify each has a margin-right of 10px"
+  ],
+  [
+    "Verify the 'X' close button in the top-right corner of the modal dialog has font size 24px, color #6c757d, is positioned at right 15px, top 10px, has opacity 0.7, and a transition effect for opacity over 150ms"
+  ],
+  [
+    "Verify the active pagination link displays page number '3' with background color #007bff, text color #ffffff, font weight 700, border radius 3px, padding 8px 12px, and left margin 4px"
+  ],
+  [
+    "Verify the success notification banner is visible, displays 'Item added to cart successfully!' with font size 14px, color #155724, background color #d4edda, border 1px solid #c3e6cb, and padding 12px",
+    "Verify it disappears after an animation duration of 3s"
+  ],
+  [
+    "Verify each item in the dropdown menu has text color #333333, font size 14px, padding 8px 15px, and an opacity of 1",
+    "Verify when focused, its background color becomes #f8f9fa and its text alignment is left"
+  ],
+  [
+    "Verify the date '2023-10-26' is selected in the calendar widget, displayed with a circular shape, background color #007bff, text color #ffffff, font weight 600, width 32px, height 32px, and border radius 50%"
+  ],
+  [
+    "Verify the 'Email' input field, when invalid, shows a 1px solid border with color #dc3545",
+    "Verify the associated error message below it displays 'Invalid email format' with font size 13px, text color #dc3545, top margin 5px, and is visible"
+  ],
+  [
+    "Verify a scrollable content area, after a scroll, has its scroll-top value at 500px",
+    "Verify the scroll indicator is visible, 10px wide, with background color #cccccc, and a transition property for its width over 300ms"
+  ],
+  [
+    "Verify the hero section background image has source 'hero_background.jpg', is loaded, covers the full width 1920px and height 500px of the container, has no watermark, and its natural dimensions are 1920x1080px"
+  ],
+  [
+    "Verify the quantity selector input field has a value of '1' by default, width 60px, height 30px, and a 1px border with color #cccccc",
+    "Verify the increment/decrement buttons are enabled and have a background color #f8f9fa"
+  ],
+  [
+    "Verify the testimonial quote text 'Great product, highly recommend!' is displayed with font size 18px, font family 'Georgia', text color #555555, and text align center",
+    "Verify the author's name 'Jane Doe' below it has font size 14px, color #777777, with a top margin of 10px"
+  ],
+  [
+    "Verify the map zoom in/out buttons are visible, enabled, have a width of 36px, height of 36px, background color #ffffff, border radius of 50%, and each button has an aria-label for 'Zoom In' or 'Zoom Out'"
+  ],
+  [
+    "Open 'https://www.example.com/home'",
+    "Verify the header is visible with height 60px and background color #f8f8f8",
+    "Verify the logo image has source 'logo.png', rendered dimensions 100x40px, alt text 'Company Logo', and loads within 200ms",
+    "Verify the navigation bar contains exactly 5 links, each with text size 16px, color #333333, and padding 10px on all sides"
+  ],
+  [
+    "Load 'https://www.shop.com/category/shirts'",
+    "Verify each product card has width 280px, height 400px, and border radius 8px",
+    "Verify the product image has source 'shirt_model_01.jpg', natural dimensions 1000x750px, is loaded successfully, and alt text 'Blue Casual Shirt'",
+    "Verify the product title uses font family 'Roboto', font size 18px, font weight 500, and color #1a1a1a",
+    "Verify the 'Add to Cart' button is visible, text 'Add to Cart'",
+    "Verify on hover, its background color transitions from #007bff to #0056b3 over 300ms"
+  ],
+  [
+    "Open 'https://www.app.com/login'",
+    "Verify the email input field has placeholder 'Enter your email', border 1px solid #ccc, and font size 16px",
+    "Verify when focused, its border changes to 1px solid #007bff",
+    "Verify the password input field has background color #ffffff",
+    "Type 'test@example.com' into the email input field",
+    "Verify the email input field value is 'test@example.com'",
+    "Verify the 'Login' button is enabled, has text 'Login', border radius 4px, and padding 12px 20px"
+  ],
+  [
+    "Open 'https://www.media.com/video/nature_clip.mp4'",
+    "Verify the video player has width 1280px, height 720px, and source 'nature_clip.mp4'",
+    "Verify it is initially muted",
+    "Click the fullscreen button",
+    "Verify the video enters fullscreen mode",
+    "Verify the play button displays a pulsing animation when hovered, with opacity changing from 1 to 0.8 and back over 500ms"
+  ],
+  [
+    "Click 'View Gallery'",
+    "Verify the modal is visible with background color rgba(0,0,0,0.8) and opacity 1, centered at x 50% and y 50%",
+    "Verify the displayed image has source 'gallery_img_01.jpg' and rendered dimensions 800x600px",
+    "Verify the close button has aria-label 'Close Gallery'",
+    "Verify there are 5 pagination dots, with the first dot initially active and color #ffffff"
+  ],
+  [
+    "Open 'https://www.profiles.com/user/john_doe'",
+    "Verify the user avatar image has source 'avatar_john.jpg', rendered dimensions 120x120px, and border radius 50%",
+    "Verify the username text 'John Doe' is displayed with font size 24px, font weight 700, color #212529, positioned at left 150px and top 100px",
+    "Verify the 'Edit Profile' button is enabled, has background color #6c757d, and padding 8px 16px"
+  ],
+  [
+    "Load 'https://www.data.com/reports/sales'",
+    "Verify the sales report table contains exactly 10 rows",
+    "Verify the header 'Product Name' has font size 14px and text align 'left'",
+    "Verify the 'Total Revenue' column cells display numeric values",
+    "Verify all table cells have a border 1px solid #e0e0e0 and alternating row background colors of #f9f9f9 and #ffffff",
+    "Scroll down by 500px",
+    "Verify scroll-top is 500px"
+  ],
+  [
+    "Add 'Laptop X' to cart",
+    "Verify the cart item count displays '1'",
+    "Verify the 'Laptop X' item text is visible",
+    "Add 'Mouse Y' to cart",
+    "Verify the cart item count updates to '2'",
+    "Verify the 'Subtotal' amount displays a value (e.g., '€1200.00') with font size 20px and color #000000",
+    "Verify the 'Proceed to Checkout' button is enabled and has opacity 1"
+  ],
+  [
+    "Trigger a success notification",
+    "Verify the toast message appears visible in the top right corner (right 20px, top 20px) with background color #28a745, text color #ffffff, border radius 5px, and padding 15px 20px",
+    "Verify it displays the text 'Item added successfully!'",
+    "Verify it fades out with a transition effect over 500ms after 3 seconds, becoming hidden"
+  ],
+  [
+    "On the homepage",
+    "Click the language selector button",
+    "Verify the button displays 'English' and has aria-label 'Select Language'",
+    "Verify the dropdown list becomes visible, positioned directly below the trigger",
+    "Verify the dropdown list has width 150px, height 120px, and contains exactly 3 language options",
+    "Verify 'English' is active/selected with font size 15px and color #007bff"
+  ],
+  [
+    "Click the 'Check-in Date' input field",
+    "Verify it has placeholder 'DD/MM/YYYY'",
+    "Verify the calendar widget becomes visible",
+    "Verify the current month's date '15' is highlighted as active/selected with background color #007bff",
+    "Verify the calendar days have font family 'Arial' and padding 5px",
+    "Select '25/12/2023'",
+    "Verify the input field's value is '2023-12-25'",
+    "Verify the widget becomes hidden",
+    "Verify the input field has a rectangular shape"
+  ],
+  [
+    "Focus the search input field",
+    "Verify it has placeholder 'Search products...' and border 1px solid #ced4da",
+    "Type 'Lap'",
+    "Verify the autocomplete suggestions box becomes visible with width 300px and background color #ffffff",
+    "Verify exactly 3 suggestions appear, with text size 16px and color #333333",
+    "Verify the search input field maintains its height of 40px"
+  ],
+  [
+    "Simulate a file upload to 75%",
+    "Verify the progress bar container has width 300px and height 20px",
+    "Verify the progress indicator has width 75% of container, background color #28a745, and border radius 10px",
+    "Verify it displays the text 75% and has aria-label 'Upload progress 75 percent'",
+    "Verify its opacity is 1 and the container's background color is #e9ecef"
+  ],
+  [
+    "Open 'https://www.blog.com/post/article_title'",
+    "Verify exactly 3 social media share buttons are present",
+    "Verify the Facebook button image has source 'facebook_icon.svg', rendered dimensions 24x24px, and alt text 'Share on Facebook'",
+    "Verify each button has background color #f0f2f5, border radius 50%, and margin 0 5px",
+    "Verify on hover, their background color transitions to a darker shade over 200ms"
+  ],
+  [
+    "On a search results page",
+    "Verify the pagination component displays exactly 5 page numbers",
+    "Verify the 'Previous' button is disabled",
+    "Verify page '1' is active/selected with background color #007bff and color #ffffff",
+    "Verify each page number has font size 14px, padding 8px 12px, positioned at x 50% alignment",
+    "Click 'Next'",
+    "Verify page '2' becomes active/selected",
+    "Verify the 'Previous' button becomes enabled and has a border radius of 4px"
+  ],
+  [
+    "Hover over the 'Info' icon",
+    "Verify the tooltip becomes visible after 300ms, positioned 10px below the icon (bottom: 10px relative to icon)",
+    "Verify it displays the text 'Additional information here' with background color #333333, text color #ffffff, font size 12px, padding 8px 12px, and border radius 4px",
+    "Verify it appears with a fade-in animation over 150ms"
+  ],
+  [
+    "On the chat interface",
+    "Verify the user avatar image has source 'user_avatar.jpg', rendered dimensions 40x40px, border radius 50%",
+    "Verify its alt text is 'User Name'",
+    "Verify the image displays a 'beta' watermark at bottom right",
+    "Verify the online status indicator is a small circular shape, 10px wide and 10px high, with background color #28a745, positioned at right 0px and bottom 0px relative to the avatar"
+  ],
+  [
+    "Open 'https://www.homepage.com'",
+    "Verify the hero banner has background image source 'hero_banner_bg.jpg' and height 500px, width 100%",
+    "Verify the main title 'Discover Your Next Adventure' is visible with font size 48px, font weight 700, and color #ffffff",
+    "Verify the description text has font size 18px",
+    "Verify the 'Explore Now' button has background color #ff6600, padding 15px 30px, border radius 5px, positioned at left 50px and top 300px"
+  ],
+  [
+    "Load the product listing page",
+    "Verify the filter sidebar is visible with width 250px, background color #f4f4f4, opacity 1, positioned at left 0px",
+    "Verify it contains exactly 4 filter categories",
+    "Verify the category 'Brand' has text size 16px and color #333333",
+    "Expand 'Price Range'",
+    "Verify the new filter options become visible, each with margin-bottom 10px"
+  ],
+  [
+    "On the blog post page",
+    "Verify the comment input field has placeholder 'Write your comment...', height 100px, border 1px solid #ccc, and width 100%",
+    "Verify the 'Comments' section displays a count of '12' comments",
+    "Type 'Great article!' into the comment input field",
+    "Verify its value is 'Great article!'",
+    "Verify the 'Post Comment' button is initially disabled",
+    "Verify the 'Post Comment' button becomes enabled upon text entry, with background color #007bff and font size 16px",
+    "Verify scroll is at the bottom for new comments"
+  ],
+  [
+    "Verify the 'Add to Cart' button is enabled, visible, has a background color #007bff, text color #ffffff, font size 16px, font weight 600, border radius 4px, padding 10px 15px, width 150px, height 40px, and an aria-label 'Add product to shopping cart'"
+  ],
+  [
+    "Verify the 'Username' input field has placeholder text 'Enter your username', is not focused by default, has a 1px solid #ced4da border, font size 14px, and width 280px",
+    "Verify its label 'Username' is visible, has font weight 500, and text color #333333"
+  ],
+  [
+    "Open 'https://demo.example.com/products'",
+    "Verify the main product image 'product_hero.jpg' is loaded within 750ms, its source is 'images/product_hero.jpg', rendered dimensions are 600x450px, and alt text describes 'Luxury handcrafted watch'",
+    "Verify a small 'exclusive' watermark is visible at the bottom-left corner with 0.7 opacity"
+  ],
+  [
+    "Verify the header element has a background color #f8f9fa, height 64px, and maintains its top position at 0px when scrolling down 300px",
+    "Verify the 'About Us' navigation link is active, has text color #007bff, and font weight 700",
+    "Verify the navigation menu has 4 primary items"
+  ],
+  [
+    "When playing the video",
+    "Verify it is initially muted, not in fullscreen mode, and its controls become visible after 1s",
+    "Verify the video player has a width of 800px, a height of 450px, positioned with left 50px and top 100px",
+    "Verify its source is 'video/intro.mp4'"
+  ],
+  [
+    "Verify the 'Item Card' has a 1px solid #e0e0e0 border, 8px border radius, and 20px padding",
+    "Verify the item title 'Premium Coffee Blend' displays with font size 20px, font family 'Georgia', and text color #333333",
+    "Verify its current price value is '19.99'"
+  ],
+  [
+    "Verify the 'Delete Confirmation' modal dialog is initially hidden",
+    "Upon user action, verify it becomes visible, centered at x 50% and y 50% of the viewport, with a dark overlay background color rgba(0,0,0,0.6)",
+    "Verify the modal content has a #ffffff background color, width 420px, and height 280px",
+    "Verify its close button has aria-label 'Close confirmation dialog'"
+  ],
+  [
+    "Verify the 'Sort By' dropdown menu is hidden",
+    "Click its trigger",
+    "Verify it becomes visible with a list count of 5 options",
+    "Verify the 'Newest' option is selected, has text color #007bff, font weight 600, and padding 8px 12px"
+  ],
+  [
+    "When submitting data",
+    "Verify the 'Processing Spinner' animation is visible, rotates continuously for 1.5s, with color #007bff, and is positioned at x 50%, y 50%",
+    "Verify its width is 32px and height is 32px"
+  ],
+  [
+    "Verify the main content paragraph uses font family 'Arial', font size 15px, has a line height of 1.6, and text align justified",
+    "Verify the text block has a width of 750px, margin-bottom 24px, and its background color is transparent"
+  ],
+  [
+    "Verify the 'Remember Session' checkbox is unchecked by default",
+    "Upon checking, verify its associated label 'Remember Session' changes text color to #007bff",
+    "Upon checking, verify the checkbox itself gains a 2px solid #007bff border"
+  ],
+  [
+    "Verify the product list table displays 10 rows and 4 columns",
+    "Verify the table header for 'Product ID' has font weight 700 and text color #555555",
+    "Verify the table's external border is 1px solid #dee2e6, and cells have 12px padding"
+  ],
+  [
+    "Verify the 'Delivery Date' input field has a pre-filled value of '2023-11-15'",
+    "Verify the adjacent calendar icon is visible and has color #6c757d",
+    "Verify the input field's left margin is 10px, and its border radius is 3px"
+  ],
+  [
+    "Verify the 'Shopping Cart' notification badge displays a count of 2 items, has a background color #dc3545, text color #ffffff, border radius of 50%, width 24px, and height 24px"
+  ],
+  [
+    "Verify the sidebar navigation has a width of 260px and a background color #343a40",
+    "Verify the currently active menu item 'Dashboard' has text color #ffffff and a distinct background color #007bff, with 15px left padding"
+  ],
+  [
+    "Verify the 'Product Specifications' accordion header has a 1px solid #e0e0e0 border at its bottom",
+    "Verify when expanded, its content area has a minimum height of 180px, 15px internal padding, and an opacity of 1"
+  ],
+  [
+    "Verify the 'Next Image' button in the gallery has an aria-label 'View next item', background color #f8f9fa, width 40px, and height 40px",
+    "Verify it is disabled when the last image in the sequence is displayed"
+  ],
+  [
+    "Verify the footer element is positioned at the bottom of the viewport, has a height of 110px, background color #333333",
+    "Verify it contains the copyright text '© 2023 GlobalCorp'",
+    "Verify this text has font size 13px, font family 'Verdana', and color #cccccc"
+  ],
+  [
+    "Verify the 'Help Icon' tooltip is hidden by default",
+    "On hover, verify it becomes visible within 250ms, with background color #333333, text color #ffffff, 8px 12px padding, border radius 4px, and its top position is 10px relative to the icon"
+  ],
+  [
+    "Verify the 'Star Rating' component indicates 3 out of 5 stars are selected, with selected star color #ffc107 and unselected star color #e0e0e0",
+    "Verify the component has a margin-bottom of 10px and a total width of 100px, horizontally aligned center"
+  ],
+  [
+    "Verify the 'Submit Order' button is enabled and has background color #4CAF50, text color #FFFFFF, font size 16px, font weight 500, padding 12px 24px, border radius 4px, and its initial width is 150px",
+    "On hover, verify background color transitions to #45a049 over 200ms and border becomes 1px solid #3e8e41",
+    "Click the 'Submit Order' button",
+    "Verify it is disabled, shows text 'Processing...' and its opacity is 0.7"
+  ],
+  [
+    "Verify the 'Email' input field is visible, has a placeholder 'your@example.com', font size 14px, text color #333333, width 250px, height 38px, and border 1px solid #cccccc",
+    "Verify its value is empty initially and text align is 'left'",
+    "When focused, verify its border changes to 2px solid #007bff, border radius is 4px, and its shadow becomes '0 0 0 3px rgba(0, 123, 255, 0.25)'",
+    "Verify on valid input it shows 'test@domain.com' with font family 'Arial'"
+  ],
+  [
+    "Load 'https://example.com/products/main-image.jpg'",
+    "Verify the image source is 'main-image.jpg', alt text is 'Product hero shot', natural dimensions are 1200x800px, and rendered dimensions are 600x400px with 100% opacity",
+    "Verify the image is loaded within 500ms, has border radius 8px, and is positioned at x 100px, y 50px on the viewport",
+    "Verify no watermark is present, and its background color is transparent"
+  ],
+  [
+    "On the navigation bar",
+    "Verify the 'About Us' link is visible, has text color #333333, font size 16px, font family 'Inter', font weight 500, and is positioned at x 300px, y 20px",
+    "On hover, verify text color changes to #007bff and has an underline border bottom 1px solid #007bff",
+    "When active, verify it has a background color #e0f2ff, border radius 4px, and padding 8px 12px"
+  ],
+  [
+    "Verify the site header is visible, positioned at top 0, left 0, right 0, has height 60px, background color #FFFFFF, border bottom 1px solid #e0e0e0, and padding 0 20px",
+    "After scrolling down 200px, verify the header remains at top 0, its background color transitions to #f8f8f8 over 300ms, and its opacity is 1.0",
+    "Verify its z-index is 100"
+  ],
+  [
+    "Play the video",
+    "Verify the video player is visible, its width is 800px, height 450px, background color black, and the 'Mute' button shows as active",
+    "Click the 'Mute' button",
+    "Verify the video becomes muted",
+    "Verify the 'Mute' button becomes inactive with an 'Unmute' aria-label",
+    "Click the 'Fullscreen' button",
+    "Verify the video enters fullscreen mode, its dimensions become viewport width and viewport height, and its opacity is 1.0 with a 200ms transition"
+  ],
+  [
+    "On the 'Products' page",
+    "Verify exactly 12 product cards are displayed, each with width 300px, height 450px, and margin 20px on all sides",
+    "Verify each card has a border 1px solid #f0f0f0, border radius 8px, and an opacity of 1.0",
+    "Verify the product titles are text aligned 'center' with font size 18px and color #222222"
+  ],
+  [
+    "Click 'Open Dialog'",
+    "Verify the modal dialog appears as visible, centered horizontally and vertically, with width 500px, height 300px, background color #FFFFFF, border radius 8px, and a shadow '0 4px 8px rgba(0,0,0,0.2)'",
+    "Verify the overlay behind it has background color #000000 with opacity 0.6",
+    "Verify the 'Close' button has aria-label 'Close dialog' and is positioned at top 10px, right 10px"
+  ],
+  [
+    "Open the long content page",
+    "Verify the 'Back to Top' button is hidden initially",
+    "Scroll down 500px",
+    "Verify the button becomes visible, its bottom position is 20px, right position is 20px, background color #007bff, text color #FFFFFF, border radius 50%, width 50px, and height 50px",
+    "Click the 'Back to Top' button",
+    "Verify the page scrolls to scroll-top 0px within 800ms",
+    "Verify the button becomes hidden again with opacity 0"
+  ],
+  [
+    "On the contact form",
+    "Verify the 'Send Message' button is disabled",
+    "Fill all required fields",
+    "Verify the button becomes enabled, background color #28a745, text color #FFFFFF, font size 16px, and has padding 10px 20px",
+    "Submit the form",
+    "Verify a success message 'Your message has been sent!' appears as visible, text aligned 'center', with font weight 600 and color #008000"
+  ],
+  [
+    "Click the 'Select Country' dropdown",
+    "Verify the dropdown menu opens, shows 5 options (count), has a width of 200px, height 150px, and each option has font size 14px, text color #333333, and padding 8px 12px",
+    "Verify 'United States' is the initial selected value",
+    "Select 'Canada'",
+    "Verify the dropdown's value updates to 'CA', its background color changes to #e9ecef, and its text color changes to #0056b3"
+  ],
+  [
+    "Verify the 'I agree to terms' checkbox is visible and unchecked",
+    "Verify its associated label has text 'I agree to terms and conditions' with font size 14px, color #555555, and is positioned to the right of the checkbox with 8px margin-left",
+    "When checked, verify the checkbox becomes selected, its visual state changes to a checked icon, and its background color changes to #007bff with a border of 1px solid #007bff and border radius 2px",
+    "When disabled, verify its opacity becomes 0.5"
+  ],
+  [
+    "Verify the 'Search' icon is visible, has a font size 24px, color #666666, and aria-label 'Search website'",
+    "Verify its width is 24px and height is 24px",
+    "On hover, verify its color changes to #007bff, and it has a 100ms color transition",
+    "Click the 'Search' icon",
+    "Verify it becomes focused and its background color briefly flashes to #e0f2ff with opacity 0.8"
+  ],
+  [
+    "Submit the form with invalid data",
+    "Verify the error message 'Please fill out all required fields' appears as visible, positioned at x 10px, y 100px, with text color #dc3545, font size 14px, font weight 600, and a padding of 10px",
+    "Verify its background color is #f8d7da, border 1px solid #f5c6cb, and border radius 4px",
+    "Verify its opacity is 1.0"
+  ],
+  [
+    "Start a file upload",
+    "Verify the progress bar is visible, width 0%, background color #007bff, and height 8px",
+    "Verify it has border radius 4px",
+    "As the upload progresses, verify its width increases to 75% within 5 seconds with a linear animation",
+    "Verify the text label '75% complete' is visible, font size 12px, color #333333, centered above the bar, and its margin top is 5px"
+  ],
+  [
+    "Verify the 'Product Card' component is visible, has a width of 300px, height of 200px, padding 16px, margin 10px, and background color #FFFFFF",
+    "Verify it has a border 1px solid #e0e0e0, border radius 12px, and a shadow '0 2px 4px rgba(0,0,0,0.1)'",
+    "Verify its child image has a source 'card_image.jpg' and alt text 'Product thumbnail'"
+  ],
+  [
+    "Verify the tab bar is visible",
+    "Verify the 'Details' tab is initially active, has background color #f8f9fa, text color #007bff, font weight 600, and a border bottom 2px solid #007bff",
+    "Verify the 'Reviews' tab should have text color #6c757d and font weight 400",
+    "Click the 'Reviews' tab",
+    "Verify 'Reviews' becomes active with background color #f8f9fa, text color #007bff, border bottom 2px solid #007bff",
+    "Verify 'Details' becomes inactive with text color #6c757d"
+  ],
+  [
+    "Hover over the 'Help' icon",
+    "Verify a tooltip becomes visible after 300ms, positioned at x 100px, y 200px (below the icon), with text 'Need assistance?'",
+    "Verify its background color is #333333, text color #FFFFFF, font size 12px, padding 8px, and border radius 4px",
+    "Verify it hides after 2 seconds of mouse-leave, with its opacity transitioning from 1.0 to 0 over 200ms"
+  ],
+  [
+    "Verify the pagination component is visible and contains a count of 5 page numbers",
+    "Verify '1' is the active page number, with font size 16px, background color #007bff, text color #FFFFFF, padding 8px 12px, and border radius 4px",
+    "Verify Page '2' has background color #e9ecef and text color #007bff",
+    "Click page '2'",
+    "Verify '2' becomes active with background color #007bff, text color #FFFFFF",
+    "Verify '1' becomes inactive with background color #e9ecef"
+  ],
+  [
+    "Verify the image carousel is visible, has a width of 800px, height of 450px, and displays a count of 3 slides",
+    "Verify its border radius is 10px",
+    "Verify the 'Next' button is enabled, positioned at right 10px, centered vertically, with background color rgba(0,0,0,0.5), and text color #FFFFFF",
+    "Click 'Next'",
+    "Verify the slides transition horizontally over 400ms",
+    "Verify the current slide changes to 'slide2.jpg' (source)"
+  ]
+]
