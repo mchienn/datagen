@@ -3,9 +3,19 @@ from pathlib import Path
 import re
 import pandas as pd
 import requests
-from key import KEY_LIST
+#from key import KEY_LIST
 import random
-
+KEY_LIST = [
+    "AIzaSyDaugTPKmx0PXHvp7I-S59ZUR3zOaZNezY",
+"AIzaSyC-cwfRet9trviKCIOzytQyObQ_XuaOk04",
+"AIzaSyBH7nFY8NsT8s08Zf_Y5sn2YJVlgKAGIig",
+"AIzaSyBlZwRGelxgCrLw-kUaQm-1FiHH_xnri5U",
+"AIzaSyCLv_UqzpWHuMVPYjIgkgVFREpNWIMLGCg",
+"AIzaSyAz3G4--s8GRI_QnkR5-gJ9YLV8b4j6d08",
+"AIzaSyAIlzECvmbyR-y8ZVU0cLBjnhbHhLn6Pzw",
+"AIzaSyCSIXH9laNY79DpG0NF-97TSNnds_hZ7oQ",
+"AIzaSyAUl_TQP_ZRp1jBf6yCkYcSl6-5U1r5dgM",
+    ]
 MODEL = "models/gemini-2.5-flash"
 HEADERS = {"Content-Type": "application/json"}
 

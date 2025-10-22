@@ -1,0 +1,8481 @@
+[
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/products/electronics/laptop",
+      "expected": {
+        "url": "https://www.example.com/products/electronics/laptop"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main product image",
+      "value": "",
+      "expected": {
+        "src": "laptop_hero.webp",
+        "rendered-width": 800,
+        "rendered-height": 600,
+        "alt-text": "Premium Laptop Pro 2024"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product title 'Laptop Pro 2024'",
+      "value": "",
+      "expected": {
+        "text-content": "Laptop Pro 2024",
+        "visibility": "visible",
+        "font-size": "32px",
+        "font-weight": "700",
+        "color": "#2C3E50"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "price text '$1299.00'",
+      "value": "",
+      "expected": {
+        "text-content": "$1299.00",
+        "visibility": "visible",
+        "font-size": "28px",
+        "color": "#E74C3C"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "text-content": "Add to Cart",
+        "visibility": "visible",
+        "background-color": "#28A745",
+        "padding-top": "12px",
+        "padding-right": "24px",
+        "padding-bottom": "12px",
+        "padding-left": "24px",
+        "border-radius": "8px",
+        "cursor": "pointer",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Compare' checkbox",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "checked": false,
+        "label-text-content": "Add to compare list"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product description text",
+      "value": "",
+      "expected": {
+        "line-height": "1.6",
+        "word-spacing": "0.5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product rating",
+      "value": "",
+      "expected": {
+        "rating": 4.5,
+        "text-content": "250 reviews"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "loading spinner",
+      "value": "",
+      "expected": {
+        "loading": "present",
+        "animation-duration": "800ms",
+        "timeout": 2000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "",
+      "value": "",
+      "expected": {
+        "viewport-width-gte": "1024px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/account/login",
+      "expected": {
+        "url": "https://www.example.com/account/login"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "login form",
+      "value": "",
+      "expected": {
+        "max-width": "400px",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Email' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your email",
+        "border": "1px solid #CED4DA",
+        "focused": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Password' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your password",
+        "type": "password"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Forgot Password?' link",
+      "value": "",
+      "expected": {
+        "text-content": "Forgot Password?",
+        "visibility": "visible",
+        "color": "#007BFF",
+        "href": "https://www.example.com/account/forgot-password"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sign In' button",
+      "value": "",
+      "expected": {
+        "text-content": "Sign In",
+        "background-color": "#007BFF",
+        "padding-top": "10px",
+        "padding-right": "20px",
+        "padding-bottom": "10px",
+        "padding-left": "20px",
+        "font-weight": "600"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "checked": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message 'Invalid email or password.'",
+      "value": "",
+      "expected": {
+        "text-content": "Invalid email or password.",
+        "visibility": "visible",
+        "position-relative-to": "login form",
+        "position-alignment": "below",
+        "color": "#DC3545",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "",
+      "value": "",
+      "expected": {
+        "page-title": "Login to Your Account"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "login form",
+      "value": "",
+      "expected": {
+        "box-shadow": "0 4px 8px rgba(0,0,0,0.1)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "input fields",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-color": "#80BDFF"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/dashboard",
+      "expected": {
+        "url": "https://www.example.com/dashboard"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main navigation bar at top",
+      "value": "",
+      "expected": {
+        "position": "fixed",
+        "z-index": "1000",
+        "background-color": "#343A40"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Dashboard' link",
+      "value": "",
+      "expected": {
+        "active": true,
+        "background-color": "#007BFF",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user profile image",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "border-radius": "50%",
+        "width": "40px",
+        "height": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Notifications' icon's badge",
+      "value": "",
+      "expected": {
+        "text-content": "3",
+        "background-color": "#DC3545"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "sidebar menu",
+      "value": "",
+      "expected": {
+        "width": "250px",
+        "overflow-y": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main content area",
+      "value": "",
+      "expected": {
+        "margin-left": "250px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Welcome, John Doe!' greeting text",
+      "value": "",
+      "expected": {
+        "text-content": "Welcome, John Doe!",
+        "font-size": "24px",
+        "font-family": "Roboto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Logout' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "aria-label": "Sign out of your account"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dashboard widgets container",
+      "value": "",
+      "expected": {
+        "display": "grid",
+        "column-gap": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search bar",
+      "value": "",
+      "expected": {
+        "placeholder": "Search for reports or users..."
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/settings/profile",
+      "expected": {
+        "url": "https://www.example.com/settings/profile"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Upload Profile Picture' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Upload Photo",
+        "background-color": "#17A2B8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current profile picture image",
+      "value": "",
+      "expected": {
+        "natural-width": 200,
+        "natural-height": 200,
+        "object-fit": "cover"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "value": "JohnDoe",
+        "enabled": true,
+        "border": "1px solid #CCCCCC"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Email Address' field",
+      "value": "",
+      "expected": {
+        "value": "john.doe@example.com",
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Bio' textarea",
+      "value": "",
+      "expected": {
+        "min-height": "100px",
+        "max-height": "200px",
+        "resize": "vertical"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Changes' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Changes' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#28A745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Cancel' button",
+      "value": "",
+      "expected": {
+        "border-top-width": "1px",
+        "border-right-width": "1px",
+        "border-bottom-width": "1px",
+        "border-left-width": "1px",
+        "border-top-style": "solid",
+        "border-right-style": "solid",
+        "border-bottom-style": "solid",
+        "border-left-style": "solid",
+        "border-top-color": "#6C757D",
+        "border-right-color": "#6C757D",
+        "border-bottom-color": "#6C757D",
+        "border-left-color": "#6C757D"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page title",
+      "value": "",
+      "expected": {
+        "text": "Profile Settings"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "form elements container",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "flex-direction": "column"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Delete Account' button",
+      "value": "",
+      "expected": {
+        "color": "#DC3545",
+        "cursor": "pointer"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/cart",
+      "expected": {
+        "url": "https://www.example.com/cart"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart list items",
+      "value": "",
+      "expected": {
+        "count": 3
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each product name text in cart",
+      "value": "",
+      "expected": {
+        "font-size": "18px",
+        "color": "#343A40"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "quantity input for 'Product A'",
+      "value": "",
+      "expected": {
+        "value": "2",
+        "min": "1",
+        "max": "10"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "unit price for 'Product B'",
+      "value": "",
+      "expected": {
+        "text": "$25.00",
+        "font-weight": "500"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Remove' button for each item",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "icon": "trash",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Subtotal' text",
+      "value": "",
+      "expected": {
+        "font-size": "20px",
+        "color": "#6C757D"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Shipping' cost",
+      "value": "",
+      "expected": {
+        "text": "$5.00"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Total' amount",
+      "value": "",
+      "expected": {
+        "text": "$105.00",
+        "font-size": "24px",
+        "font-weight": "700"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Checkout' button",
+      "value": "",
+      "expected": {
+        "background-color": "#FFC107",
+        "text": "Proceed to Checkout",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px",
+        "margin-bottom": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "promo code input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter promo code"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/blog/latest-article",
+      "expected": {
+        "url": "https://www.example.com/blog/latest-article"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "article title",
+      "value": "",
+      "expected": {
+        "text": "The Future of AI",
+        "font-size": "48px",
+        "font-family": "Merriweather",
+        "letter-spacing": "0.5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "author name 'Jane Doe'",
+      "value": "",
+      "expected": {
+        "text": "Jane Doe",
+        "visibility": "visible",
+        "href": "https://www.example.com/blog/author/jane-doe"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "publication date",
+      "value": "",
+      "expected": {
+        "text-content": "October 26, 2023",
+        "visibility": "visible",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main body text",
+      "value": "",
+      "expected": {
+        "line-height": "1.7",
+        "font-family": "Open Sans",
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "featured image",
+      "value": "",
+      "expected": {
+        "src": "ai_future.jpg",
+        "aspect-ratio": "16 / 9",
+        "width": "100%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "social sharing buttons",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Read Time' estimate",
+      "value": "",
+      "expected": {
+        "text-content": "7 min read",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Comments' section heading",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "8 comments"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Leave a comment' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "article content",
+      "value": "",
+      "expected": {
+        "max-width": "800px",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "related article",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/contact",
+      "expected": {
+        "url": "https://www.example.com/contact"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "contact form",
+      "value": "",
+      "expected": {
+        "background-color": "#f8f9fa",
+        "border-radius": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Your Name' input field",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "border-top-width": "1px",
+        "border-right-width": "1px",
+        "border-bottom-width": "1px",
+        "border-left-width": "1px",
+        "border-top-style": "solid",
+        "border-right-style": "solid",
+        "border-bottom-style": "solid",
+        "border-left-style": "solid",
+        "border-top-color": "#ced4da",
+        "border-right-color": "#ced4da",
+        "border-bottom-color": "#ced4da",
+        "border-left-color": "#ced4da",
+        "height": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Your Email' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "your.email@example.com",
+        "type": "email"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Message' textarea",
+      "value": "",
+      "expected": {
+        "min-height": "150px",
+        "overflow-y": "scroll"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Send Message' button",
+      "value": "",
+      "expected": {
+        "text-content": "Send",
+        "background-color": "#007bff",
+        "border-width": "0px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "reCAPTCHA checkbox",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "label-text": "I'm not a robot"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "contact information section",
+      "value": "",
+      "expected": {
+        "text-content": [
+          "+1 (555) 123-4567",
+          "support@example.com"
+        ]
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "office address",
+      "value": "",
+      "expected": {
+        "text-content": "123 Main St, Anytown, USA",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "contact form",
+      "value": "",
+      "expected": {
+        "box-shadow": "rgba(0, 0, 0, 0.1) 0px 0px 10px 0px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map embed",
+      "value": "",
+      "expected": {
+        "height": "300px",
+        "is-loaded": true,
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Call Us' button",
+      "value": "",
+      "expected": {
+        "cursor": "pointer",
+        "font-weight": "600"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/gallery",
+      "expected": {
+        "url": "https://www.example.com/gallery"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image gallery",
+      "value": "",
+      "expected": {
+        "display": "grid",
+        "grid-template-columns": "repeat(3, 1fr)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image in gallery",
+      "value": "",
+      "expected": {
+        "width": "100%",
+        "object-fit": "cover",
+        "height": "200px"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "an image in gallery",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "lightbox modal",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "rgba(0,0,0,0.8)",
+        "z-index": "9999"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image inside lightbox",
+      "value": "",
+      "expected": {
+        "src": "full_size_image.jpg",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Next' and 'Previous' navigation arrows within lightbox",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Close' button in lightbox",
+      "value": "",
+      "expected": {
+        "top": "0px",
+        "right": "0px",
+        "text-content": "X",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "images in gallery",
+      "value": "",
+      "expected": {
+        "count": 12,
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image captions",
+      "value": "",
+      "expected": {
+        "visibility": "hidden"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image captions",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "visibility": "visible",
+        "background-color": "rgba(0,0,0,0.7)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image gallery grid",
+      "value": "",
+      "expected": {
+        "column-gap": "20px",
+        "row-gap": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Load More' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/dashboard/analytics",
+      "expected": {
+        "url": "https://www.example.com/dashboard/analytics"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main chart canvas",
+      "value": "",
+      "expected": {
+        "width": "100%",
+        "height": "400px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "chart title",
+      "value": "",
+      "expected": {
+        "text-content": "Website Traffic",
+        "visibility": "visible",
+        "font-size": "22px",
+        "font-weight": "600"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "X-axis label 'Date' and Y-axis label 'Visitors'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#6c757d"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "data series in legend",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "hover",
+      "selector": "a data point",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "text-content": "Date: YYYY-MM-DD, Visitors: NNNN"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Download Report' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Download CSV",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "date range selector",
+      "value": "",
+      "expected": {
+        "text-content": "Last 30 Days",
+        "selected": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "chart",
+      "value": "",
+      "expected": {
+        "animation-duration": "1000ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dashboard widgets below the chart",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "column-gap": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Total Views' widget",
+      "value": "",
+      "expected": {
+        "text-content": "1,234,567",
+        "font-size": "36px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "chart container",
+      "value": "",
+      "expected": {
+        "box-shadow": "0 0 10px rgba(0,0,0,0.05)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/careers",
+      "expected": {
+        "url": "https://www.example.com/careers"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page title",
+      "value": "",
+      "expected": {
+        "text-content": "Join Our Team"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main heading",
+      "value": "",
+      "expected": {
+        "text-content": "Current Openings",
+        "font-size": "40px",
+        "text-align": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job listings",
+      "value": "",
+      "expected": {
+        "display": "list",
+        "expandable": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job listings",
+      "value": "",
+      "expected": {
+        "count": 5,
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job card title",
+      "value": "",
+      "expected": {
+        "font-size": "20px",
+        "font-weight": "500"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Apply Now' button on each job card",
+      "value": "",
+      "expected": {
+        "background-color": "#17a2b8",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job location and department below the title",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Search job titles..."
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filter dropdown for 'Department'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "All Departments",
+        "selected": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "footer",
+      "value": "",
+      "expected": {
+        "background-color": "#343a40",
+        "color": "#f8f9fa"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search button",
+      "value": "",
+      "expected": {
+        "aria-label": "Search for jobs"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job cards",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "box-shadow": "0 2px 4px rgba(0,0,0,0.05)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/pricing",
+      "expected": {
+        "url": "https://www.example.com/pricing"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pricing plan cards",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "display": "grid",
+        "grid-template-columns": "repeat(3, 1fr)",
+        "column-gap": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "plan card",
+      "value": "",
+      "expected": {
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#E9ECEF",
+        "border-radius": "12px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Basic' plan title",
+      "value": "",
+      "expected": {
+        "text-content": "Basic",
+        "font-size": "24px",
+        "font-weight": "700"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Pro' plan card",
+      "value": "",
+      "expected": {
+        "border-color": "#007BFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "price '$9.99/month'",
+      "value": "",
+      "expected": {
+        "text-content": "$9.99/month",
+        "font-size": "36px",
+        "color": "#007BFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "plan features",
+      "value": "",
+      "expected": {
+        "count": 5,
+        "font-size": "16px",
+        "icon": "checkmark",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Choose Plan' button for the 'Premium' plan",
+      "value": "",
+      "expected": {
+        "text-content": "Go Premium",
+        "background-color": "#28A745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Choose Plan' button for the 'Premium' plan",
+      "value": "",
+      "expected": {
+        "padding-top": "12px",
+        "padding-right": "24px",
+        "padding-bottom": "12px",
+        "padding-left": "24px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pricing cards container",
+      "value": "",
+      "expected": {
+        "align-items": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Compare Features' link",
+      "value": "",
+      "expected": {
+        "text-content": "Compare Features",
+        "visibility": "visible",
+        "href": "https://www.example.com/pricing/compare"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "plan description text",
+      "value": "",
+      "expected": {
+        "line-height": "1.5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pricing cards",
+      "value": "",
+      "expected": {
+        "margin-bottom": "40px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/support/faq",
+      "expected": {
+        "url": "https://www.example.com/support/faq"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "FAQ page title",
+      "value": "",
+      "expected": {
+        "text-content": "Frequently Asked Questions"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main search bar",
+      "value": "",
+      "expected": {
+        "placeholder": "Search for answers...",
+        "width": "600px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "FAQ categories on left sidebar",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Billing' category",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Billing' category",
+      "value": "",
+      "expected": {
+        "background-color": "#E9ECEF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first FAQ item",
+      "value": "",
+      "expected": {
+        "text-content": "How do I reset my password?",
+        "role": "accordion-header"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "accordion header for 'How do I reset my password?'",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "accordion answer content",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "transition-duration": "300ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "accordion answer content text",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "color": "#555555"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Contact Support' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#FFC107",
+        "font-weight": "600"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Privacy Policy' link in page footer",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Privacy Policy",
+        "href": "https://www.example.com/privacy"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "FAQ search results",
+      "value": "",
+      "expected": {
+        "transition-duration": "500ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "accordion headers",
+      "value": "",
+      "expected": {
+        "cursor": "pointer"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/events/upcoming",
+      "expected": {
+        "url": "https://www.example.com/events/upcoming"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page title",
+      "value": "",
+      "expected": {
+        "text-content": "Upcoming Events"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main heading 'Events Calendar'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Events Calendar",
+        "font-size": "36px",
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "calendar month display",
+      "value": "",
+      "expected": {
+        "text-content": "November 2024",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Previous Month' and 'Next Month' navigation buttons",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "has-icon": "arrow"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current date in calendar",
+      "value": "",
+      "expected": {
+        "background-color": "#ADD8E6"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "event entries on November 20",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "count-gte": 3
+      }
+    },
+    {
+      "action": "click",
+      "selector": "an event entry",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "event modal dialog",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Conference 2024"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "event modal dialog",
+      "value": "",
+      "expected": {
+        "z-index": "1000",
+        "width": "500px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Register Now' button inside event modal",
+      "value": "",
+      "expected": {
+        "background-color": "#28A745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "calendar grid container",
+      "value": "",
+      "expected": {
+        "display": "grid",
+        "grid-template-columns": "repeat(7, 1fr)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "calendar cell",
+      "value": "",
+      "expected": {
+        "padding": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "event modal's 'close' button",
+      "value": "",
+      "expected": {
+        "x": "480px",
+        "y": "10px",
+        "position": "relative"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/downloads",
+      "expected": {
+        "url": "https://www.example.com/downloads"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main section heading",
+      "value": "",
+      "expected": {
+        "text-content": "Your Downloads",
+        "font-size": "30px",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "downloadable files",
+      "value": "",
+      "expected": {
+        "count": 4
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file entry filename",
+      "value": "",
+      "expected": {
+        "font-weight": "500",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file size",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "14px",
+        "color": "#6C757D"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Download' button for each file",
+      "value": "",
+      "expected": {
+        "background-color": "#007BFF",
+        "has-icon": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file status",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Search Downloads' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Search files...",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Upload New File' button",
+      "value": "",
+      "expected": {
+        "background-color": "#6C757D",
+        "padding-top": "8px",
+        "padding-right": "16px",
+        "padding-bottom": "8px",
+        "padding-left": "16px",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "download list items",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "justify-content": "space-between"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "section",
+      "value": "",
+      "expected": {
+        "max-width": "900px",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filename",
+      "value": "",
+      "expected": {
+        "text-overflow": "ellipsis"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "last modified date for each file",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "format": "YYYY-MM-DD"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/community/forum",
+      "expected": {
+        "url": "https://www.example.com/community/forum"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "forum title",
+      "value": "",
+      "expected": {
+        "text-content": "Community Discussions",
+        "font-size": "38px",
+        "font-family": "Georgia",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "forum categories",
+      "value": "",
+      "expected": {
+        "count": 5,
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each category name",
+      "value": "",
+      "expected": {
+        "font-size": "20px",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'New Topic' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#28A745",
+        "text-content": "Create New Topic"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input field for topics",
+      "value": "",
+      "expected": {
+        "placeholder": "Search forum topics...",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "latest topics list",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "topic title",
+      "value": "",
+      "expected": {
+        "font-weight": "600",
+        "font-size": "18px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "topic's author name",
+      "value": "",
+      "expected": {
+        "is-linked": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Last Post' timestamp",
+      "value": "",
+      "expected": {
+        "format": "relative time",
+        "text-content-pattern": "^\\d+ (second|minute|hour|day|week|month|year)s? ago$|^just now$"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "forum container",
+      "value": "",
+      "expected": {
+        "layout-type": "fluid",
+        "child-posts-display": "block"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination controls",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "active-page-text": "Page 1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "forum posts",
+      "value": "",
+      "expected": {
+        "line-height": "1.6"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "forum content",
+      "value": "",
+      "expected": {
+        "min-width": "768px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/video/tutorial",
+      "expected": {
+        "url": "https://www.example.com/video/tutorial"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "video-src": "tutorial.mp4"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "video-muted-state": false,
+        "play-pause-button-visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "play/pause button",
+      "value": "",
+      "expected": {
+        "icon-display": "Pause",
+        "video-playback-state": "playing"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video progress bar",
+      "value": "",
+      "expected": {
+        "progress-value": "75%",
+        "fill-color": "#007BFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video time display",
+      "value": "",
+      "expected": {
+        "current-time-text": "02:30",
+        "total-duration-text": "03:45"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Fullscreen' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video controls",
+      "value": "",
+      "expected": {
+        "visibility-after-inactivity": "hidden",
+        "inactivity-delay": "3000ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video controls",
+      "value": "",
+      "expected": {
+        "hovered-visibility": "visible",
+        "transition-duration": "500ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "width": "100%",
+        "max-height": "720px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Like' button",
+      "value": "",
+      "expected": {
+        "text-content": "1.2K",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video title",
+      "value": "",
+      "expected": {
+        "text-content": "Getting Started with Platform X",
+        "font-size": "28px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video description text",
+      "value": "",
+      "expected": {
+        "word-spacing": "1px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Share' button",
+      "value": "",
+      "expected": {
+        "aria-label": "Share this video"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/ebooks",
+      "expected": {
+        "url": "https://www.example.com/ebooks"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main heading 'Ebook Library'",
+      "value": "",
+      "expected": {
+        "text-content": "Ebook Library",
+        "visibility": "visible",
+        "font-size": "42px",
+        "letter-spacing": "1px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "ebook covers grid",
+      "value": "",
+      "expected": {
+        "count": 6,
+        "grid-template-columns": "repeat(3, 1fr)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "ebook cover image",
+      "value": "",
+      "expected": {
+        "width": "200px",
+        "height": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "ebook title",
+      "value": "The Digital Frontier",
+      "expected": {
+        "font-size": "18px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "author's name",
+      "value": "A. Author",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "14px",
+        "color": "#6C757D"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Download' button below each ebook",
+      "value": "",
+      "expected": {
+        "text-content": "Download PDF",
+        "background-color": "#28A745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filter dropdown for 'Genre'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "selected-value": "All"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input",
+      "value": "",
+      "expected": {
+        "placeholder": "Search ebooks..."
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "ebook covers grid",
+      "value": "",
+      "expected": {
+        "row-gap": "30px",
+        "column-gap": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'View All' link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "href": "https://www.example.com/ebooks/all"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "ebook cover",
+      "value": "",
+      "expected": {
+        "box-shadow": "0 4px 8px rgba(0,0,0,0.1)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/notifications",
+      "expected": {
+        "url": "https://www.example.com/notifications"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page title",
+      "value": "",
+      "expected": {
+        "title": "Notifications"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main heading 'Your Notifications'",
+      "value": "",
+      "expected": {
+        "text-content": "Your Notifications",
+        "visibility": "visible",
+        "font-size": "34px",
+        "font-weight": "600"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notification items",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notification item",
+      "value": "",
+      "expected": {
+        "background-color": "#FFFFFF",
+        "border-bottom": "1px solid #E9ECEF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "unread notification item",
+      "value": "",
+      "expected": {
+        "border-left": "5px solid #007BFF"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notification message",
+      "value": "Your order #1234 has shipped!",
+      "expected": {
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "timestamp",
+      "value": "2 hours ago",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "12px",
+        "color": "#6C757D"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Mark All as Read' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#FFC107",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Clear All' button",
+      "value": "",
+      "expected": {
+        "color": "#DC3545"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notifications",
+      "value": "",
+      "expected": {
+        "transition": "opacity 300ms",
+        "opacity": "0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notification list",
+      "value": "",
+      "expected": {
+        "max-width": "800px",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filter dropdown for 'Type'",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notification items",
+      "value": "",
+      "expected": {
+        "padding-top": "15px",
+        "padding-right": "15px",
+        "padding-bottom": "15px",
+        "padding-left": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "aria-live region for new notifications",
+      "value": "",
+      "expected": {
+        "aria-live": "polite"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/onboarding",
+      "expected": {
+        "url": "https://www.example.com/onboarding"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "onboarding wizard status indicator",
+      "value": "Step 1 of 3",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current step title",
+      "value": "Account Setup",
+      "expected": {
+        "font-size": "28px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Next' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#007BFF",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Back' button",
+      "value": "",
+      "expected": {
+        "enabled": false,
+        "opacity": "0.5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "progress-value": "33%",
+        "background-color": "#28A745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "input field for 'Company Name'",
+      "value": "",
+      "expected": {
+        "placeholder": "Your Company Name",
+        "border": "1px solid #CED4DA"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Industry' dropdown",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "value": "Technology"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "illustration image 'onboarding_step1.svg'",
+      "value": "",
+      "expected": {
+        "src": "onboarding_step1.svg",
+        "rendered-width": 300,
+        "rendered-height": 200
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "step description text",
+      "value": "",
+      "expected": {
+        "line-height": "1.6"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "wizard container",
+      "value": "",
+      "expected": {
+        "max-width": "700px",
+        "margin-left": "auto",
+        "margin-right": "auto",
+        "padding-top": "30px",
+        "padding-right": "30px",
+        "padding-bottom": "30px",
+        "padding-left": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "wizard",
+      "value": "",
+      "expected": {
+        "box-shadow": "0 4px 12px rgba(0,0,0,0.1)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Help' link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "href": "https://www.example.com/help"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/dashboard/settings",
+      "expected": {
+        "url": "https://www.example.com/dashboard/settings"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main content area",
+      "value": "",
+      "expected": {
+        "overflow-y": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Display Preferences' section title",
+      "value": "",
+      "expected": {
+        "font-size": "24px",
+        "border-bottom": "1px solid #E0E0E0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Dark Mode' toggle switch",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "state": "Off"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Dark Mode' toggle switch",
+      "value": "",
+      "expected": {
+        "state": "On",
+        "background-color": "#66bb6a"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Font Size' dropdown",
+      "value": "",
+      "expected": {
+        "selected-option": "Medium",
+        "options": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Notifications' toggle switch",
+      "value": "",
+      "expected": {
+        "state": "On",
+        "color": "#4caf50"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Language' dropdown",
+      "value": "",
+      "expected": {
+        "text-content": "English",
+        "aria-label": "Select display language"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Settings' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Settings' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Reset to Defaults' button",
+      "value": "",
+      "expected": {
+        "color": "#ff0000"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "section",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px",
+        "margin-top": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toggle switches",
+      "value": "",
+      "expected": {
+        "transition": "background-color 200ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "settings form elements container",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "flex-direction": "column"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/product/item_id_001",
+      "expected": {
+        "url": "https://www.example.com/product/item_id_001"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "hero image 'product_main.webp'",
+      "value": "",
+      "expected": {
+        "src": "product_main.webp",
+        "is-loaded": true,
+        "rendered-width": 800,
+        "rendered-height": 600,
+        "alt-text": "Premium Wireless Headphones"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product title 'Echo Buds Max'",
+      "value": "",
+      "expected": {
+        "text-content": "Echo Buds Max",
+        "font-size": "32px",
+        "color": "rgb(0,0,0)",
+        "font-family": "Roboto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#ff9900",
+        "text-content": "Add to Cart",
+        "padding-top": "12px",
+        "padding-right": "24px",
+        "padding-bottom": "12px",
+        "padding-left": "24px",
+        "border-radius": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product price",
+      "value": "",
+      "expected": {
+        "text-content": "$249.99",
+        "font-weight": "700"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product review component",
+      "value": "",
+      "expected": {
+        "text-content": "★★★★ 1,234 reviews",
+        "font-size": "14px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/account/profile/user123",
+      "expected": {
+        "url": "https://www.example.com/account/profile/user123"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "avatar image 'user_avatar.png'",
+      "value": "",
+      "expected": {
+        "src": "user_avatar.png",
+        "is-loaded": true,
+        "natural-width": 100,
+        "natural-height": 100,
+        "border-radius": "50%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "username 'Alice Smith'",
+      "value": "",
+      "expected": {
+        "text-content": "Alice Smith",
+        "font-size": "24px",
+        "color": "#333333",
+        "letter-spacing": "0.5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "email 'alice.s@example.com'",
+      "value": "",
+      "expected": {
+        "text-content": "alice.s@example.com",
+        "visibility": "visible",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Edit Profile' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#007bff",
+        "text-content": "Edit Profile",
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "profile card",
+      "value": "",
+      "expected": {
+        "box-shadow": "0px 4px 8px rgba(0,0,0,0.1)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/checkout",
+      "expected": {
+        "url": "https://www.example.com/checkout"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar 'Step 1 of 3'",
+      "value": "",
+      "expected": {
+        "text-content": "Step 1 of 3",
+        "active": true,
+        "background-color": "#28a745",
+        "width": "33.33%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Shipping Address' section heading",
+      "value": "",
+      "expected": {
+        "text-content": "Shipping Address",
+        "font-size": "20px",
+        "color": "#333",
+        "margin-bottom": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'First Name' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your first name",
+        "border-color": "#cccccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Continue to Payment' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "text-content": "Continue",
+        "background-color": "#007bff",
+        "padding-top": "14px",
+        "padding-right": "28px",
+        "padding-bottom": "14px",
+        "padding-left": "28px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "total price display",
+      "value": "",
+      "expected": {
+        "text-content": "Total: $150.00",
+        "font-weight": "600",
+        "font-size": "22px",
+        "text-align": "right"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/help",
+      "expected": {
+        "url": "https://www.example.com/help"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "FAQ section title",
+      "value": "",
+      "expected": {
+        "text-content": "Frequently Asked Questions",
+        "font-size": "28px",
+        "color": "#1a1a1a"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first FAQ item 'How do I reset my password?'",
+      "value": "",
+      "expected": {
+        "text-content": "How do I reset my password?",
+        "enabled": true,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search bar",
+      "value": "",
+      "expected": {
+        "placeholder": "Search for help topics...",
+        "font-size": "16px",
+        "border-radius": "4px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Contact Support' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#6c757d",
+        "text-content": "Contact Support"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Contact Support' button",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "transition-duration": "0.3s"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page footer",
+      "value": "",
+      "expected": {
+        "position": "sticky",
+        "bottom": "0px",
+        "background-color": "#f8f9fa",
+        "height": "100px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/dashboard",
+      "expected": {
+        "url": "https://www.example.com/dashboard"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' widget title",
+      "value": "",
+      "expected": {
+        "text-content": "Sales Overview",
+        "font-size": "22px",
+        "color": "#343a40"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main sales figure",
+      "value": "",
+      "expected": {
+        "text-content": "4,567",
+        "font-size": "48px",
+        "color": "#007bff",
+        "line-height": "1.2"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'View Details' button within the widget",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "View Details",
+        "background-color": "#17a2b8",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dashboard layout",
+      "value": "",
+      "expected": {
+        "display": "grid",
+        "column-gap": "20px",
+        "row-gap": "20px"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "refresh icon",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "refresh icon",
+      "value": "",
+      "expected": {
+        "animation-name": "rotate",
+        "animation-duration": "1s"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/blog/latest-article",
+      "expected": {
+        "url": "https://www.example.com/blog/latest-article"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "article's main heading",
+      "value": "",
+      "expected": {
+        "text-content": "The Future of AI in Web Development",
+        "font-size": "40px",
+        "font-family": "Merriweather"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "author's name",
+      "value": "",
+      "expected": {
+        "text-content": "Jane Doe",
+        "font-size": "16px",
+        "color": "#666666",
+        "word-spacing": "1px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "publication date",
+      "value": "",
+      "expected": {
+        "text-content": "October 26, 2023",
+        "visibility": "visible",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main content paragraph text",
+      "value": "",
+      "expected": {
+        "font-size": "18px",
+        "line-height": "1.6",
+        "text-align": "justify"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Share on Twitter' button",
+      "value": "",
+      "expected": {
+        "text-content": "Share on Twitter",
+        "enabled": true,
+        "background-image": "url(\"twitter_icon.svg\")",
+        "background-size": "24px 24px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/categories/electronics",
+      "expected": {
+        "url": "https://www.example.com/categories/electronics"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product cards",
+      "value": "",
+      "expected": {
+        "count": 12,
+        "display": "grid"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each product card",
+      "value": "",
+      "expected": {
+        "box-shadow": "0px 2px 4px rgba(0,0,0,0.05)",
+        "border-radius": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product image in each card",
+      "value": "",
+      "expected": {
+        "src": "product_thumb.jpg",
+        "rendered-width": "200px",
+        "rendered-height": "150px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product name",
+      "value": "",
+      "expected": {
+        "text-content": "Smartwatch X1",
+        "font-size": "18px",
+        "color": "#333",
+        "max-width": "90%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Quick View' button",
+      "value": "",
+      "expected": {
+        "text-content": "Quick View",
+        "visibility": "hidden"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Quick View' button on card",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/settings/notifications",
+      "expected": {
+        "url": "https://www.example.com/settings/notifications"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Email Notifications' toggle switch",
+      "value": "",
+      "expected": {
+        "selected": true,
+        "background-color": "#28a745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Receive email updates' label",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "color": "#333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sound Alerts' dropdown",
+      "value": "",
+      "expected": {
+        "text-content": "Default Sound"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Changes' button",
+      "value": "",
+      "expected": {
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Changes' button",
+      "value": "",
+      "expected": {
+        "text-content": "Save Changes",
+        "background-color": "#e0e0e0",
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "settings section",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px",
+        "min-height": "400px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/login",
+      "expected": {
+        "url": "https://www.example.com/login"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main login form",
+      "value": "",
+      "expected": {
+        "width": "360px",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your username"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "border-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Password' input field",
+      "value": "",
+      "expected": {
+        "type": "password",
+        "minlength": "8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Log In' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "text-content": "Log In",
+        "background-color": "#007bff",
+        "padding-top": "10px",
+        "padding-right": "20px",
+        "padding-bottom": "10px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Forgot Password?' link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Forgot Password?' link",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "text-decoration-line": "underline"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/cart",
+      "expected": {
+        "url": "https://www.example.com/cart"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart items",
+      "value": "",
+      "expected": {
+        "count": 3
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Total Items:' label",
+      "value": "",
+      "expected": {
+        "font-size": "18px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Price: $50.00' label",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "color": "#666"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Proceed to Checkout' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "text-content": "Proceed to Checkout",
+        "background-color": "#ff9900",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each item row",
+      "value": "",
+      "expected": {
+        "column-gap": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "item delete button",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "cursor": "pointer",
+        "fill": "red"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/gallery",
+      "expected": {
+        "url": "https://www.example.com/gallery"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "gallery",
+      "value": "",
+      "expected": {
+        "count": 9,
+        "display": "grid",
+        "row-gap": "10px",
+        "column-gap": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image thumbnail 'gallery_thumb.jpg'",
+      "value": "",
+      "expected": {
+        "src": "gallery_thumb.jpg",
+        "width": "200px",
+        "height": "150px"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "an image",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "lightbox overlay",
+      "value": "",
+      "expected": {
+        "background-color": "rgba(0,0,0,0.8)",
+        "z-index": "1000"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main image within the lightbox 'full_image.jpg'",
+      "value": "",
+      "expected": {
+        "src": "full_image.jpg",
+        "margin-left": "auto",
+        "margin-right": "auto",
+        "max-width": "90vw"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "close button",
+      "value": "",
+      "expected": {
+        "text-content": "x",
+        "font-size": "24px",
+        "color": "white",
+        "top": "20px",
+        "right": "20px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/watch/video1",
+      "expected": {
+        "url": "https://www.example.com/watch/video1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player controls",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "timeout": 2000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player controls",
+      "value": "",
+      "expected": {
+        "visibility": "hidden",
+        "timeout": 3000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "play/pause button icon",
+      "value": "",
+      "expected": {
+        "state": "paused",
+        "icon-src": "play_icon.svg"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "play/pause button icon",
+      "value": "",
+      "expected": {
+        "state": "playing",
+        "icon-src": "pause_icon.svg"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "volume slider filled portion",
+      "value": "",
+      "expected": {
+        "stroke": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player",
+      "value": "",
+      "expected": {
+        "muted": true,
+        "duration": "120s"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "fullscreen button",
+      "value": "",
+      "expected": {
+        "icon-src": "fullscreen_enter.svg"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "fullscreen button",
+      "value": "",
+      "expected": {
+        "fullscreen-active": true,
+        "icon-src": "fullscreen_exit.svg"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video content",
+      "value": "",
+      "expected": {
+        "watermark": false
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/about",
+      "expected": {
+        "url": "https://www.example.com/about"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main heading 'Our Story'",
+      "value": "",
+      "expected": {
+        "text": "Our Story",
+        "font-size": "36px",
+        "color": "#111",
+        "font-weight": "700"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "introductory paragraph",
+      "value": "",
+      "expected": {
+        "text-align": "left",
+        "font-size": "17px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "team member cards within team section",
+      "value": "",
+      "expected": {
+        "count": 4
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "team member's photo 'member_photo.jpg'",
+      "value": "",
+      "expected": {
+        "src": "member_photo.jpg",
+        "border-radius": "50%",
+        "filter": "grayscale(0%)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Learn More' button",
+      "value": "",
+      "expected": {
+        "text": "Learn More",
+        "padding-top": "10px",
+        "padding-right": "20px",
+        "padding-bottom": "10px",
+        "padding-left": "20px",
+        "background-color": "#007bff",
+        "border-radius": "4px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page content area",
+      "value": "",
+      "expected": {
+        "max-width": "960px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/contact",
+      "expected": {
+        "url": "https://www.example.com/contact"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Subject' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "How can we help you?",
+        "min-width": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Message' textarea",
+      "value": "",
+      "expected": {
+        "min-height": "150px",
+        "overflow-y": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Send Message' button",
+      "value": "",
+      "expected": {
+        "text": "Send Message",
+        "background-color": "#28a745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Send Message' button",
+      "value": "",
+      "expected": {
+        "enabled": false,
+        "opacity": "0.8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "form's success message",
+      "value": "",
+      "expected": {
+        "text": "Thank you for your message!",
+        "font-size": "18px",
+        "color": "#28a745",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "all form fields",
+      "value": "",
+      "expected": {
+        "margin-bottom": "15px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/terms",
+      "expected": {
+        "url": "https://www.example.com/terms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main title 'Terms of Service'",
+      "value": "",
+      "expected": {
+        "text": "Terms of Service",
+        "font-size": "30px",
+        "color": "#222",
+        "position": "relative",
+        "x": "50px",
+        "y": "50px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each section heading",
+      "value": "",
+      "expected": {
+        "font-size": "22px",
+        "color": "#333",
+        "line-height": "1.4"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "document content",
+      "value": "",
+      "expected": {
+        "font-family": "Arial",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "all external links within the content",
+      "value": "",
+      "expected": {
+        "target": "_blank"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page",
+      "value": "",
+      "expected": {
+        "overflow-x": "hidden"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/dashboard/analytics",
+      "expected": {
+        "url": "https://www.example.com/dashboard/analytics"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "chart element",
+      "value": "",
+      "expected": {
+        "width": "100%",
+        "height": "400px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Daily Visitors' count element",
+      "value": "",
+      "expected": {
+        "text-content": "12,345",
+        "font-size": "28px",
+        "color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "timestamp below the chart",
+      "value": "",
+      "expected": {
+        "text-content": "Last updated: 2023-10-26 14:30:00 UTC",
+        "font-size": "12px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Export Data' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#6c757d",
+        "text-content": "Export CSV",
+        "padding-top": "8px",
+        "padding-right": "16px",
+        "padding-bottom": "8px",
+        "padding-left": "16px"
+      }
+    },
+    {
+      "action": "hover",
+      "selector": "data point",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "rgba(0,0,0,0.7)",
+        "color": "white"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/notifications",
+      "expected": {
+        "url": "https://www.example.com/notifications"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "unread notification items",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "unread notification item",
+      "value": "",
+      "expected": {
+        "background-color": "#e6f7ff",
+        "border-left-width": "4px",
+        "border-left-style": "solid",
+        "border-left-color": "#1890ff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notification title 'New message from Admin'",
+      "value": "",
+      "expected": {
+        "text-content": "New message from Admin",
+        "font-weight": "600",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "timestamp '5 minutes ago'",
+      "value": "",
+      "expected": {
+        "text-content": "5 minutes ago",
+        "font-size": "12px",
+        "color": "#888"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Mark All As Read' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#f0f2f5",
+        "text-content": "Mark All As Read"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Mark All As Read' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Mark All As Read' button",
+      "value": "",
+      "expected": {
+        "enabled": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "notification container",
+      "value": "",
+      "expected": {
+        "overflow-y": "scroll"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/jobs",
+      "expected": {
+        "url": "https://www.example.com/jobs"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job postings",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job card",
+      "value": "",
+      "expected": {
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#e0e0e0",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "job title 'Software Engineer'",
+      "value": "",
+      "expected": {
+        "text-content": "Software Engineer",
+        "font-size": "20px",
+        "color": "#333",
+        "font-family": "Lato"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "location 'New York, NY'",
+      "value": "",
+      "expected": {
+        "font-size": "14px",
+        "color": "#666",
+        "icon": "location_icon.svg",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Apply Now' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#28a745",
+        "text-content": "Apply Now",
+        "padding-top": "10px",
+        "padding-right": "20px",
+        "padding-bottom": "10px",
+        "padding-left": "20px",
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filtering options on the left sidebar",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "250px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/documentation/api",
+      "expected": {
+        "url": "https://www.example.com/documentation/api"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main documentation navigation",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "250px",
+        "background-color": "#f9f9f9",
+        "float": "left"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "active navigation item 'Authentication'",
+      "value": "",
+      "expected": {
+        "text-content": "Authentication",
+        "background-color": "#e6f7ff",
+        "color": "#1890ff",
+        "active": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "code block displaying 'POST /api/v1/users'",
+      "value": "",
+      "expected": {
+        "text-content": "POST /api/v1/users",
+        "font-family": "Monaco",
+        "background-color": "#f0f0f0",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "response body example",
+      "value": "",
+      "expected": {
+        "text-content-format": "JSON",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Copy Code' button next to the code block",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "text-content": "Copy",
+        "icon": "copy_icon.svg"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main content area",
+      "value": "",
+      "expected": {
+        "padding-top": "24px",
+        "padding-right": "24px",
+        "padding-bottom": "24px",
+        "padding-left": "24px",
+        "line-height": "1.5",
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com/pricing",
+      "expected": {
+        "url": "https://www.example.com/pricing"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pricing plan cards",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "display": "flex",
+        "flex-direction": "row",
+        "row-gap": "0px",
+        "column-gap": "30px",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Pro Plan' card",
+      "value": "",
+      "expected": {
+        "border-width": "2px",
+        "border-style": "solid",
+        "border-color": "#007bff",
+        "background-color": "#eaf6ff",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "price '$29/month'",
+      "value": "",
+      "expected": {
+        "text-content": "$29/month",
+        "font-size": "48px",
+        "color": "#007bff",
+        "font-weight": "700",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sign Up' button for the 'Pro Plan'",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "text-content": "Sign Up",
+        "background-color": "#007bff",
+        "padding-top": "14px",
+        "padding-right": "30px",
+        "padding-bottom": "14px",
+        "padding-left": "30px",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "feature list items",
+      "value": "",
+      "expected": {
+        "icon": "checkmark.svg",
+        "icon-width": "16px",
+        "icon-height": "16px",
+        "word-spacing": "2px",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "card title",
+      "value": "",
+      "expected": {
+        "font-size": "24px",
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.ecomsite.com/product/details/SKU789",
+      "expected": {
+        "url": "https://www.ecomsite.com/product/details/SKU789"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "background-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "text-content": "Add to Cart",
+        "font-size": "16px",
+        "font-weight": "700",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "border-radius": "8px",
+        "padding-top": "12px",
+        "padding-right": "24px",
+        "padding-bottom": "12px",
+        "padding-left": "24px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "width": "200px",
+        "height": "48px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "aria-label": "Add product to shopping cart"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "min-width": "180px",
+        "max-width": "250px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "display": "inline-block",
+        "text-align": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "transition": "background-color 0.3s ease-in-out"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "top": "600px",
+        "left": "500px",
+        "viewport-width": "1280px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.myservice.com",
+      "expected": {
+        "url": "https://www.myservice.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "primary navigation bar",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "fixed",
+        "top": "0px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "primary navigation bar",
+      "value": "",
+      "expected": {
+        "background-color": "#ffffff",
+        "height": "64px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Services' link",
+      "value": "",
+      "expected": {
+        "color": "#333333",
+        "font-size": "16px",
+        "font-family": "Arial, sans-serif"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "padding-top": "0px",
+        "padding-right": "15px",
+        "padding-bottom": "0px",
+        "padding-left": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "navigation links",
+      "value": "",
+      "expected": {
+        "letter-spacing": "0.5px",
+        "word-spacing": "1px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "menu items container",
+      "value": "",
+      "expected": {
+        "column-gap": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "company logo image",
+      "value": "",
+      "expected": {
+        "src": "logo.svg",
+        "natural-width": 150,
+        "natural-height": 40
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "navigation bar",
+      "value": "",
+      "expected": {
+        "z-index": "100"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "primary navigation bar",
+      "value": "",
+      "expected": {
+        "border-bottom-width": "1px",
+        "border-bottom-style": "solid",
+        "border-bottom-color": "#eeeeee"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "company logo image",
+      "value": "",
+      "expected": {
+        "max-height": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main nav container",
+      "value": "",
+      "expected": {
+        "overflow-x": "hidden"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "body",
+      "value": "",
+      "expected": {
+        "opacity": "1"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://secure.app.com/login",
+      "expected": {
+        "url": "https://secure.app.com/login"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your username"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "border-top-width": "1px",
+        "border-top-style": "solid",
+        "border-top-color": "#cccccc",
+        "border-right-width": "1px",
+        "border-right-style": "solid",
+        "border-right-color": "#cccccc",
+        "border-bottom-width": "1px",
+        "border-bottom-style": "solid",
+        "border-bottom-color": "#cccccc",
+        "border-left-width": "1px",
+        "border-left-style": "solid",
+        "border-left-color": "#cccccc",
+        "border-radius": "4px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "height": "40px",
+        "width": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "font-size": "14px",
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "padding-left": "10px",
+        "margin-bottom": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "box-shadow": "inset 0 1px 3px rgba(0, 0, 0, 0.1)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Password' input",
+      "value": "",
+      "expected": {
+        "aria-label": "Password field"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "input",
+      "value": "",
+      "expected": {
+        "line-height": "normal"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "width": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "input fields",
+      "value": "",
+      "expected": {
+        "background-color": "#f8f8f8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "input",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "cursor": "text"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://admin.portal.com/data/users",
+      "expected": {
+        "url": "https://admin.portal.com/data/users"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination container",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "at the bottom of the table"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page number buttons",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Next' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current page button",
+      "value": "",
+      "expected": {
+        "text-content": "1",
+        "background-color": "#0056b3",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page button",
+      "value": "",
+      "expected": {
+        "width": "32px",
+        "height": "32px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page buttons",
+      "value": "",
+      "expected": {
+        "border-radius": "4px",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page buttons",
+      "value": "",
+      "expected": {
+        "margin-right": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination container",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "justify-content": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page button text",
+      "value": "",
+      "expected": {
+        "line-height": "32px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination container",
+      "value": "",
+      "expected": {
+        "height": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page buttons",
+      "value": "",
+      "expected": {
+        "transition": "background-color 0.2s ease"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "an image",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "modal overlay",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "rgba(0, 0, 0, 0.8)",
+        "z-index": "1000"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main image inside the modal",
+      "value": "",
+      "expected": {
+        "src": "large_image_01.jpg",
+        "rendered-width": 800,
+        "rendered-height": 600
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Close' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "24px",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Next' and 'Previous' navigation arrows",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "top": "50%",
+        "transform": "translateY(-50%)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Next' arrow",
+      "value": "",
+      "expected": {
+        "aria-label": "Next image"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "overlay",
+      "value": "",
+      "expected": {
+        "opacity": "0.8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image inside the modal",
+      "value": "",
+      "expected": {
+        "max-width": "90vw",
+        "max-height": "90vh"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "navigation arrows",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal",
+      "value": "",
+      "expected": {
+        "animation": "fade-in 0.3s ease-out"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "body",
+      "value": "",
+      "expected": {
+        "overflow": "hidden"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://media.stream.com/video/ID456",
+      "expected": {
+        "url": "https://media.stream.com/video/ID456"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "play button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "fill": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "background-color": "#cccccc",
+        "height": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current time display",
+      "value": "",
+      "expected": {
+        "text-content": "00:00",
+        "font-size": "12px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "volume slider",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "min-height": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video element",
+      "value": "",
+      "expected": {
+        "muted": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "fullscreen button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "aria-label": "Toggle fullscreen mode"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "controls",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "align-items": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "controls",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "controls",
+      "value": "",
+      "expected": {
+        "hovered": false,
+        "opacity": "0.8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "play button",
+      "value": "",
+      "expected": {
+        "width": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "controls",
+      "value": "",
+      "expected": {
+        "transition-property": "opacity",
+        "transition-duration": "0.5s",
+        "transition-timing-function": "ease-out"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video element",
+      "value": "",
+      "expected": {
+        "poster": "video_poster.jpg"
+      }
+    }
+  ],
+  [
+    {
+      "action": "perform",
+      "selector": "action that triggers a success message",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "top": "20px",
+        "right": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "background-color": "#28a745",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "text-content": "Item added successfully.",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "padding-top": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "10px",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "box-shadow": "0px 4px 8px rgba(0, 0, 0, 0.2)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "opacity": "1",
+        "visibility": "visible",
+        "timeout": 3000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "z-index": "999"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "max-width": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "message text",
+      "value": "",
+      "expected": {
+        "line-height": "1.4"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "entry element",
+      "value": "",
+      "expected": {
+        "animation": "slide-in 0.3s ease-out"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "element",
+      "value": "",
+      "expected": {
+        "cursor": "default"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://shop.cart.com/checkout",
+      "expected": {
+        "url": "https://shop.cart.com/checkout"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cart summary section",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Subtotal' label",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "font-weight": "400"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "subtotal value",
+      "value": "",
+      "expected": {
+        "text": "$50.00",
+        "color": "#000000"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "summary items container",
+      "value": "",
+      "expected": {
+        "row-gap": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Shipping' line item value",
+      "value": "",
+      "expected": {
+        "text": "Calculated at checkout"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Total' amount",
+      "value": "",
+      "expected": {
+        "text": "$55.00",
+        "font-size": "20px",
+        "font-weight": "700"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "element above the 'Total' amount",
+      "value": "",
+      "expected": {
+        "border-top": "1px solid #e0e0e0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "summary box",
+      "value": "",
+      "expected": {
+        "background-color": "#f9f9f9"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "summary box",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "values within the summary",
+      "value": "",
+      "expected": {
+        "text-align": "right"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "element with grid layout",
+      "value": "",
+      "expected": {
+        "display": "grid",
+        "grid-template-columns": "1fr auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "summary box",
+      "value": "",
+      "expected": {
+        "margin-bottom": "20px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://docs.cloud.com/upload",
+      "expected": {
+        "url": "https://docs.cloud.com/upload"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Drag and drop files here' area",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "border": "2px dashed #cccccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Drag and drop files here' area",
+      "value": "",
+      "expected": {
+        "min-height": "150px",
+        "background-color": "#f0f0f0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Browse files' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Browse files' button",
+      "value": "",
+      "expected": {
+        "background-color": "#007bff",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "drop area",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file count display",
+      "value": "",
+      "expected": {
+        "text-content": "0 files selected"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "drag area text",
+      "value": "",
+      "expected": {
+        "text-align": "center",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "instruction text",
+      "value": "",
+      "expected": {
+        "line-height": "1.5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "drop area",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "entire widget",
+      "value": "",
+      "expected": {
+        "width": "400px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "element that handles file drag-over",
+      "value": "",
+      "expected": {
+        "transition-property": "border-color",
+        "transition-duration": "0.2s",
+        "transition-timing-function": "ease-in-out"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://user.profile.com/me",
+      "expected": {
+        "url": "https://user.profile.com/me"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "border-radius": "50%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "src": "profile_pic.jpg",
+        "alt-text": "User profile picture"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "width": "80px",
+        "height": "80px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "border-width": "2px",
+        "border-style": "solid",
+        "border-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "object-fit": "cover"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "margin-right": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "display": "inline-block"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "load-time": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "active": true,
+        "box-shadow": "rgb(224, 242, 255) 0px 0px 0px 3px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "width": "80px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's avatar image",
+      "value": "",
+      "expected": {
+        "cursor": "pointer"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://landing.page.com",
+      "expected": {
+        "url": "https://landing.page.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "hero section",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "100%",
+        "height": "500px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "hero section",
+      "value": "",
+      "expected": {
+        "background-image": "url(hero_background.jpg)",
+        "background-size": "cover"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main headline",
+      "value": "",
+      "expected": {
+        "text-content": "Your Journey Starts Here",
+        "font-size": "48px",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "headline and sub-headline",
+      "value": "",
+      "expected": {
+        "text-align": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Explore Now' CTA button",
+      "value": "",
+      "expected": {
+        "text-content": "Explore Now",
+        "visibility": "visible",
+        "background-color": "#ff6f61"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "CTA button",
+      "value": "",
+      "expected": {
+        "padding-top": "15px",
+        "padding-right": "30px",
+        "padding-bottom": "15px",
+        "padding-left": "30px",
+        "border-radius": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "CTA button text",
+      "value": "",
+      "expected": {
+        "letter-spacing": "1px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "headline",
+      "value": "",
+      "expected": {
+        "line-height": "1.1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "hero section",
+      "value": "",
+      "expected": {
+        "opacity": "1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "hero section",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "flex-direction": "column",
+        "justify-content": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "CTA button",
+      "value": "",
+      "expected": {
+        "z-index": "2"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://help.support.com/faq",
+      "expected": {
+        "url": "https://help.support.com/faq"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "header of accordion item 'How do I reset my password?'",
+      "value": "",
+      "expected": {
+        "text-content": "How do I reset my password?",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "header of the accordion item",
+      "value": "",
+      "expected": {
+        "background-color": "#f8f8f8",
+        "padding-top": "15px",
+        "padding-right": "15px",
+        "padding-bottom": "15px",
+        "padding-left": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "expand/collapse icon",
+      "value": "",
+      "expected": {
+        "text-content": "+",
+        "color": "#666666"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "accordion item header",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content area for accordion item 'What payment methods do you accept?'",
+      "value": "",
+      "expected": {
+        "visibility": "hidden",
+        "max-height": "0",
+        "overflow-y": "hidden"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each accordion item header",
+      "value": "",
+      "expected": {
+        "border-bottom": "1px solid #e0e0e0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "accordion item question text",
+      "value": "",
+      "expected": {
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "expanding element",
+      "value": "",
+      "expected": {
+        "transition": "max-height 0.3s ease-out"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "answer text",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "line-height": "1.5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "accordion component",
+      "value": "",
+      "expected": {
+        "min-width": "320px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "expanded item header",
+      "value": "",
+      "expected": {
+        "aria-label": "Collapse section"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.globalnews.com",
+      "expected": {
+        "url": "https://www.globalnews.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "placeholder": "Search..."
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "width": "250px",
+        "height": "36px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input field",
+      "value": "",
+      "expected": {
+        "border": "1px solid #aaaaaa",
+        "border-radius": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search icon (SVG)",
+      "value": "",
+      "expected": {
+        "fill": "#666666"
+      }
+    },
+    {
+      "action": "type",
+      "selector": "search input field",
+      "value": "economy",
+      "expected": {}
+    },
+    {
+      "action": "press key",
+      "selector": "",
+      "value": "Enter",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "search results",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search result title",
+      "value": "",
+      "expected": {
+        "font-size": "18px",
+        "color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each search result item",
+      "value": "",
+      "expected": {
+        "margin-bottom": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "input placeholder",
+      "value": "",
+      "expected": {
+        "text-align": "left"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search input",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "box-shadow": "0 0 0 2px rgba(0,123,255,0.25)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "results container",
+      "value": "",
+      "expected": {
+        "overflow-x": "hidden"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search bar elements",
+      "value": "",
+      "expected": {
+        "display": "flex"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://privacy.website.org",
+      "expected": {
+        "url": "https://privacy.website.org"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cookie consent banner",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "fixed",
+        "bottom": "0px",
+        "height": "80px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cookie consent banner",
+      "value": "",
+      "expected": {
+        "background-color": "#333333",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Accept' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "enabled": true,
+        "background-color": "#28a745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Decline' button",
+      "value": "",
+      "expected": {
+        "border": "1px solid #ffffff",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "consent text",
+      "value": "",
+      "expected": {
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cookie consent banner",
+      "value": "",
+      "expected": {
+        "padding-top": "15px",
+        "padding-right": "20px",
+        "padding-bottom": "15px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cookie consent banner",
+      "value": "",
+      "expected": {
+        "z-index": "900"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "consent message",
+      "value": "",
+      "expected": {
+        "line-height": "1.4"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cookie consent banner",
+      "value": "",
+      "expected": {
+        "opacity": "1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "cookie consent banner",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "justify-content": "space-between",
+        "align-items": "center"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Accept' button",
+      "value": "",
+      "expected": {
+        "transition": "background-color 0.2s ease-in"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://user.dashboard.com",
+      "expected": {
+        "url": "https://user.dashboard.com"
+      }
+    },
+    {
+      "action": "hover",
+      "selector": "'Account' link",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu below the 'Account' link",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "background-color": "#ffffff",
+        "border": "1px solid #e0e0e0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "box-shadow": "0 8px 16px rgba(0, 0, 0, 0.2)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu items",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "text-content": [
+          "Profile",
+          "Settings",
+          "Logout"
+        ]
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu item",
+      "value": "",
+      "expected": {
+        "padding-top": "10px",
+        "padding-right": "15px",
+        "padding-bottom": "10px",
+        "padding-left": "15px",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu item",
+      "value": "",
+      "expected": {
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu item",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "width": "180px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "menu items",
+      "value": "",
+      "expected": {
+        "display": "block"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "opacity": "1",
+        "transition": "opacity 0.2s"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "z-index": "50"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "menu items",
+      "value": "",
+      "expected": {
+        "cursor": "pointer"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://signup.form.com",
+      "expected": {
+        "url": "https://signup.form.com"
+      }
+    },
+    {
+      "action": "submit",
+      "selector": "form",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Email' input field",
+      "value": "",
+      "expected": {
+        "border-color": "#dc3545"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message below 'Email' input field",
+      "value": "",
+      "expected": {
+        "text-content": "Please enter a valid email address.",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message",
+      "value": "",
+      "expected": {
+        "color": "#dc3545",
+        "font-size": "12px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message",
+      "value": "",
+      "expected": {
+        "margin-top": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Email' input field",
+      "value": "",
+      "expected": {
+        "aria-invalid": "true"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Submit' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message",
+      "value": "",
+      "expected": {
+        "line-height": "1.2"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message",
+      "value": "",
+      "expected": {
+        "opacity": "1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message",
+      "value": "",
+      "expected": {
+        "display": "block"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message",
+      "value": "",
+      "expected": {
+        "height": "18px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "error message",
+      "value": "",
+      "expected": {
+        "animation": "shake 0.2s ease-in-out"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://product.settings.com",
+      "expected": {
+        "url": "https://product.settings.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'General' tab",
+      "value": "",
+      "expected": {
+        "active": true,
+        "background-color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'General' tab",
+      "value": "",
+      "expected": {
+        "border-bottom": "2px solid #007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Security' tab",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "active": false,
+        "background-color": "#f0f0f0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "inactive tab title",
+      "value": "",
+      "expected": {
+        "color": "#666666",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tab headers",
+      "value": "",
+      "expected": {
+        "padding-top": "12px",
+        "padding-right": "20px",
+        "padding-bottom": "12px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "inactive tabs",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content area for the 'General' tab",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "min-height": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tab headers",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "column-gap": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tab titles",
+      "value": "",
+      "expected": {
+        "line-height": "1.2"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'General' tab",
+      "value": "",
+      "expected": {
+        "width": "100px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tab",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "transition": "background-color 0.2s ease, color 0.2s ease"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://contact.us.com",
+      "expected": {
+        "url": "https://contact.us.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map widget",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "600px",
+        "height": "400px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map widget",
+      "value": "",
+      "expected": {
+        "border": "1px solid #cccccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map",
+      "value": "",
+      "expected": {
+        "location": "34.0522,-118.2437",
+        "zoom-level": 15
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pin icon on the map",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "centered"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "copyright notice",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "10px",
+        "bottom": "0",
+        "left": "0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map container",
+      "value": "",
+      "expected": {
+        "overflow": "hidden"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map controls",
+      "value": "",
+      "expected": {
+        "z-index": "5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map",
+      "value": "",
+      "expected": {
+        "loading": "present",
+        "background-color": "#e0e0e0"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map",
+      "value": "",
+      "expected": {
+        "min-width": "300px",
+        "max-width": "800px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "loaded map",
+      "value": "",
+      "expected": {
+        "loading": "none",
+        "opacity": "1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map",
+      "value": "",
+      "expected": {
+        "cursor": "grab"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://analytics.dashboard.com",
+      "expected": {
+        "url": "https://analytics.dashboard.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' dashboard card",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' dashboard card",
+      "value": "",
+      "expected": {
+        "width": "350px",
+        "min-height": "200px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' dashboard card",
+      "value": "",
+      "expected": {
+        "border-radius": "8px",
+        "box-shadow": "0 4px 10px rgba(0,0,0,0.1)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' card title",
+      "value": "",
+      "expected": {
+        "font-size": "18px",
+        "font-weight": "600"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' dashboard card",
+      "value": "",
+      "expected": {
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'View Report' link",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": ".dashboard-card",
+      "value": "",
+      "expected": {
+        "margin-bottom": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": ".dashboard-card",
+      "value": "",
+      "expected": {
+        "display": "block"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' card title",
+      "value": "",
+      "expected": {
+        "line-height": "1.2"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' dashboard card",
+      "value": "",
+      "expected": {
+        "height": "250px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Sales Overview' dashboard card",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "transition": "box-shadow 0.3s ease"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://long.content.com",
+      "expected": {
+        "url": "https://long.content.com"
+      }
+    },
+    {
+      "action": "scroll",
+      "selector": "page",
+      "value": "",
+      "expected": {
+        "scroll-top-gte": "300px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "position": "fixed",
+        "bottom": "30px",
+        "right": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "background-color": "#007bff",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "width": "48px",
+        "height": "48px",
+        "border-radius": "50%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button up-arrow icon (SVG)",
+      "value": "",
+      "expected": {
+        "fill": "#ffffff",
+        "text-align": "center",
+        "vertical-align": "middle"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "transition-property": "opacity",
+        "transition-duration": "0.3s",
+        "opacity": "1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "z-index": "99"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "box-shadow": "0px 2px 5px rgba(0, 0, 0, 0.2)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "width": "48px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Scroll to Top' button",
+      "value": "",
+      "expected": {
+        "aria-label": "Scroll to top of page"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.shopdemo.com/product/123",
+      "expected": {
+        "url": "https://www.shopdemo.com/product/123"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product image",
+      "value": "",
+      "expected": {
+        "src": "hero_image.jpg",
+        "rendered-width": 400,
+        "rendered-height": 300
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "product image",
+      "value": "",
+      "expected": {
+        "alt-text": "Genuine Shoes"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "thumbnails below product image",
+      "value": "",
+      "expected": {
+        "count": 6,
+        "text-align": "center",
+        "width": "120px",
+        "height": "80px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main heading",
+      "value": "",
+      "expected": {
+        "text-content": "Product Title",
+        "font-size": "24px",
+        "color": "#000000"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Buy now' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "border-radius": "6px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Buy now' button",
+      "value": "",
+      "expected": {
+        "active": true,
+        "background-color": "#0056b3"
+      }
+    },
+    {
+      "action": "scroll",
+      "selector": "window",
+      "value": "500px",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "header",
+      "value": "",
+      "expected": {
+        "z-index": "100",
+        "position": "sticky"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "language label",
+      "value": "",
+      "expected": {
+        "aria-label": "Select Language"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.blogsite.com/articles",
+      "expected": {
+        "url": "https://www.blogsite.com/articles"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main navigation bar",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "background-color": "#f8f9fa",
+        "height": "60px",
+        "position": "fixed",
+        "top": "0px",
+        "width": "100%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Home' link",
+      "value": "",
+      "expected": {
+        "font-size": "16px",
+        "color": "#007bff",
+        "padding-top": "15px",
+        "padding-right": "20px",
+        "padding-bottom": "15px",
+        "padding-left": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About' link",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#e9ecef",
+        "transition-duration": "150ms",
+        "transition-property": "background-color"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Contact' link",
+      "value": "",
+      "expected": {
+        "active": true,
+        "border-bottom": "2px solid #007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "logo image 'logo.png'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "max-height": "40px",
+        "width": "150px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "search icon",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "cursor": "pointer"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.dashboard.com/settings",
+      "expected": {
+        "url": "https://www.dashboard.com/settings"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "Enter your username",
+        "border": "1px solid #ced4da",
+        "padding-top": "10px",
+        "padding-right": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "10px",
+        "font-family": "Arial"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Username' input field",
+      "value": "",
+      "expected": {
+        "focused": true,
+        "box-shadow": "0 0 0 0.25rem rgba(0, 123, 255, 0.25)",
+        "border-color": "#80bdff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Changes' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "border-radius": "4px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Save Changes' button",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "opacity": "0.8"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Cancel' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "transparent",
+        "color": "#6c757d",
+        "border": "1px solid #6c757d"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "form section",
+      "value": "",
+      "expected": {
+        "max-width": "600px",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "form title 'Profile Settings'",
+      "value": "",
+      "expected": {
+        "font-weight": "600"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Open Modal' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "modal dialog",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "z-index": "1050"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal background overlay",
+      "value": "",
+      "expected": {
+        "background-color": "rgba(0, 0, 0, 0.5)",
+        "width": "100vw",
+        "height": "100vh"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal content block",
+      "value": "",
+      "expected": {
+        "max-width": "500px",
+        "background-color": "#ffffff",
+        "border-radius": "8px",
+        "box-shadow": "0 5px 15px rgba(0, 0, 0, 0.5)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Close' button at top right",
+      "value": "",
+      "expected": {
+        "text-content": "X",
+        "color": "#6c757d",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal title 'Important Notice'",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "font-size": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal body text",
+      "value": "",
+      "expected": {
+        "line-height": "1.5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal",
+      "value": "",
+      "expected": {
+        "offset-parent": "document body"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.datareport.com/transactions",
+      "expected": {
+        "url": "https://www.datareport.com/transactions"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "transaction table header row",
+      "value": "",
+      "expected": {
+        "background-color": "#e9ecef",
+        "font-weight": "600",
+        "padding-top": "12px",
+        "padding-right": "12px",
+        "padding-bottom": "12px",
+        "padding-left": "12px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "table rows of data",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Amount' column cells",
+      "value": "",
+      "expected": {
+        "text-align": "right",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "table cells",
+      "value": "",
+      "expected": {
+        "border": "1px solid #dee2e6"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "table",
+      "value": "",
+      "expected": {
+        "width": "100%",
+        "overflow-x": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "table row",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "background-color": "#f5f5f5",
+        "transition-duration": "100ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Date' column cells",
+      "value": "",
+      "expected": {
+        "date-format": "YYYY-MM-DD",
+        "first-entry-timestamp": "1678886400"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.ecomsite.com/checkout",
+      "expected": {
+        "url": "https://www.ecomsite.com/checkout"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "order summary box",
+      "value": "",
+      "expected": {
+        "background-color": "#f8f9fa",
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px",
+        "border": "1px solid #e2e6ea"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Subtotal' text",
+      "value": "",
+      "expected": {
+        "font-size": "18px",
+        "color": "#343a40"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Shipping' cost",
+      "value": "",
+      "expected": {
+        "text-content": "5.00"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Total' amount",
+      "value": "",
+      "expected": {
+        "calculated-correctly": true,
+        "font-weight": "700",
+        "font-size": "22px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Proceed to Payment' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "background-color": "#007bff"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Proceed to Payment' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "",
+      "value": "",
+      "expected": {
+        "url": "https://www.ecomsite.com/payment"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Proceed to Payment' button",
+      "value": "",
+      "expected": {
+        "min-width": "200px",
+        "text-transform": "uppercase"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "total amount element",
+      "value": "",
+      "expected": {
+        "aria-label": "Total order amount"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.settings.com/preferences",
+      "expected": {
+        "url": "https://www.settings.com/preferences"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Language' dropdown button",
+      "value": "",
+      "expected": {
+        "text-content": "English"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "active": true,
+        "visibility": "visible",
+        "z-index": "100",
+        "background-color": "#ffffff",
+        "border": "1px solid #ced4da",
+        "box-shadow": "0px 2px 4px rgba(0, 0, 0, 0.1)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu items",
+      "value": "",
+      "expected": {
+        "padding-top": "10px",
+        "padding-right": "15px",
+        "padding-bottom": "10px",
+        "padding-left": "15px",
+        "font-size": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "language options in dropdown",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "text-content": [
+          "English",
+          "Spanish",
+          "French"
+        ]
+      }
+    },
+    {
+      "action": "select",
+      "selector": "dropdown menu",
+      "value": "Spanish",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "language toggle button",
+      "value": "",
+      "expected": {
+        "text-content": "Spanish",
+        "data-language-code": "es"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "dropdown menu",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "height": "120px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toggle button icon",
+      "value": "",
+      "expected": {
+        "icon": "chevron-down",
+        "visibility": "visible",
+        "transform": "rotate(180deg)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.photos.com/gallery",
+      "expected": {
+        "url": "https://www.photos.com/gallery"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image carousel container",
+      "value": "",
+      "expected": {
+        "width": "800px",
+        "height": "500px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current image in carousel",
+      "value": "",
+      "expected": {
+        "src": "landscape_01.jpg",
+        "is-loaded": true,
+        "display": "block",
+        "margin-left": "auto",
+        "margin-right": "auto"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "carousel navigation arrows",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#ffffff",
+        "font-size": "30px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "carousel navigation arrows",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "opacity": "0.7"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "carousel pagination dots",
+      "value": "",
+      "expected": {
+        "count": 5,
+        "position": "below carousel",
+        "width": "10px",
+        "height": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "active pagination dot",
+      "value": "",
+      "expected": {
+        "background-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "inactive pagination dots",
+      "value": "",
+      "expected": {
+        "background-color": "#cccccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image in carousel",
+      "value": "",
+      "expected": {
+        "load-time": 500
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "next image in carousel",
+      "value": "",
+      "expected": {
+        "loading": "preloaded"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image carousel",
+      "value": "",
+      "expected": {
+        "transition-duration": "300ms"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.mediaplayer.com/video",
+      "expected": {
+        "url": "https://www.mediaplayer.com/video"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video player controls",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "visibility": "visible",
+        "background-color": "rgba(0, 0, 0, 0.6)",
+        "opacity": "1"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Play' button",
+      "value": "",
+      "expected": {
+        "icon": "play",
+        "width": "40px",
+        "height": "40px",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Play' button",
+      "value": "",
+      "expected": {
+        "icon": "pause"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "height": "8px",
+        "filled-portion-background-color": "#ff0000",
+        "progress-value": "75%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "volume slider",
+      "value": "",
+      "expected": {
+        "progress-value": "50%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video element",
+      "value": "",
+      "expected": {
+        "muted": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Fullscreen' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video element",
+      "value": "",
+      "expected": {
+        "natural-width": 1280,
+        "natural-height": 720
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'mute' button",
+      "value": "",
+      "expected": {
+        "aria-label": "Mute Audio"
+      }
+    }
+  ],
+  [
+    {
+      "action": "hover",
+      "selector": "'Help' icon",
+      "value": "",
+      "expected": {
+        "x": "50px",
+        "y": "50px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "timeout": 200
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "background-color": "#333333",
+        "color": "#ffffff",
+        "border-radius": "4px",
+        "padding-top": "8px",
+        "padding-right": "12px",
+        "padding-bottom": "8px",
+        "padding-left": "12px",
+        "box-shadow": "0 2px 5px rgba(0, 0, 0, 0.2)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "text-content": "Click for more information"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "top": "10px below 'Help' icon bottom",
+        "z-index": "999"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip text",
+      "value": "",
+      "expected": {
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "move-away",
+      "selector": "'Help' icon",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "visibility": "hidden",
+        "timeout": 300
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "tooltip",
+      "value": "",
+      "expected": {
+        "display": "block when active, none when inactive"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.forum.com/posts",
+      "expected": {
+        "url": "https://www.forum.com/posts"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination component page numbers",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Previous' button",
+      "value": "",
+      "expected": {
+        "enabled": false,
+        "opacity": "0.5",
+        "on-page": 1
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current page '3' button",
+      "value": "",
+      "expected": {
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "border": "1px solid #007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Next' button",
+      "value": "",
+      "expected": {
+        "enabled": true,
+        "icon": "chevron-right"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "page number button",
+      "value": "",
+      "expected": {
+        "width": "32px",
+        "height": "32px",
+        "margin-top": "0px",
+        "margin-right": "5px",
+        "margin-bottom": "0px",
+        "margin-left": "5px",
+        "font-weight": "500"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "pagination container",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "justify-content": "center"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Next' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "current page value",
+      "value": "",
+      "expected": {
+        "movement": "increments"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.profiles.com/user/john_doe",
+      "expected": {
+        "url": "https://www.profiles.com/user/john_doe"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user avatar image 'avatar.jpg'",
+      "value": "",
+      "expected": {
+        "src": "avatar.jpg",
+        "border-radius": "50%",
+        "width": "80px",
+        "height": "80px",
+        "border": "2px solid #007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "online status indicator",
+      "value": "",
+      "expected": {
+        "background-color": "#28a745",
+        "width": "12px",
+        "height": "12px",
+        "position": "relative",
+        "bottom": "5px",
+        "right": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "username 'John Doe'",
+      "value": "",
+      "expected": {
+        "text-content": "John Doe",
+        "font-size": "22px",
+        "font-weight": "700"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "profile header",
+      "value": "",
+      "expected": {
+        "background-image": "url(\"profile_banner.jpg\")",
+        "background-size": "cover"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "user's join date '2023-01-15'",
+      "value": "",
+      "expected": {
+        "text-content": "2023-01-15"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "profile section",
+      "value": "",
+      "expected": {
+        "padding-top": "30px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.upload.com/status",
+      "expected": {
+        "url": "https://www.upload.com/status"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar element",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar track",
+      "value": "",
+      "expected": {
+        "background-color": "#e9ecef",
+        "height": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "filled portion of the progress bar",
+      "value": "",
+      "expected": {
+        "background-color": "#28a745",
+        "width": "75%",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "percentage label '75%'",
+      "value": "",
+      "expected": {
+        "text-content": "75%",
+        "font-size": "16px",
+        "color": "#343a40"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "transition": "width 500ms ease 0s"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar element",
+      "value": "",
+      "expected": {
+        "aria-valuemin": "0",
+        "aria-valuemax": "100"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "label 'Upload Progress'",
+      "value": "",
+      "expected": {
+        "text-content": "Upload Progress",
+        "aria-label": "File Upload Progress"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.notifications.com",
+      "expected": {
+        "url": "https://www.notifications.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "fixed",
+        "right": "20px",
+        "bottom": "20px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "padding-top": "15px",
+        "padding-right": "20px",
+        "padding-bottom": "15px",
+        "padding-left": "20px",
+        "border-radius": "6px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "box-shadow": "0px 2px 10px rgba(0, 0, 0, 0.2)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "text-content": "Settings saved successfully!"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Close' icon ('X')",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "position": "top right",
+        "enabled": true
+      }
+    },
+    {
+      "action": "click",
+      "selector": "'Close' icon",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "visibility": "hidden",
+        "animation-duration": "300ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "max-width": "350px",
+        "z-index": "1060"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.faq.com",
+      "expected": {
+        "url": "https://www.faq.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first accordion header",
+      "value": "",
+      "expected": {
+        "text-content": "What is your return policy?",
+        "font-weight": "600",
+        "padding-top": "15px",
+        "padding-right": "15px",
+        "padding-bottom": "15px",
+        "padding-left": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first accordion header",
+      "value": "",
+      "expected": {
+        "background-color": "#f8f9fa",
+        "border-bottom": "1px solid #e9ecef"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "expand/collapse icon (a plus sign) for the first accordion section",
+      "value": "",
+      "expected": {
+        "transform": "rotate(45deg)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content for the first accordion section",
+      "value": "",
+      "expected": {
+        "display": "none"
+      }
+    },
+    {
+      "action": "click",
+      "selector": "first accordion header",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "content for the first accordion section",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "max-height": "200px",
+        "overflow-y": "auto",
+        "transform": "rotate(45deg)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content text for the first accordion section",
+      "value": "",
+      "expected": {
+        "line-height": "1.6",
+        "word-spacing": "1px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "first accordion header",
+      "value": "",
+      "expected": {
+        "aria-expanded": "true"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.calendarapp.com",
+      "expected": {
+        "url": "https://www.calendarapp.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "current month display",
+      "value": "",
+      "expected": {
+        "text-content": "March 2024",
+        "font-size": "24px",
+        "font-weight": "700"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "selected date '15'",
+      "value": "",
+      "expected": {
+        "background-color": "#007bff",
+        "color": "#ffffff",
+        "border-radius": "50%"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Today's Date' (e.g., '20')",
+      "value": "",
+      "expected": {
+        "border": "2px solid #28a745"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Previous Month' and 'Next Month' arrows",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "color": "#6c757d",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each date cell",
+      "value": "",
+      "expected": {
+        "width": "40px",
+        "height": "40px",
+        "padding": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "weekday labels (e.g., 'Sun', 'Mon')",
+      "value": "",
+      "expected": {
+        "text-align": "center",
+        "font-size": "12px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "calendar grid",
+      "value": "",
+      "expected": {
+        "display": "grid",
+        "column-gap": "5px",
+        "row-gap": "5px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.devtool.com/code",
+      "expected": {
+        "url": "https://www.devtool.com/code"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "code block",
+      "value": "",
+      "expected": {
+        "font-family": "monospace",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "code block",
+      "value": "",
+      "expected": {
+        "background-color": "#2d2d2d",
+        "color": "#f8f8f2"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "code block",
+      "value": "",
+      "expected": {
+        "padding": "20px",
+        "border-radius": "8px",
+        "line-height": "1.5"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "code block",
+      "value": "",
+      "expected": {
+        "highlight-for-function-keyword-color": "#ffcb6b",
+        "highlight-for-const-keyword-color": "#c792ea"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "code block comments",
+      "value": "",
+      "expected": {
+        "starts-with-text-content": "//",
+        "color": "#6a9955"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "code block",
+      "value": "",
+      "expected": {
+        "overflow-x": "auto",
+        "overflow-x-active-if-content-width-exceeds": "800px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Copy Code' button",
+      "value": "",
+      "expected": {
+        "background-color": "#4a4a4a",
+        "color": "#ffffff",
+        "cursor": "pointer"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.socialapp.com/share",
+      "expected": {
+        "url": "https://www.socialapp.com/share"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "social share buttons container",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "justify-content": "center",
+        "column-gap": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Facebook' share icon",
+      "value": "",
+      "expected": {
+        "fill": "#3b5998",
+        "width": "32px",
+        "height": "32px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Twitter' icon",
+      "value": "",
+      "expected": {
+        "fill": "#1da1f2"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each social share icon",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "opacity": "0.8",
+        "transition-duration": "100ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "clickable area for each social share icon",
+      "value": "",
+      "expected": {
+        "min-width": "40px",
+        "min-height": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Share via Email' button",
+      "value": "",
+      "expected": {
+        "background-color": "#6c757d",
+        "text-content": "Email",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "share options",
+      "value": "",
+      "expected": {
+        "count": 4
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Share' label",
+      "value": "",
+      "expected": {
+        "aria-label": "Share Content"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.musicstream.com/player",
+      "expected": {
+        "url": "https://www.musicstream.com/player"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "audio player 'Play/Pause' button",
+      "value": "",
+      "expected": {
+        "toggles-icons": [
+          "play",
+          "pause"
+        ]
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'play' icon",
+      "value": "",
+      "expected": {
+        "stroke-color": "#007bff",
+        "stroke-width": "2px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "volume slider",
+      "value": "",
+      "expected": {
+        "progress-value": "75%",
+        "track-background-color": "#cccccc",
+        "filled-track-color": "#007bff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "audio player timestamp",
+      "value": "",
+      "expected": {
+        "current-time": "0:30",
+        "total-duration": "3:45"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Repeat' button",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "active-state-background-color": "#e6f2ff"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "audio element",
+      "value": "",
+      "expected": {
+        "muted": false
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "animation": "present"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.maps.com/location",
+      "expected": {
+        "url": "https://www.maps.com/location"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map widget",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "width": "100%",
+        "height": "600px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map markers",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "src": "pin_icon.png",
+        "position-type": "lat/long"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map",
+      "value": "",
+      "expected": {
+        "zoom-level": 12
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Zoom In' and 'Zoom Out' buttons",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#ffffff",
+        "border-radius": "50%",
+        "width": "36px",
+        "height": "36px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "copyright text",
+      "value": "",
+      "expected": {
+        "text-content": "© 2024 Maps Inc.",
+        "position": "bottom-left",
+        "font-size": "11px",
+        "color": "#6c757d",
+        "z-index": "50"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map canvas",
+      "value": "",
+      "expected": {
+        "filter": "grayscale(10%)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map",
+      "value": "",
+      "expected": {
+        "overflow": "hidden"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.example.com",
+      "expected": {
+        "url": "https://www.example.com"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "header element",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "background-color": "#ffffff",
+        "height": "60px",
+        "z-index": "1000"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Home' link",
+      "value": "",
+      "expected": {
+        "font-family": "Arial",
+        "font-size": "16px",
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Home' link",
+      "value": "",
+      "expected": {
+        "hovered": true,
+        "color": "#007bff",
+        "transition": "color 200ms ease"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "logo image 'logo.png'",
+      "value": "",
+      "expected": {
+        "src": "logo.png",
+        "width": "100px",
+        "height": "40px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "language label",
+      "value": "",
+      "expected": {
+        "aria-label": "Language Selector"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "text-content": "Add to Cart",
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "border-radius": "8px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "padding-top": "12px",
+        "padding-right": "12px",
+        "padding-bottom": "12px",
+        "padding-left": "12px",
+        "cursor": "pointer",
+        "enabled": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Add to Cart' button",
+      "value": "",
+      "expected": {
+        "active": true,
+        "transform": "scale(0.98)",
+        "box-shadow": "0 2px 4px rgba(0,0,0,0.2)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "goto",
+      "selector": "",
+      "value": "https://www.store.com/item/456",
+      "expected": {
+        "url": "https://www.store.com/item/456"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main product image",
+      "value": "",
+      "expected": {
+        "src": "item_456_main.jpg",
+        "rendered-width": 600,
+        "rendered-height": 450,
+        "alt-text": "Stylish Red Jacket"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "main product image",
+      "value": "",
+      "expected": {
+        "is-loaded": true,
+        "load-time": 500,
+        "natural-width": 1200,
+        "object-fit": "cover"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "'Email Address' input field",
+      "value": "",
+      "expected": {
+        "placeholder": "your@example.com",
+        "border": "1px solid #ced4da",
+        "font-size": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "input label for 'Email Address'",
+      "value": "",
+      "expected": {
+        "text-content": "Email Address",
+        "font-weight": "500",
+        "color": "#333333"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Email Address' input field",
+      "value": "",
+      "expected": {
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "15px",
+        "padding-right": "15px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "each 'Service Feature' card",
+      "value": "",
+      "expected": {
+        "display": "flex",
+        "width": "300px",
+        "min-height": "180px",
+        "background-color": "#f8f9fa"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "each 'Service Feature' card",
+      "value": "",
+      "expected": {
+        "margin-bottom": "15px",
+        "padding-top": "20px",
+        "padding-right": "20px",
+        "padding-bottom": "20px",
+        "padding-left": "20px",
+        "box-shadow": "0 4px 8px rgba(0,0,0,0.1)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "container of 'Service Feature' cards",
+      "value": "",
+      "expected": {
+        "column-gap": "10px",
+        "row-gap": "10px"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "'About Us' paragraph",
+      "value": "",
+      "expected": {
+        "text-content": "About Us"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' paragraph",
+      "value": "",
+      "expected": {
+        "font-family": "Georgia",
+        "font-size": "17px",
+        "line-height": "1.6",
+        "color": "#495057"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' paragraph",
+      "value": "",
+      "expected": {
+        "text-align": "left",
+        "max-width": "700px",
+        "letter-spacing": "0.5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'About Us' paragraph",
+      "value": "",
+      "expected": {
+        "text-decoration": "none"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "footer section",
+      "value": "",
+      "expected": {
+        "background-color": "#343a40",
+        "min-height": "100px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "footer section navigation links",
+      "value": "",
+      "expected": {
+        "count": 4
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Privacy Policy' link",
+      "value": "",
+      "expected": {
+        "href": "https://www.example.com/privacy",
+        "color": "#adb5bd",
+        "font-size": "14px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "footer section",
+      "value": "",
+      "expected": {
+        "text-content": "© 2023 Example, Inc."
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Sign Up' button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "modal",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "z-index": "1050"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal backdrop",
+      "value": "",
+      "expected": {
+        "background-color": "rgba(0,0,0,0.6)"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal content box",
+      "value": "",
+      "expected": {
+        "width": "500px",
+        "height": "350px",
+        "border-radius": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "modal",
+      "value": "",
+      "expected": {
+        "position": "fixed",
+        "centered": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "'Order History' table",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Order History' table rows",
+      "value": "",
+      "expected": {
+        "count": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Order History' table row",
+      "value": "",
+      "expected": {
+        "border-bottom": "1px solid #dee2e6"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Order History' table rows",
+      "value": "",
+      "expected": {
+        "background-color-even": "#ffffff",
+        "background-color-odd": "#f2f2f2"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Order History' table row",
+      "value": "",
+      "expected": {
+        "padding-top": "10px",
+        "padding-bottom": "10px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Order History' table columns",
+      "value": "",
+      "expected": {
+        "count": 4
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Order ID' column",
+      "value": "",
+      "expected": {
+        "text-overflow": "ellipsis"
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "'Product Demo' video open button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Product Demo' video",
+      "value": "",
+      "expected": {
+        "src": "https://www.cdn.com/demo.mp4",
+        "width": "800px",
+        "height": "450px",
+        "muted": true
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "'Product Demo' video",
+      "value": "",
+      "expected": {
+        "play-duration-min-seconds": 10
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "video",
+      "value": "",
+      "expected": {
+        "poster": "demo_poster.jpg",
+        "controls": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "file upload button",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "height": "8px",
+        "background-color": "#007bff",
+        "border-radius": "4px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "progress-value": "0% to 100%",
+        "transition-duration": "5s",
+        "transition-timing-function": "linear"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "progress bar",
+      "value": "",
+      "expected": {
+        "aria-valuenow": "current percentage"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "shopping cart icon in header",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "fill": "#333333",
+        "width": "24px",
+        "height": "24px",
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "min-width": "32px",
+        "min-height": "32px",
+        "title": "Shopping Cart"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "shopping cart icon",
+      "value": "",
+      "expected": {
+        "aria-hidden": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "click",
+      "selector": "language selector dropdown",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "language selector dropdown options",
+      "value": "",
+      "expected": {
+        "count": 5
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "selected language option",
+      "value": "",
+      "expected": {
+        "value": "en-US",
+        "text-content": "English"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "language selector dropdown",
+      "value": "",
+      "expected": {
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "#ced4da"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "language selector dropdown",
+      "value": "",
+      "expected": {
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "language selector dropdown arrow icon",
+      "value": "",
+      "expected": {
+        "transform": "rotate(180deg)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "image carousel on homepage",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "image carousel slides",
+      "value": "",
+      "expected": {
+        "count": 3
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image carousel slide",
+      "value": "",
+      "expected": {
+        "width": "100%",
+        "height": "400px",
+        "animation-duration": "500ms"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "image carousel navigation dots",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "visibility": "visible"
+      }
+    }
+  ],
+  [
+    {
+      "action": "verify",
+      "selector": "embedded map component",
+      "value": "",
+      "expected": {
+        "width": "100%",
+        "height": "400px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "",
+      "value": "",
+      "expected": {
+        "url": "https://maps.google.com/embed?"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map location markers",
+      "value": "",
+      "expected": {
+        "count": 3,
+        "count-comparison": "greater-than-or-equal",
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "map",
+      "value": "",
+      "expected": {
+        "border": "1px solid #e0e0e0",
+        "box-shadow": "0px 2px 5px rgba(0, 0, 0, 0.1)"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "login page",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Remember me' checkbox",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "checked": false,
+        "text-content": "Remember me"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "checkbox",
+      "value": "",
+      "expected": {
+        "margin-right": "8px",
+        "cursor": "pointer"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "checkbox",
+      "value": "",
+      "expected": {
+        "role": "checkbox"
+      }
+    }
+  ],
+  [
+    {
+      "action": "submit",
+      "selector": "form",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "background-color": "#28a745",
+        "color": "#ffffff",
+        "padding": "15px",
+        "border-radius": "5px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "position": "fixed",
+        "bottom": "20px",
+        "right": "20px",
+        "timeout": 3000
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "toast notification",
+      "value": "",
+      "expected": {
+        "opacity": 1,
+        "has-clickable-close-icon": true
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "'Upload Resume' file input",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "file input",
+      "value": "",
+      "expected": {
+        "placeholder": "No file chosen"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "button associated with 'Upload Resume' file input",
+      "value": "",
+      "expected": {
+        "text-content": "Choose File"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file input",
+      "value": "",
+      "expected": {
+        "accept": ".pdf,.doc,.docx"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file input area",
+      "value": "",
+      "expected": {
+        "width": "250px",
+        "border": "1px dashed #cccccc"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "file input",
+      "value": "",
+      "expected": {
+        "file-count": 0
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "'Departure Date' input field",
+      "value": "",
+      "expected": {}
+    },
+    {
+      "action": "verify",
+      "selector": "'Departure Date' input field",
+      "value": "",
+      "expected": {
+        "value": "",
+        "placeholder": "YYYY-MM-DD",
+        "font-size": "16px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "calendar icon",
+      "value": "",
+      "expected": {
+        "visibility": "visible",
+        "float": "right"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "calendar component",
+      "value": "",
+      "expected": {
+        "date-selection-blocked-before": "today"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "calendar component",
+      "value": "",
+      "expected": {
+        "border-color": "#ced4da",
+        "background-color": "#ffffff"
+      }
+    }
+  ],
+  [
+    {
+      "action": "locate",
+      "selector": "content area",
+      "value": "",
+      "expected": {
+        "overflow-y": "scroll"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content area with overflow",
+      "value": "",
+      "expected": {
+        "overflow-y": "scroll",
+        "max-height": "300px",
+        "scroll-top": "0px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "content area scrollbar",
+      "value": "",
+      "expected": {
+        "width": "15px"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "scrollable content",
+      "value": "",
+      "expected": {
+        "background-color": "#fdfdfd"
+      }
+    },
+    {
+      "action": "verify",
+      "selector": "scrollable content",
+      "value": "",
+      "expected": {
+        "scroll-behavior": "smooth"
+      }
+    }
+  ]
+]
